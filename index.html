@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ヨーロッパ卒業旅行｜Country Tier Guide</title>
+<style>
+:root{
+  --bg:#f5f3ee;--card:#fff;--text:#1f2630;--muted:#6d7480;--line:#e5e0d7;
+  --navy:#243b53;--navy2:#3d5d78;--s:#ffd98a;--a:#dbe8d5;--b:#dce8f3;--c:#ece7df;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;line-height:1.65}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 70px}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:24px;padding:34px 34px 30px;box-shadow:0 14px 36px rgba(36,59,83,.15)}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:0 0 12px}
+h2{font-size:28px;margin:0 0 10px}
+h3{font-size:20px;margin:0 0 8px}
+p{margin:0 0 10px}
+.lead{max-width:900px;color:#edf4f8;font-size:17px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pill{padding:7px 10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.10);border-radius:999px;font-size:13px}
+.tabs{display:flex;gap:8px;overflow:auto;padding:12px 0 2px;position:sticky;top:0;background:linear-gradient(var(--bg) 75%,rgba(245,243,238,0));z-index:10}
+.tabbtn{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap;font-weight:700;color:#415062}
+.tabbtn.active{background:var(--navy);color:white;border-color:var(--navy)}
+.page{display:none;margin-top:20px}
+.page.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 7px 22px rgba(31,38,48,.045)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.axisgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.axis{background:#fbfaf7;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:14px}
+.axis b{display:block;margin-bottom:4px}
+.tierrow{display:grid;grid-template-columns:72px 1fr;gap:10px;margin:10px 0}
+.label{border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;padding:14px}
+.box{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.S .label{background:var(--s)} .A .label{background:var(--a)} .B .label{background:var(--b)} .C .label{background:var(--c)}
+.countries{font-weight:800}
+.reason{font-size:13px;color:#59616d;margin-top:3px}
+.country{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.country .head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.badge{font-weight:800;font-size:12px;padding:5px 9px;border-radius:999px}
+.bs{background:var(--s)} .ba{background:var(--a)} .bb{background:var(--b)} .bc{background:var(--c)}
+.country ul{margin:10px 0 0;padding-left:18px}
+.country li{margin:5px 0;color:#4f5864;font-size:14px}
+.sub{color:var(--muted);margin-top:-5px}
+.callout{background:#fbfaf7;border:1px solid var(--line);border-radius:16px;padding:17px;margin-top:14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:11px 9px;border-bottom:1px solid var(--line);vertical-align:top;text-align:center}
+th:first-child,td:first-child{text-align:left;white-space:nowrap}
+th{background:#faf9f6;color:#4c5562}
+.grade{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:9px;font-weight:800}
+.gS{background:var(--s)} .gA{background:var(--a)} .gB{background:var(--b)} .gC{background:var(--c)}
+.footer{margin-top:26px;color:var(--muted);font-size:12px}
+@media(max-width:850px){
+  .grid{grid-template-columns:1fr}.axisgrid{grid-template-columns:1fr 1fr}.wrap{padding:14px 10px 50px}.hero{padding:26px 20px}
+}
+@media(max-width:520px){
+  .axisgrid{grid-template-columns:1fr}.tierrow{grid-template-columns:56px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Europe Graduation Trip<br>Country Tier Guide</h1>
+    <p class="lead">2027年2月14日ごろ出発予定。ルートを決める前に、2人で「どの国を候補に残すか」を比較するための資料。観点ごとにページを切り替えて確認できる。</p>
+    <div class="meta">
+      <span class="pill">👫 22歳・カップル</span><span class="pill">🎓 卒業旅行</span><span class="pill">🇪🇺 彼女は初ヨーロッパ</span>
+      <span class="pill">🗓 10日〜最大2週間半</span><span class="pill">🏙 1都市2〜3泊</span><span class="pill">🍝 景色・街並み・食事重視</span>
+      <span class="pill">🌡 0℃前後は避けたい</span><span class="pill">🌲 自然は1日程度ならあり</span>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tabbtn active" data-page="overview">総合</button>
+    <button class="tabbtn" data-page="first">初ヨーロッパ</button>
+    <button class="tabbtn" data-page="scenery">街並み・景色</button>
+    <button class="tabbtn" data-page="food">食事</button>
+    <button class="tabbtn" data-page="weather">2月の歩きやすさ</button>
+    <button class="tabbtn" data-page="routing">3か国旅行の組みやすさ</button>
+  </div>
+
+  <section id="overview" class="page active">
+    <div class="card">
+      <h2>比較の前提</h2>
+      <p class="sub">今回の旅行に合わせて評価軸を独立させる。国そのものの優劣ではない。</p>
+      <div class="axisgrid">
+        <div class="axis"><b>① 初ヨーロッパの感動</b>象徴性、初回での印象の強さ。</div>
+        <div class="axis"><b>② 街並み・景色</b>街歩きそのものが楽しいか。</div>
+        <div class="axis"><b>③ 食事</b>毎日の食事が旅の楽しみになるか。</div>
+        <div class="axis"><b>④ 2月の歩きやすさ</b>気温・風・日照を含む。</div>
+        <div class="axis"><b>⑤ 3か国旅行の組みやすさ</b>地理・移動・体験変化。</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px;overflow:auto">
+      <h2>5軸一覧</h2>
+      <table>
+        <thead><tr><th>国</th><th>初ヨーロッパ</th><th>街並み・景色</th><th>食事</th><th>2月</th><th>組みやすさ</th></tr></thead>
+        <tbody>
+          <tr><td>🇫🇷 フランス</td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇮🇹 イタリア</td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇪🇸 スペイン</td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇬🇧 イギリス</td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇨🇭 スイス</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇳🇱 オランダ</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇧🇪 ベルギー</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇦🇹 オーストリア</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇩🇪 ドイツ</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gC">C</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇩🇰 デンマーク</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gC">C</span></td><td><span class="grade gB">B</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><b>使い方：</b>まず2人で「どの観点を最優先するか」を決め、そのページを見ながら候補国を削っていく。平均点だけで決めない。</div>
+  </section>
+
+  <section id="first" class="page">
+    <div class="card">
+      <h2>① 初ヨーロッパの感動</h2>
+      <p class="sub">彼女にとって「初めてヨーロッパに来た」という感覚をどれだけ強く作れるか。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇫🇷 フランス　🇮🇹 イタリア　🇬🇧 イギリス</div><div class="reason">象徴的な都市・建築・文化が多く、初回での分かりやすい感動が強い。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇨🇭 スイス　🇳🇱 オランダ</div><div class="reason">その国ならではの景観や文化が非常に分かりやすい。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇩🇪 ドイツ　🇧🇪 ベルギー　🇩🇰 デンマーク</div><div class="reason">十分魅力的だが、初回での象徴性は上位国よりやや弱い。</div></div></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>パリの象徴性が非常に高い。</li><li>エッフェル塔、セーヌ、ルーヴルなど「見たことがある場所に来た」感が強い。</li><li>初ヨーロッパの入口として分かりやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>ローマ、フィレンツェ、ヴェネツィアの個性が明確。</li><li>歴史・街並み・食事が同時に刺さりやすい。</li><li>「ヨーロッパらしさ」の密度が高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge bs">S</span></div><ul><li>ロンドンの知名度と象徴性が高い。</li><li>英語圏なので彼女にも心理的な分かりやすさがある。</li><li>あなたが住んでいた経験を活かして案内できる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>ガウディや旧市街など視覚的なインパクトが大きい。</li><li>イギリス・フランスとは違う南欧感が出る。</li><li>初回でも十分印象に残る。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge ba">A</span></div><ul><li>アルプス・湖など「ヨーロッパの絶景」の象徴。</li><li>自然を1日だけ入れたい今回と相性がよい。</li><li>都市体験の厚みは他国より薄め。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge ba">A</span></div><ul><li>運河と細長い建物で街並みが一目で違う。</li><li>王道4か国とは違う「ヨーロッパの別の顔」がある。</li><li>初回でもユニークさが伝わりやすい。</li></ul></div>
+    </div>
+  </section>
+
+  <section id="scenery" class="page">
+    <div class="card">
+      <h2>② 街並み・景色</h2>
+      <p class="sub">観光地だけでなく、街を歩いている時間そのものが楽しいか。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇫🇷 フランス　🇨🇭 スイス　🇳🇱 オランダ</div><div class="reason">歴史都市・水辺・アルプス・運河など、街や景観そのものの強さが大きい。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇦🇹 オーストリア　🇬🇧 イギリス　🇧🇪 ベルギー</div><div class="reason">個性的な街が多く、写真・散歩との相性が良い。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇩🇰 デンマーク</div><div class="reason">良い都市はあるが、今回の候補内では視覚的な変化の強さはやや弱め。</div></div></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>ローマ、フィレンツェ、ヴェネツィアで景観が全く違う。</li><li>旧市街の密度が高く、街歩きが目的になる。</li><li>写真映えだけでなく、歴史の厚みがある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>パリの都市景観が強い。</li><li>南フランスまで広げると景色の変化も作れる。</li><li>大通り・川・建築のバランスがよい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><ul><li>アルプスと湖の景色は他候補と明確に違う。</li><li>自然メインにせず1日だけ入れるとアクセントになる。</li><li>2月は雪景色の強さがある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><ul><li>アムステルダムの運河景観がユニーク。</li><li>街全体がコンパクトで散歩しやすい。</li><li>他国との違いが一目で分かる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>バルセロナの建築、セビリアの南欧感が強い。</li><li>都市による景観差が大きい。</li><li>街歩きと気候の相性が良い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span class="badge ba">A</span></div><ul><li>ウィーンの宮殿・旧市街は非常に美しい。</li><li>歴史的な都市美が強い。</li><li>ただし2月の寒さが街歩き時間を削りやすい。</li></ul></div>
+    </div>
+  </section>
+
+  <section id="food" class="page">
+    <div class="card">
+      <h2>③ 食事</h2>
+      <p class="sub">毎日の食事を旅の大きな楽しみにできるか。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇪🇸 スペイン　🇫🇷 フランス</div><div class="reason">地域ごとの料理の幅が広く、食そのものが旅の目的になる。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇧🇪 ベルギー　🇩🇪 ドイツ　🇬🇧 イギリス</div><div class="reason">ビール、肉料理、菓子、パブ文化など楽しみ方が明確。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇨🇭 スイス　🇳🇱 オランダ　🇩🇰 デンマーク</div><div class="reason">魅力はあるが、今回の他候補と比べると食を主目的にはしにくい。</div></div></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>パスタ、ピザだけでなく地方料理の幅が非常に広い。</li><li>都市を変えるだけで食体験も変わる。</li><li>カップル旅行でも店選びが楽しい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge bs">S</span></div><ul><li>タパス、魚介、肉料理などシェアしやすい。</li><li>食事時間そのものが旅行体験になる。</li><li>バル文化との相性も良い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>ビストロ、パン、菓子、ワインまで幅広い。</li><li>高級店から日常食まで選択肢が多い。</li><li>食文化の象徴性が高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge ba">A</span></div><ul><li>チョコ、ワッフル、ビール、ムール貝など旅行向き。</li><li>食べ歩きもしやすい。</li><li>短期滞在でも満足を作りやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span class="badge ba">A</span></div><ul><li>ビールと肉料理が分かりやすい。</li><li>地域差もある。</li><li>好みが合えば満足度は高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge ba">A</span></div><ul><li>パブ、Sunday roast、インド料理など幅がある。</li><li>ロンドンなら世界各国の料理も楽しめる。</li><li>「英国料理＝弱い」だけではない。</li></ul></div>
+    </div>
+  </section>
+
+  <section id="weather" class="page">
+    <div class="card">
+      <h2>④ 2月の歩きやすさ</h2>
+      <p class="sub">今回だけは完全に季節依存。街歩き時間を削らないかという観点。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇪🇸 スペイン　🇮🇹 イタリア</div><div class="reason">バルセロナ・ローマなら昼は約13〜14℃前後で、候補内では明確に有利。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇫🇷 フランス　🇬🇧 イギリス</div><div class="reason">パリ・ロンドンは昼約9℃前後。冬だが観光は十分可能。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇧🇪 ベルギー　🇳🇱 オランダ　🇨🇭 スイス　🇦🇹 オーストリア</div><div class="reason">昼5〜7℃程度。朝晩は0℃前後になりやすい。</div></div></div>
+      <div class="tierrow C"><div class="label">C</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇩🇰 デンマーク</div><div class="reason">ベルリン約5℃、コペンハーゲン約2℃が目安。街歩き型の旅行では負担が大きい。</div></div></div>
+    </div>
+    <div class="card" style="margin-top:14px;overflow:auto">
+      <table>
+        <thead><tr><th>国</th><th>代表都市</th><th>昼</th><th>朝晩</th><th>今回の見方</th></tr></thead>
+        <tbody>
+          <tr><td>🇪🇸 スペイン</td><td>バルセロナ</td><td>約14℃</td><td>約5℃</td><td>かなり歩きやすい</td></tr>
+          <tr><td>🇮🇹 イタリア</td><td>ローマ</td><td>約13℃</td><td>約3〜4℃</td><td>中南部中心なら強い</td></tr>
+          <tr><td>🇬🇧 イギリス</td><td>ロンドン</td><td>約9℃</td><td>約3℃</td><td>寒いが現実的</td></tr>
+          <tr><td>🇫🇷 フランス</td><td>パリ</td><td>約9℃</td><td>約3℃</td><td>十分観光可能</td></tr>
+          <tr><td>🇧🇪 ベルギー</td><td>ブリュッセル</td><td>約7℃</td><td>約1〜2℃</td><td>やや寒い</td></tr>
+          <tr><td>🇳🇱 オランダ</td><td>アムステルダム</td><td>約7℃</td><td>約1℃</td><td>風で体感低下</td></tr>
+          <tr><td>🇨🇭 スイス</td><td>チューリッヒ</td><td>約5〜7℃</td><td>約0℃</td><td>景観目的ならあり</td></tr>
+          <tr><td>🇦🇹 オーストリア</td><td>ウィーン</td><td>約6〜7℃</td><td>約0℃</td><td>街は魅力的だが寒い</td></tr>
+          <tr><td>🇩🇪 ドイツ</td><td>ベルリン</td><td>約5℃</td><td>約-1℃</td><td>今回やや厳しい</td></tr>
+          <tr><td>🇩🇰 デンマーク</td><td>コペンハーゲン</td><td>約2℃</td><td>約-2℃</td><td>今回かなり厳しい</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="routing" class="page">
+    <div class="card">
+      <h2>⑤ 3か国旅行の組みやすさ</h2>
+      <p class="sub">10日〜2週間半、1都市2〜3泊、3か国程度という条件で見た移動の作りやすさ。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇫🇷 フランス　🇮🇹 イタリア　🇨🇭 スイス　🇧🇪 ベルギー　🇳🇱 オランダ</div><div class="reason">鉄道・航空とも選択肢が多く、隣国と自然につながる。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇦🇹 オーストリア　🇩🇪 ドイツ　🇬🇧 イギリス</div><div class="reason">十分組みやすいが、スペイン・英国は次国への移動で飛行機を使いやすい。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇰 デンマーク</div><div class="reason">北欧方面なら強いが、南欧・西欧と組み合わせると距離が出やすい。</div></div></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>英国、ベルギー、スイス、イタリア、スペインと組める。</li><li>パリを中継点にしやすい。</li><li>鉄道でも飛行機でも柔軟。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>スイス、フランス、オーストリア方面へ広げやすい。</li><li>国内都市の選択肢も多い。</li><li>3か国旅の「核」にしやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><ul><li>フランス・イタリア・ドイツの中間に置きやすい。</li><li>自然担当として1〜2泊入れると旅に変化が出る。</li><li>通過国ではなく短期滞在の価値がある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge bs">S</span></div><ul><li>フランス・オランダとの組み合わせが非常に自然。</li><li>鉄道移動が短く、旅程を圧迫しにくい。</li><li>2泊でも成立しやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><ul><li>ベルギー・フランス・ドイツと繋ぎやすい。</li><li>2〜3泊でまとまりやすい。</li><li>街並みの変化も作れる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>フランスとは組みやすい。</li><li>イタリアや英国へは飛行機を使うことが増える。</li><li>移動負担より気候メリットが大きい。</li></ul></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    ※ Tierは今回の2人の旅行条件に対する比較用。国そのものの一般的な価値・優劣を示すものではありません。<br>
+    ※ 気温は代表都市の2月平年値ベースの目安。2027年2月の実際の天候は直前予報で確認する前提です。
+  </div>
+</div>
+
+<script>
+const buttons=[...document.querySelectorAll('.tabbtn')];
+const pages=[...document.querySelectorAll('.page')];
+buttons.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    buttons.forEach(b=>b.classList.remove('active'));
+    pages.forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.page).classList.add('active');
+    window.scrollTo({top:document.querySelector('.tabs').offsetTop-4,behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
