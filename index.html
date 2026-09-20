@@ -59,6 +59,33 @@ th{background:#faf9f6;color:#4c5562}
 @media(max-width:520px){
   .axisgrid{grid-template-columns:1fr}.tierrow{grid-template-columns:56px 1fr}
 }
+
+/* Real travel photographs */
+.photo-intro{margin:22px 0 14px}.photo-intro p{color:var(--muted);font-size:14px}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.overview-photos{grid-template-columns:repeat(3,minmax(0,1fr))}
+.photo-card{min-width:0;background:white;border:1px solid var(--line);border-radius:16px;padding:16px}
+.photo-card h3{font-size:18px}.country{min-width:0}
+.travel-photo{margin:14px 0 8px;min-width:0}
+.photo-open{display:block;position:relative;border-radius:12px;overflow:hidden;background:#ebe7df;outline-offset:4px}
+.photo-open img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;transition:transform .2s}
+.photo-open.portrait img{object-fit:contain;background:#eeeae2}
+.photo-open:hover img{transform:scale(1.025)}
+.photo-open:after{content:'拡大する ↗';position:absolute;right:10px;bottom:10px;background:rgba(20,31,44,.78);color:#fff;padding:4px 9px;border-radius:99px;font-size:11px}
+.photo-caption{font-size:14px;font-weight:700;margin-top:9px;line-height:1.5}
+.photo-date{font-size:12px;color:#59616d;display:block;margin-top:3px}
+.photo-credit{color:#626b77;font-size:11px;line-height:1.6;margin-top:5px;overflow-wrap:anywhere}
+.photo-credit a{color:#405c78;text-underline-offset:2px}.photo-credit summary{cursor:pointer;width:fit-content}
+.photo-credit p{margin:4px 0 0}.photo-hint{font-size:13px;color:var(--muted);margin-top:12px}
+.photo-dialog{width:min(1100px,95vw);max-height:94dvh;border:0;border-radius:18px;padding:18px;background:#fff;color:var(--text);box-shadow:0 20px 80px #0006}
+.photo-dialog::backdrop{background:rgba(13,23,34,.86)}
+.dialog-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:16px}
+.dialog-top p{margin:0;font-weight:700}.dialog-close{border:1px solid var(--line);background:#f5f3ee;border-radius:999px;padding:9px 16px;cursor:pointer;font:inherit}
+.dialog-image{display:block;max-width:100%;width:auto;max-height:68dvh;object-fit:contain;margin:0 auto;background:#f5f3ee}
+.photo-dialog figure{margin:0}.photo-dialog .photo-caption{margin-top:12px}
+@media(max-width:850px){.overview-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.photo-grid{grid-template-columns:1fr}.photo-card{padding:14px}.photo-dialog{padding:12px}.dialog-image{max-height:65dvh}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo-open img{transition:none}}
 </style>
 </head>
 <body>
@@ -114,7 +141,37 @@ th{background:#faf9f6;color:#4c5562}
       </table>
     </div>
     <div class="callout"><b>使い方：</b>まず2人で「どの観点を最優先するか」を決め、そのページを見ながら候補国を削っていく。平均点だけで決めない。</div>
-  </section>
+  <div class="photo-intro"><h2>写真で見比べる10か国</h2><p>まずは各国の象徴的な景色から。上のタブを切り替えると、街並み・食事・冬・移動の実写真を見比べられます。</p><p>写真をタップすると大きく表示できます。</p></div><div class="photo-grid overview-photos"><article class="photo-card"><h3>🇫🇷 フランス</h3><figure class="travel-photo" data-photo="first-fr">
+<a class="photo-open portrait" href="assets/photos/first-fr.jpg" aria-label="パリ｜エッフェル塔の写真を拡大"><img src="assets/photos/first-fr.jpg" width="801" height="1200" loading="lazy" decoding="async" alt="パリ｜エッフェル塔の実際の写真"></a>
+<figcaption><div class="photo-caption">パリ｜エッフェル塔</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DXR<br><a href="https://commons.wikimedia.org/wiki/File:Tour_Eiffel_and_Pont_de_Bir-Hakeim_as_seen_from_Ile_aux_Cygnes_140203_7.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="first-it">
+<a class="photo-open" href="assets/photos/first-it.jpg" aria-label="ローマ｜コロッセオの写真を拡大"><img src="assets/photos/first-it.jpg" width="960" height="568" loading="lazy" decoding="async" alt="ローマ｜コロッセオの実際の写真"></a>
+<figcaption><div class="photo-caption">ローマ｜コロッセオ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Wilfredor<br><a href="https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇪🇸 スペイン</h3><figure class="travel-photo" data-photo="first-es">
+<a class="photo-open portrait" href="assets/photos/first-es.jpg" aria-label="バルセロナ｜サグラダ・ファミリアの写真を拡大"><img src="assets/photos/first-es.jpg" width="825" height="1200" loading="lazy" decoding="async" alt="バルセロナ｜サグラダ・ファミリアの実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ｜サグラダ・ファミリア</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Canaan<br><a href="https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇬🇧 イギリス</h3><figure class="travel-photo" data-photo="first-gb">
+<a class="photo-open" href="assets/photos/first-gb.jpg" aria-label="ロンドン｜ビッグ・ベンの写真を拡大"><img src="assets/photos/first-gb.jpg" width="960" height="650" loading="lazy" decoding="async" alt="ロンドン｜ビッグ・ベンの実際の写真"></a>
+<figcaption><div class="photo-caption">ロンドン｜ビッグ・ベン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Colin<br><a href="https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇨🇭 スイス</h3><figure class="travel-photo" data-photo="first-ch">
+<a class="photo-open" href="assets/photos/first-ch.jpg" aria-label="ツェルマット｜マッターホルンの写真を拡大"><img src="assets/photos/first-ch.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ツェルマット｜マッターホルンの実際の写真"></a>
+<figcaption><div class="photo-caption">ツェルマット｜マッターホルン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Vavaloin<br><a href="https://commons.wikimedia.org/wiki/File:Impressive_Matterhorn_view_in_Zermatt,_Switzerland.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇳🇱 オランダ</h3><figure class="travel-photo" data-photo="first-nl">
+<a class="photo-open" href="assets/photos/first-nl.jpg" aria-label="アムステルダム｜ダムラックの家並みの写真を拡大"><img src="assets/photos/first-nl.jpg" width="960" height="640" loading="lazy" decoding="async" alt="アムステルダム｜ダムラックの家並みの実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜ダムラックの家並み</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Basile Morin<br><a href="https://commons.wikimedia.org/wiki/File:Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇧🇪 ベルギー</h3><figure class="travel-photo" data-photo="first-be">
+<a class="photo-open" href="assets/photos/first-be.jpg" aria-label="ブリュッセル｜グラン・プラスの写真を拡大"><img src="assets/photos/first-be.jpg" width="960" height="546" loading="lazy" decoding="async" alt="ブリュッセル｜グラン・プラスの実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜グラン・プラス</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Celuici<br><a href="https://commons.wikimedia.org/wiki/File:Grand-Place,_Brussels_-_panorama,_June_2018.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="first-at">
+<a class="photo-open" href="assets/photos/first-at.jpg" aria-label="ウィーン｜シェーンブルン宮殿の写真を拡大"><img src="assets/photos/first-at.jpg" width="960" height="430" loading="lazy" decoding="async" alt="ウィーン｜シェーンブルン宮殿の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜シェーンブルン宮殿</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Thomas Wolf, www.foto-tw.de<br><a href="https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0 de</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="first-de">
+<a class="photo-open" href="assets/photos/first-de.jpg" aria-label="ベルリン｜ブランデンブルク門の写真を拡大"><img src="assets/photos/first-de.jpg" width="960" height="641" loading="lazy" decoding="async" alt="ベルリン｜ブランデンブルク門の実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜ブランデンブルク門</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Thomas Wolf, www.foto-tw.de<br><a href="https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="first-dk">
+<a class="photo-open" href="assets/photos/first-dk.jpg" aria-label="コペンハーゲン｜ニューハウンの写真を拡大"><img src="assets/photos/first-dk.jpg" width="960" height="520" loading="lazy" decoding="async" alt="コペンハーゲン｜ニューハウンの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜ニューハウン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Jakub Hałun<br><a href="https://commons.wikimedia.org/wiki/File:Nyhavn,_Copenhagen,_20220618_1728_7354.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div></section>
 
   <section id="first" class="page">
     <div class="card">
@@ -125,14 +182,44 @@ th{background:#faf9f6;color:#4c5562}
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇩🇪 ドイツ　🇧🇪 ベルギー　🇩🇰 デンマーク</div><div class="reason">十分魅力的だが、初回での象徴性は上位国よりやや弱い。</div></div></div>
     </div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>パリの象徴性が非常に高い。</li><li>エッフェル塔、セーヌ、ルーヴルなど「見たことがある場所に来た」感が強い。</li><li>初ヨーロッパの入口として分かりやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>ローマ、フィレンツェ、ヴェネツィアの個性が明確。</li><li>歴史・街並み・食事が同時に刺さりやすい。</li><li>「ヨーロッパらしさ」の密度が高い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge bs">S</span></div><ul><li>ロンドンの知名度と象徴性が高い。</li><li>英語圏なので彼女にも心理的な分かりやすさがある。</li><li>あなたが住んでいた経験を活かして案内できる。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>ガウディや旧市街など視覚的なインパクトが大きい。</li><li>イギリス・フランスとは違う南欧感が出る。</li><li>初回でも十分印象に残る。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge ba">A</span></div><ul><li>アルプス・湖など「ヨーロッパの絶景」の象徴。</li><li>自然を1日だけ入れたい今回と相性がよい。</li><li>都市体験の厚みは他国より薄め。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge ba">A</span></div><ul><li>運河と細長い建物で街並みが一目で違う。</li><li>王道4か国とは違う「ヨーロッパの別の顔」がある。</li><li>初回でもユニークさが伝わりやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="first-fr">
+<a class="photo-open portrait" href="assets/photos/first-fr.jpg" aria-label="パリ｜エッフェル塔の写真を拡大"><img src="assets/photos/first-fr.jpg" width="801" height="1200" loading="lazy" decoding="async" alt="パリ｜エッフェル塔の実際の写真"></a>
+<figcaption><div class="photo-caption">パリ｜エッフェル塔</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DXR<br><a href="https://commons.wikimedia.org/wiki/File:Tour_Eiffel_and_Pont_de_Bir-Hakeim_as_seen_from_Ile_aux_Cygnes_140203_7.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パリの象徴性が非常に高い。</li><li>エッフェル塔、セーヌ、ルーヴルなど「見たことがある場所に来た」感が強い。</li><li>初ヨーロッパの入口として分かりやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="first-it">
+<a class="photo-open" href="assets/photos/first-it.jpg" aria-label="ローマ｜コロッセオの写真を拡大"><img src="assets/photos/first-it.jpg" width="960" height="568" loading="lazy" decoding="async" alt="ローマ｜コロッセオの実際の写真"></a>
+<figcaption><div class="photo-caption">ローマ｜コロッセオ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Wilfredor<br><a href="https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ローマ、フィレンツェ、ヴェネツィアの個性が明確。</li><li>歴史・街並み・食事が同時に刺さりやすい。</li><li>「ヨーロッパらしさ」の密度が高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="first-gb">
+<a class="photo-open" href="assets/photos/first-gb.jpg" aria-label="ロンドン｜ビッグ・ベンの写真を拡大"><img src="assets/photos/first-gb.jpg" width="960" height="650" loading="lazy" decoding="async" alt="ロンドン｜ビッグ・ベンの実際の写真"></a>
+<figcaption><div class="photo-caption">ロンドン｜ビッグ・ベン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Colin<br><a href="https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ロンドンの知名度と象徴性が高い。</li><li>英語圏なので彼女にも心理的な分かりやすさがある。</li><li>あなたが住んでいた経験を活かして案内できる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="first-es">
+<a class="photo-open portrait" href="assets/photos/first-es.jpg" aria-label="バルセロナ｜サグラダ・ファミリアの写真を拡大"><img src="assets/photos/first-es.jpg" width="825" height="1200" loading="lazy" decoding="async" alt="バルセロナ｜サグラダ・ファミリアの実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ｜サグラダ・ファミリア</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Canaan<br><a href="https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ガウディや旧市街など視覚的なインパクトが大きい。</li><li>イギリス・フランスとは違う南欧感が出る。</li><li>初回でも十分印象に残る。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="first-ch">
+<a class="photo-open" href="assets/photos/first-ch.jpg" aria-label="ツェルマット｜マッターホルンの写真を拡大"><img src="assets/photos/first-ch.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ツェルマット｜マッターホルンの実際の写真"></a>
+<figcaption><div class="photo-caption">ツェルマット｜マッターホルン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Vavaloin<br><a href="https://commons.wikimedia.org/wiki/File:Impressive_Matterhorn_view_in_Zermatt,_Switzerland.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>アルプス・湖など「ヨーロッパの絶景」の象徴。</li><li>自然を1日だけ入れたい今回と相性がよい。</li><li>都市体験の厚みは他国より薄め。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="first-nl">
+<a class="photo-open" href="assets/photos/first-nl.jpg" aria-label="アムステルダム｜ダムラックの家並みの写真を拡大"><img src="assets/photos/first-nl.jpg" width="960" height="640" loading="lazy" decoding="async" alt="アムステルダム｜ダムラックの家並みの実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜ダムラックの家並み</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Basile Morin<br><a href="https://commons.wikimedia.org/wiki/File:Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>運河と細長い建物で街並みが一目で違う。</li><li>王道4か国とは違う「ヨーロッパの別の顔」がある。</li><li>初回でもユニークさが伝わりやすい。</li></ul></div>
     </div>
-  </section>
+  <div class="photo-intro"><h2>ほかの候補国も写真で比較</h2></div><div class="photo-grid"><article class="photo-card"><h3>🇧🇪 ベルギー</h3><figure class="travel-photo" data-photo="first-be">
+<a class="photo-open" href="assets/photos/first-be.jpg" aria-label="ブリュッセル｜グラン・プラスの写真を拡大"><img src="assets/photos/first-be.jpg" width="960" height="546" loading="lazy" decoding="async" alt="ブリュッセル｜グラン・プラスの実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜グラン・プラス</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Celuici<br><a href="https://commons.wikimedia.org/wiki/File:Grand-Place,_Brussels_-_panorama,_June_2018.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="first-at">
+<a class="photo-open" href="assets/photos/first-at.jpg" aria-label="ウィーン｜シェーンブルン宮殿の写真を拡大"><img src="assets/photos/first-at.jpg" width="960" height="430" loading="lazy" decoding="async" alt="ウィーン｜シェーンブルン宮殿の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜シェーンブルン宮殿</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Thomas Wolf, www.foto-tw.de<br><a href="https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0 de</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="first-de">
+<a class="photo-open" href="assets/photos/first-de.jpg" aria-label="ベルリン｜ブランデンブルク門の写真を拡大"><img src="assets/photos/first-de.jpg" width="960" height="641" loading="lazy" decoding="async" alt="ベルリン｜ブランデンブルク門の実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜ブランデンブルク門</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Thomas Wolf, www.foto-tw.de<br><a href="https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="first-dk">
+<a class="photo-open" href="assets/photos/first-dk.jpg" aria-label="コペンハーゲン｜ニューハウンの写真を拡大"><img src="assets/photos/first-dk.jpg" width="960" height="520" loading="lazy" decoding="async" alt="コペンハーゲン｜ニューハウンの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜ニューハウン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Jakub Hałun<br><a href="https://commons.wikimedia.org/wiki/File:Nyhavn,_Copenhagen,_20220618_1728_7354.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div><p class="photo-hint">写真の撮影季節はさまざまです。冬の様子は「2月の歩きやすさ」タブで確認できます。</p></section>
 
   <section id="scenery" class="page">
     <div class="card">
@@ -143,14 +230,44 @@ th{background:#faf9f6;color:#4c5562}
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇩🇰 デンマーク</div><div class="reason">良い都市はあるが、今回の候補内では視覚的な変化の強さはやや弱め。</div></div></div>
     </div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>ローマ、フィレンツェ、ヴェネツィアで景観が全く違う。</li><li>旧市街の密度が高く、街歩きが目的になる。</li><li>写真映えだけでなく、歴史の厚みがある。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>パリの都市景観が強い。</li><li>南フランスまで広げると景色の変化も作れる。</li><li>大通り・川・建築のバランスがよい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><ul><li>アルプスと湖の景色は他候補と明確に違う。</li><li>自然メインにせず1日だけ入れるとアクセントになる。</li><li>2月は雪景色の強さがある。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><ul><li>アムステルダムの運河景観がユニーク。</li><li>街全体がコンパクトで散歩しやすい。</li><li>他国との違いが一目で分かる。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>バルセロナの建築、セビリアの南欧感が強い。</li><li>都市による景観差が大きい。</li><li>街歩きと気候の相性が良い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span class="badge ba">A</span></div><ul><li>ウィーンの宮殿・旧市街は非常に美しい。</li><li>歴史的な都市美が強い。</li><li>ただし2月の寒さが街歩き時間を削りやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-it">
+<a class="photo-open" href="assets/photos/scenery-it.jpg" aria-label="ヴェネツィア｜リアルト橋と大運河の写真を拡大"><img src="assets/photos/scenery-it.jpg" width="960" height="427" loading="lazy" decoding="async" alt="ヴェネツィア｜リアルト橋と大運河の実際の写真"></a>
+<figcaption><div class="photo-caption">ヴェネツィア｜リアルト橋と大運河</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Martin Falbisoner<br><a href="https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ローマ、フィレンツェ、ヴェネツィアで景観が全く違う。</li><li>旧市街の密度が高く、街歩きが目的になる。</li><li>写真映えだけでなく、歴史の厚みがある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-fr">
+<a class="photo-open" href="assets/photos/scenery-fr.jpg" aria-label="パリ｜セーヌ川沿いの街並みの写真を拡大"><img src="assets/photos/scenery-fr.jpg" width="960" height="435" loading="lazy" decoding="async" alt="パリ｜セーヌ川沿いの街並みの実際の写真"></a>
+<figcaption><div class="photo-caption">パリ｜セーヌ川沿いの街並み</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DiscoA340<br><a href="https://commons.wikimedia.org/wiki/File:Panorama_on_the_River_Seine_(July_2022).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パリの都市景観が強い。</li><li>南フランスまで広げると景色の変化も作れる。</li><li>大通り・川・建築のバランスがよい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-ch">
+<a class="photo-open" href="assets/photos/scenery-ch.jpg" aria-label="ラウターブルンネン｜アルプスの谷の写真を拡大"><img src="assets/photos/scenery-ch.jpg" width="960" height="641" loading="lazy" decoding="async" alt="ラウターブルンネン｜アルプスの谷の実際の写真"></a>
+<figcaption><div class="photo-caption">ラウターブルンネン｜アルプスの谷</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：chensiyuan<br><a href="https://commons.wikimedia.org/wiki/File:1_lauterbrunnen_valley_2012.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>アルプスと湖の景色は他候補と明確に違う。</li><li>自然メインにせず1日だけ入れるとアクセントになる。</li><li>2月は雪景色の強さがある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-nl">
+<a class="photo-open" href="assets/photos/scenery-nl.jpg" aria-label="アムステルダム｜運河沿いの街並みの写真を拡大"><img src="assets/photos/scenery-nl.jpg" width="960" height="720" loading="lazy" decoding="async" alt="アムステルダム｜運河沿いの街並みの実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜運河沿いの街並み</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Aforaseem<br><a href="https://commons.wikimedia.org/wiki/File:Prinsengracht_Amsterdam.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>アムステルダムの運河景観がユニーク。</li><li>街全体がコンパクトで散歩しやすい。</li><li>他国との違いが一目で分かる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="scenery-es">
+<a class="photo-open" href="assets/photos/scenery-es.jpg" aria-label="セビリア｜スペイン広場の写真を拡大"><img src="assets/photos/scenery-es.jpg" width="960" height="640" loading="lazy" decoding="async" alt="セビリア｜スペイン広場の実際の写真"></a>
+<figcaption><div class="photo-caption">セビリア｜スペイン広場</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Carlos Delgado<br><a href="https://commons.wikimedia.org/wiki/File:Plaza_de_Espa%C3%B1a_(Sevilla)_-_01.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>バルセロナの建築、セビリアの南欧感が強い。</li><li>都市による景観差が大きい。</li><li>街歩きと気候の相性が良い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="scenery-at">
+<a class="photo-open" href="assets/photos/scenery-at.jpg" aria-label="ウィーン｜ベルヴェデーレ宮殿の写真を拡大"><img src="assets/photos/scenery-at.jpg" width="960" height="412" loading="lazy" decoding="async" alt="ウィーン｜ベルヴェデーレ宮殿の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜ベルヴェデーレ宮殿</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Diego Delso<br><a href="https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_90-92_HDR.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ウィーンの宮殿・旧市街は非常に美しい。</li><li>歴史的な都市美が強い。</li><li>ただし2月の寒さが街歩き時間を削りやすい。</li></ul></div>
     </div>
-  </section>
+  <div class="photo-intro"><h2>ほかの候補国も写真で比較</h2></div><div class="photo-grid"><article class="photo-card"><h3>🇬🇧 イギリス</h3><figure class="travel-photo" data-photo="scenery-gb">
+<a class="photo-open" href="assets/photos/scenery-gb.jpg" aria-label="バース｜ロイヤル・クレセントの写真を拡大"><img src="assets/photos/scenery-gb.jpg" width="960" height="640" loading="lazy" decoding="async" alt="バース｜ロイヤル・クレセントの実際の写真"></a>
+<figcaption><div class="photo-caption">バース｜ロイヤル・クレセント</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Photograph by Mike Peel (www.mikepeel.net).<br><a href="https://commons.wikimedia.org/wiki/File:Royal_Crescent,_Bath_2014_10.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇧🇪 ベルギー</h3><figure class="travel-photo" data-photo="scenery-be">
+<a class="photo-open" href="assets/photos/scenery-be.jpg" aria-label="ブルージュ｜ローゼンフートカイの写真を拡大"><img src="assets/photos/scenery-be.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ブルージュ｜ローゼンフートカイの実際の写真"></a>
+<figcaption><div class="photo-caption">ブルージュ｜ローゼンフートカイ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ank Kumar<br><a href="https://commons.wikimedia.org/wiki/File:Rozenhoedkaai_(canal)_and_Belfry_of_Bruges,_Bruges,_Belgium_(Ank_Kumar,_Infosys_Limited)_05.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="scenery-de">
+<a class="photo-open" href="assets/photos/scenery-de.jpg" aria-label="ローテンブルク｜旧市街の写真を拡大"><img src="assets/photos/scenery-de.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ローテンブルク｜旧市街の実際の写真"></a>
+<figcaption><div class="photo-caption">ローテンブルク｜旧市街</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Diego Delso<br><a href="https://commons.wikimedia.org/wiki/File:Pl%C3%B6nlein,_Rothenburg_ob_der_Tauber,_Alemania,_2023-06-17,_DD_37.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="scenery-dk">
+<a class="photo-open" href="assets/photos/scenery-dk.jpg" aria-label="コペンハーゲン｜クリスチャンハウンの写真を拡大"><img src="assets/photos/scenery-dk.jpg" width="960" height="640" loading="lazy" decoding="async" alt="コペンハーゲン｜クリスチャンハウンの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜クリスチャンハウン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Tony Webster from Portland, Oregon, United States<br><a href="https://commons.wikimedia.org/wiki/File:Christianshavn_Canal_(15911963215).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div><p class="photo-hint">写真の撮影季節はさまざまです。冬の様子は「2月の歩きやすさ」タブで確認できます。</p></section>
 
   <section id="food" class="page">
     <div class="card">
@@ -161,14 +278,44 @@ th{background:#faf9f6;color:#4c5562}
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇨🇭 スイス　🇳🇱 オランダ　🇩🇰 デンマーク</div><div class="reason">魅力はあるが、今回の他候補と比べると食を主目的にはしにくい。</div></div></div>
     </div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>パスタ、ピザだけでなく地方料理の幅が非常に広い。</li><li>都市を変えるだけで食体験も変わる。</li><li>カップル旅行でも店選びが楽しい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge bs">S</span></div><ul><li>タパス、魚介、肉料理などシェアしやすい。</li><li>食事時間そのものが旅行体験になる。</li><li>バル文化との相性も良い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>ビストロ、パン、菓子、ワインまで幅広い。</li><li>高級店から日常食まで選択肢が多い。</li><li>食文化の象徴性が高い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge ba">A</span></div><ul><li>チョコ、ワッフル、ビール、ムール貝など旅行向き。</li><li>食べ歩きもしやすい。</li><li>短期滞在でも満足を作りやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span class="badge ba">A</span></div><ul><li>ビールと肉料理が分かりやすい。</li><li>地域差もある。</li><li>好みが合えば満足度は高い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge ba">A</span></div><ul><li>パブ、Sunday roast、インド料理など幅がある。</li><li>ロンドンなら世界各国の料理も楽しめる。</li><li>「英国料理＝弱い」だけではない。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="food-it">
+<a class="photo-open" href="assets/photos/food-it.jpg" aria-label="イタリア｜マルゲリータ・ピザの写真を拡大"><img src="assets/photos/food-it.jpg" width="960" height="720" loading="lazy" decoding="async" alt="イタリア｜マルゲリータ・ピザの実際の写真"></a>
+<figcaption><div class="photo-caption">イタリア｜マルゲリータ・ピザ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kos88<br><a href="https://commons.wikimedia.org/wiki/File:Pizza_Margherita_in_Naples_2015.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パスタ、ピザだけでなく地方料理の幅が非常に広い。</li><li>都市を変えるだけで食体験も変わる。</li><li>カップル旅行でも店選びが楽しい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="food-es">
+<a class="photo-open" href="assets/photos/food-es.jpg" aria-label="スペイン｜タパスの写真を拡大"><img src="assets/photos/food-es.jpg" width="960" height="720" loading="lazy" decoding="async" alt="スペイン｜タパスの実際の写真"></a>
+<figcaption><div class="photo-caption">スペイン｜タパス</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：David Adam Kess<br><a href="https://commons.wikimedia.org/wiki/File:(_Tapas_in_Spain,_Madrid_).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>タパス、魚介、肉料理などシェアしやすい。</li><li>食事時間そのものが旅行体験になる。</li><li>バル文化との相性も良い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="food-fr">
+<a class="photo-open" href="assets/photos/food-fr.jpg" aria-label="フランス｜クロワッサンとカフェの写真を拡大"><img src="assets/photos/food-fr.jpg" width="960" height="960" loading="lazy" decoding="async" alt="フランス｜クロワッサンとカフェの実際の写真"></a>
+<figcaption><div class="photo-caption">フランス｜クロワッサンとカフェ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ajay Suresh from New York, NY, USA<br><a href="https://commons.wikimedia.org/wiki/File:Paris-Day1-5_(37702232851).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ビストロ、パン、菓子、ワインまで幅広い。</li><li>高級店から日常食まで選択肢が多い。</li><li>食文化の象徴性が高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="food-be">
+<a class="photo-open" href="assets/photos/food-be.jpg" aria-label="ベルギー｜ワッフルの写真を拡大"><img src="assets/photos/food-be.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ベルギー｜ワッフルの実際の写真"></a>
+<figcaption><div class="photo-caption">ベルギー｜ワッフル</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Thomas Quine<br><a href="https://commons.wikimedia.org/wiki/File:Belgian_waffles_-_Brussels,_Belgium,_2011_(2011-05-22_11.55.35_by_Thomas_Quine).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>チョコ、ワッフル、ビール、ムール貝など旅行向き。</li><li>食べ歩きもしやすい。</li><li>短期滞在でも満足を作りやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="food-de">
+<a class="photo-open" href="assets/photos/food-de.jpg" aria-label="ドイツ｜ブラートヴルストの写真を拡大"><img src="assets/photos/food-de.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ドイツ｜ブラートヴルストの実際の写真"></a>
+<figcaption><div class="photo-caption">ドイツ｜ブラートヴルスト</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：JIP / Talk / JIP at English Wikipedia<br><a href="https://commons.wikimedia.org/wiki/File:Bratwurst_Gl%C3%B6ckl.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ビールと肉料理が分かりやすい。</li><li>地域差もある。</li><li>好みが合えば満足度は高い。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="food-gb">
+<a class="photo-open" href="assets/photos/food-gb.jpg" aria-label="イギリス｜サンデーローストの写真を拡大"><img src="assets/photos/food-gb.jpg" width="960" height="720" loading="lazy" decoding="async" alt="イギリス｜サンデーローストの実際の写真"></a>
+<figcaption><div class="photo-caption">イギリス｜サンデーロースト</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Acabashi<br><a href="https://commons.wikimedia.org/wiki/File:A_roast_beef_dinner_at_The_Queen%27s_Head,_Boreham,_Essex,_England_-_lighter.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パブ、Sunday roast、インド料理など幅がある。</li><li>ロンドンなら世界各国の料理も楽しめる。</li><li>「英国料理＝弱い」だけではない。</li></ul></div>
     </div>
-  </section>
+  <div class="photo-intro"><h2>ほかの候補国も写真で比較</h2></div><div class="photo-grid"><article class="photo-card"><h3>🇨🇭 スイス</h3><figure class="travel-photo" data-photo="food-ch">
+<a class="photo-open" href="assets/photos/food-ch.jpg" aria-label="スイス｜チーズフォンデュの写真を拡大"><img src="assets/photos/food-ch.jpg" width="960" height="720" loading="lazy" decoding="async" alt="スイス｜チーズフォンデュの実際の写真"></a>
+<figcaption><div class="photo-caption">スイス｜チーズフォンデュ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Brücke-Osteuropa<br><a href="https://commons.wikimedia.org/wiki/File:Swiss_cheese_fondue.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇳🇱 オランダ</h3><figure class="travel-photo" data-photo="food-nl">
+<a class="photo-open" href="assets/photos/food-nl.jpg" aria-label="オランダ｜ストロープワッフルの写真を拡大"><img src="assets/photos/food-nl.jpg" width="960" height="723" loading="lazy" decoding="async" alt="オランダ｜ストロープワッフルの実際の写真"></a>
+<figcaption><div class="photo-caption">オランダ｜ストロープワッフル</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Andy Li<br><a href="https://commons.wikimedia.org/wiki/File:Stroopwafels_on_the_counter_of_Van_Wonderen_Stroopwafels_2024-11-27.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="food-at">
+<a class="photo-open" href="assets/photos/food-at.jpg" aria-label="オーストリア｜ウィーナー・シュニッツェルの写真を拡大"><img src="assets/photos/food-at.jpg" width="960" height="720" loading="lazy" decoding="async" alt="オーストリア｜ウィーナー・シュニッツェルの実際の写真"></a>
+<figcaption><div class="photo-caption">オーストリア｜ウィーナー・シュニッツェル</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：JIP<br><a href="https://commons.wikimedia.org/wiki/File:Wiener_Schnitzel_in_Vienna.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="food-dk">
+<a class="photo-open" href="assets/photos/food-dk.jpg" aria-label="デンマーク｜スモーブローの写真を拡大"><img src="assets/photos/food-dk.jpg" width="960" height="640" loading="lazy" decoding="async" alt="デンマーク｜スモーブローの実際の写真"></a>
+<figcaption><div class="photo-caption">デンマーク｜スモーブロー</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kritzolina<br><a href="https://commons.wikimedia.org/wiki/File:Sm%C3%B8rrebr%C3%B8d_in_Copenhagen_01.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div></section>
 
   <section id="weather" class="page">
     <div class="card">
@@ -196,7 +343,37 @@ th{background:#faf9f6;color:#4c5562}
         </tbody>
       </table>
     </div>
-  </section>
+  <div class="photo-intro"><h2>冬の街を写真で見る</h2><p>12〜2月に撮影された実際の写真です。撮影日の景色を示すもので、2月の平年の天候を表すものではありません。積雪の有無は年・日・場所によって変わります。</p></div><div class="photo-grid"><article class="photo-card"><h3>🇫🇷 フランス</h3><figure class="travel-photo" data-photo="weather-fr">
+<a class="photo-open" href="assets/photos/weather-fr.jpg" aria-label="パリ｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-fr.jpg" width="960" height="640" loading="lazy" decoding="async" alt="パリ｜冬の街の様子の実際の写真"></a>
+<figcaption><div class="photo-caption">パリ｜冬の街の様子</div><span class="photo-date">2017年2月5日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Guilhem Vellut from Paris, France<br><a href="https://commons.wikimedia.org/wiki/File:Seine_River_in_Paris_(32353423710).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="weather-it">
+<a class="photo-open" href="assets/photos/weather-it.jpg" aria-label="ローマ｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-it.jpg" width="960" height="604" loading="lazy" decoding="async" alt="ローマ｜冬の街の様子の実際の写真"></a>
+<figcaption><div class="photo-caption">ローマ｜冬の街の様子</div><span class="photo-date">2024年2月8日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Wilfredor<br><a href="https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇪🇸 スペイン</h3><figure class="travel-photo" data-photo="weather-es">
+<a class="photo-open" href="assets/photos/weather-es.jpg" aria-label="バルセロナ｜冬の海辺の写真を拡大"><img src="assets/photos/weather-es.jpg" width="960" height="720" loading="lazy" decoding="async" alt="バルセロナ｜冬の海辺の実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ｜冬の海辺</div><span class="photo-date">2024年2月5日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Matti Blume<br><a href="https://commons.wikimedia.org/wiki/File:Beach,_Barcelona_(P1170712).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇬🇧 イギリス</h3><figure class="travel-photo" data-photo="weather-gb">
+<a class="photo-open" href="assets/photos/weather-gb.jpg" aria-label="ロンドン｜冬のテムズ川沿いの写真を拡大"><img src="assets/photos/weather-gb.jpg" width="960" height="426" loading="lazy" decoding="async" alt="ロンドン｜冬のテムズ川沿いの実際の写真"></a>
+<figcaption><div class="photo-caption">ロンドン｜冬のテムズ川沿い</div><span class="photo-date">2006年2月撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Diliff<br><a href="https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇨🇭 スイス</h3><figure class="travel-photo" data-photo="weather-ch">
+<a class="photo-open" href="assets/photos/weather-ch.jpg" aria-label="チューリッヒ｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-ch.jpg" width="960" height="540" loading="lazy" decoding="async" alt="チューリッヒ｜冬の街の様子の実際の写真"></a>
+<figcaption><div class="photo-caption">チューリッヒ｜冬の街の様子</div><span class="photo-date">2017年1月9日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Sergi Gomez Sanchis<br><a href="https://commons.wikimedia.org/wiki/File:Sunrise_in_Zurich_on_a_winter_day.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇳🇱 オランダ</h3><figure class="travel-photo" data-photo="weather-nl">
+<a class="photo-open portrait" href="assets/photos/weather-nl.jpg" aria-label="アムステルダム｜冬の旧市街の写真を拡大"><img src="assets/photos/weather-nl.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="アムステルダム｜冬の旧市街の実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜冬の旧市街</div><span class="photo-date">2011年1月4日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Txllxt TxllxT<br><a href="https://commons.wikimedia.org/wiki/File:Amsterdam_-_Rusland_-_Oudezijds_Achterburgwal_-_View_SSE_on_Renaissance_Canal_Houses.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇧🇪 ベルギー</h3><figure class="travel-photo" data-photo="weather-be">
+<a class="photo-open" href="assets/photos/weather-be.jpg" aria-label="ブリュッセル｜冬のグラン・プラスの写真を拡大"><img src="assets/photos/weather-be.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ブリュッセル｜冬のグラン・プラスの実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜冬のグラン・プラス</div><span class="photo-date">2009年12月10日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Szilas<br><a href="https://commons.wikimedia.org/wiki/File:Grand-Place_Brussels_-_Maison_du_Roi.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · Public domain<br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="weather-at">
+<a class="photo-open" href="assets/photos/weather-at.jpg" aria-label="ウィーン｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-at.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ウィーン｜冬の街の様子の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜冬の街の様子</div><span class="photo-date">2026年2月20日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Eva Maria Mandl<br><a href="https://commons.wikimedia.org/wiki/File:Rochusmarkt_im_Winter,_Vienna,_2026.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="weather-de">
+<a class="photo-open portrait" href="assets/photos/weather-de.jpg" aria-label="ベルリン｜冬のブランデンブルク門の写真を拡大"><img src="assets/photos/weather-de.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="ベルリン｜冬のブランデンブルク門の実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜冬のブランデンブルク門</div><span class="photo-date">2015年1月30日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ank Kumar<br><a href="https://commons.wikimedia.org/wiki/File:Brandenburg_Tor(Gate),_Berlin_(Ank_Kumar)_06.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="weather-dk">
+<a class="photo-open" href="assets/photos/weather-dk.jpg" aria-label="コペンハーゲン｜冬のニューハウンの写真を拡大"><img src="assets/photos/weather-dk.jpg" width="960" height="640" loading="lazy" decoding="async" alt="コペンハーゲン｜冬のニューハウンの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜冬のニューハウン</div><span class="photo-date">2026年2月2日撮影</span>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：kallerna<br><a href="https://commons.wikimedia.org/wiki/File:Nyhavn_winter_2026_1.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div></section>
 
   <section id="routing" class="page">
     <div class="card">
@@ -207,32 +384,90 @@ th{background:#faf9f6;color:#4c5562}
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇰 デンマーク</div><div class="reason">北欧方面なら強いが、南欧・西欧と組み合わせると距離が出やすい。</div></div></div>
     </div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><ul><li>英国、ベルギー、スイス、イタリア、スペインと組める。</li><li>パリを中継点にしやすい。</li><li>鉄道でも飛行機でも柔軟。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><ul><li>スイス、フランス、オーストリア方面へ広げやすい。</li><li>国内都市の選択肢も多い。</li><li>3か国旅の「核」にしやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><ul><li>フランス・イタリア・ドイツの中間に置きやすい。</li><li>自然担当として1〜2泊入れると旅に変化が出る。</li><li>通過国ではなく短期滞在の価値がある。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge bs">S</span></div><ul><li>フランス・オランダとの組み合わせが非常に自然。</li><li>鉄道移動が短く、旅程を圧迫しにくい。</li><li>2泊でも成立しやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><ul><li>ベルギー・フランス・ドイツと繋ぎやすい。</li><li>2〜3泊でまとまりやすい。</li><li>街並みの変化も作れる。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><ul><li>フランスとは組みやすい。</li><li>イタリアや英国へは飛行機を使うことが増える。</li><li>移動負担より気候メリットが大きい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-fr">
+<a class="photo-open" href="assets/photos/routing-fr.jpg" aria-label="パリ北駅｜旅の出発点をイメージの写真を拡大"><img src="assets/photos/routing-fr.jpg" width="960" height="640" loading="lazy" decoding="async" alt="パリ北駅｜旅の出発点をイメージの実際の写真"></a>
+<figcaption><div class="photo-caption">パリ北駅｜旅の出発点をイメージ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Lionel Allorge<br><a href="https://commons.wikimedia.org/wiki/File:Gare_du_Nord_%C3%A0_Paris_le_17_juillet_2015_-_54.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>英国、ベルギー、スイス、イタリア、スペインと組める。</li><li>パリを中継点にしやすい。</li><li>鉄道でも飛行機でも柔軟。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-it">
+<a class="photo-open" href="assets/photos/routing-it.jpg" aria-label="ミラノ中央駅｜イタリアの鉄道旅行の写真を拡大"><img src="assets/photos/routing-it.jpg" width="960" height="700" loading="lazy" decoding="async" alt="ミラノ中央駅｜イタリアの鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">ミラノ中央駅｜イタリアの鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Daniel Case<br><a href="https://commons.wikimedia.org/wiki/File:Upper_front_facade_of_Milano_Stazione_Centrale.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>スイス、フランス、オーストリア方面へ広げやすい。</li><li>国内都市の選択肢も多い。</li><li>3か国旅の「核」にしやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-ch">
+<a class="photo-open" href="assets/photos/routing-ch.jpg" aria-label="ランドヴァッサー橋｜スイス国内の鉄道風景の写真を拡大"><img src="assets/photos/routing-ch.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ランドヴァッサー橋｜スイス国内の鉄道風景の実際の写真"></a>
+<figcaption><div class="photo-caption">ランドヴァッサー橋｜スイス国内の鉄道風景</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kabelleger / David Gubler<br><a href="https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランス・イタリア・ドイツの中間に置きやすい。</li><li>自然担当として1〜2泊入れると旅に変化が出る。</li><li>通過国ではなく短期滞在の価値がある。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-be">
+<a class="photo-open" href="assets/photos/routing-be.jpg" aria-label="アントウェルペン中央駅｜ベルギーの鉄道旅行の写真を拡大"><img src="assets/photos/routing-be.jpg" width="960" height="641" loading="lazy" decoding="async" alt="アントウェルペン中央駅｜ベルギーの鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">アントウェルペン中央駅｜ベルギーの鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Fred Romero from Paris, France<br><a href="https://commons.wikimedia.org/wiki/File:Antwerpen_-_Station_Antwerpen-Centraal_(7).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランス・オランダとの組み合わせが非常に自然。</li><li>鉄道移動が短く、旅程を圧迫しにくい。</li><li>2泊でも成立しやすい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-nl">
+<a class="photo-open" href="assets/photos/routing-nl.jpg" aria-label="アムステルダム中央駅｜運河の街への玄関口の写真を拡大"><img src="assets/photos/routing-nl.jpg" width="960" height="640" loading="lazy" decoding="async" alt="アムステルダム中央駅｜運河の街への玄関口の実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム中央駅｜運河の街への玄関口</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Sundaze.work<br><a href="https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_Station_Building.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ベルギー・フランス・ドイツと繋ぎやすい。</li><li>2〜3泊でまとまりやすい。</li><li>街並みの変化も作れる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="routing-es">
+<a class="photo-open" href="assets/photos/routing-es.jpg" aria-label="バルセロナ・サンツ駅｜高速列車のホームの写真を拡大"><img src="assets/photos/routing-es.jpg" width="960" height="721" loading="lazy" decoding="async" alt="バルセロナ・サンツ駅｜高速列車のホームの実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ・サンツ駅｜高速列車のホーム</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：MaxEmanuel<br><a href="https://commons.wikimedia.org/wiki/File:Gleishalle_Barcelona_Sants_2.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランスとは組みやすい。</li><li>イタリアや英国へは飛行機を使うことが増える。</li><li>移動負担より気候メリットが大きい。</li></ul></div>
     </div>
-  </section>
+  <div class="photo-intro"><h2>ほかの候補国も写真で比較</h2></div><div class="photo-grid"><article class="photo-card"><h3>🇬🇧 イギリス</h3><figure class="travel-photo" data-photo="routing-gb">
+<a class="photo-open" href="assets/photos/routing-gb.jpg" aria-label="セント・パンクラス駅｜ユーロスターの写真を拡大"><img src="assets/photos/routing-gb.jpg" width="960" height="720" loading="lazy" decoding="async" alt="セント・パンクラス駅｜ユーロスターの実際の写真"></a>
+<figcaption><div class="photo-caption">セント・パンクラス駅｜ユーロスター</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Someone Not Awful<br><a href="https://commons.wikimedia.org/wiki/File:London_St_Pancras_Eurostar_trains.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="routing-at">
+<a class="photo-open" href="assets/photos/routing-at.jpg" aria-label="ウィーン中央駅｜鉄道旅行の拠点の写真を拡大"><img src="assets/photos/routing-at.jpg" width="960" height="540" loading="lazy" decoding="async" alt="ウィーン中央駅｜鉄道旅行の拠点の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン中央駅｜鉄道旅行の拠点</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ravi Dwivedi<br><a href="https://commons.wikimedia.org/wiki/File:Wien_Hauptbahnhof_station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="routing-de">
+<a class="photo-open" href="assets/photos/routing-de.jpg" aria-label="ベルリン中央駅｜ドイツの鉄道旅行の写真を拡大"><img src="assets/photos/routing-de.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ベルリン中央駅｜ドイツの鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン中央駅｜ドイツの鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Dosseman<br><a href="https://commons.wikimedia.org/wiki/File:Hauptbahnhof_Berlin_exterior_0136.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="routing-dk">
+<a class="photo-open" href="assets/photos/routing-dk.jpg" aria-label="コペンハーゲン中央駅｜北欧の鉄道旅行の写真を拡大"><img src="assets/photos/routing-dk.jpg" width="960" height="640" loading="lazy" decoding="async" alt="コペンハーゲン中央駅｜北欧の鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン中央駅｜北欧の鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Liberaler Humanist<br><a href="https://commons.wikimedia.org/wiki/File:The_hall_of_the_Copenhagen_Central_Station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div><p class="photo-hint">各国の駅・列車の実写真です。移動の雰囲気を、旅程の組みやすさとあわせて見比べてください。</p></section>
 
   <div class="footer">
+    写真：Wikimedia Commons。撮影者・出典・利用条件は各写真の「写真の出典・ライセンス」から確認できます。<br>
     ※ Tierは今回の2人の旅行条件に対する比較用。国そのものの一般的な価値・優劣を示すものではありません。<br>
     ※ 気温は代表都市の2月平年値ベースの目安。2027年2月の実際の天候は直前予報で確認する前提です。
   </div>
 </div>
+
+
+<dialog class="photo-dialog" id="photo-dialog" aria-labelledby="photo-dialog-title">
+  <div class="dialog-top"><p id="photo-dialog-title">旅先の写真</p><button class="dialog-close" type="button" autofocus>閉じる ×</button></div>
+  <figure><img class="dialog-image" alt=""><figcaption class="dialog-caption"></figcaption></figure>
+</dialog>
 
 <script>
 const buttons=[...document.querySelectorAll('.tabbtn')];
 const pages=[...document.querySelectorAll('.page')];
 buttons.forEach(btn=>{
   btn.addEventListener('click',()=>{
-    buttons.forEach(b=>b.classList.remove('active'));
+    buttons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
     pages.forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed','true');
     document.getElementById(btn.dataset.page).classList.add('active');
-    window.scrollTo({top:document.querySelector('.tabs').offsetTop-4,behavior:'smooth'});
+    window.scrollTo({top:document.querySelector('.tabs').offsetTop-4,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   });
+});
+
+buttons.forEach(btn=>btn.setAttribute('aria-pressed',String(btn.classList.contains('active'))));
+const photoDialog=document.getElementById('photo-dialog');
+const dialogImage=photoDialog.querySelector('.dialog-image');
+const dialogCaption=photoDialog.querySelector('.dialog-caption');
+document.querySelectorAll('.photo-open').forEach(link=>{
+  link.addEventListener('click',event=>{
+    if(typeof photoDialog.showModal!=='function'||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+    event.preventDefault();
+    dialogImage.src=link.href;
+    dialogImage.alt=link.querySelector('img').alt;
+    dialogCaption.replaceChildren(...[...link.closest('figure').querySelector('figcaption').childNodes].map(node=>node.cloneNode(true)));
+    photoDialog.showModal();
+  });
+});
+photoDialog.querySelector('.dialog-close').addEventListener('click',()=>photoDialog.close());
+photoDialog.addEventListener('click',event=>{
+  const rect=photoDialog.getBoundingClientRect();
+  if(event.target===photoDialog&&(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom))photoDialog.close();
 });
 </script>
 </body>
