@@ -1,19 +1,5 @@
 [
   {
-    "key": "first-at",
-    "file": "assets/photos/first-at.jpg",
-    "title": "Schloss Schönbrunn Wien 2014 (Zuschnitt 1).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Schloss_Sch%C3%B6nbrunn_Wien_2014_%28Zuschnitt_1%29.jpg",
-    "author": "Thomas Wolf, www.foto-tw.de",
-    "license": "CC BY-SA 3.0 de",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-    "date": "2014-06-02",
-    "width": 960,
-    "height": 430,
-    "caption": "ウィーン｜シェーンブルン宮殿"
-  },
-  {
     "key": "first-be",
     "file": "assets/photos/first-be.jpg",
     "title": "Grand-Place, Brussels - panorama, June 2018.jpg",
@@ -26,48 +12,6 @@
     "width": 960,
     "height": 546,
     "caption": "ブリュッセル｜グラン・プラス"
-  },
-  {
-    "key": "first-ch",
-    "file": "assets/photos/first-ch.jpg",
-    "title": "Impressive Matterhorn view in Zermatt, Switzerland.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Impressive_Matterhorn_view_in_Zermatt,_Switzerland.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Impressive_Matterhorn_view_in_Zermatt%2C_Switzerland.jpg",
-    "author": "Vavaloin",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2016-10-22 14:44:12",
-    "width": 960,
-    "height": 640,
-    "caption": "ツェルマット｜マッターホルン"
-  },
-  {
-    "key": "first-de",
-    "file": "assets/photos/first-de.jpg",
-    "title": "Brandenburger Tor morgens.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Brandenburger_Tor_morgens.jpg",
-    "author": "Thomas Wolf, www.foto-tw.de",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "date": "Taken on 10 July 2012",
-    "width": 960,
-    "height": 641,
-    "caption": "ベルリン｜ブランデンブルク門"
-  },
-  {
-    "key": "first-dk",
-    "file": "assets/photos/first-dk.jpg",
-    "title": "Nyhavn, Copenhagen, 20220618 1728 7354.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Nyhavn,_Copenhagen,_20220618_1728_7354.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Nyhavn%2C_Copenhagen%2C_20220618_1728_7354.jpg",
-    "author": "Jakub Hałun",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2022-06-18 17:28:56",
-    "width": 960,
-    "height": 520,
-    "caption": "コペンハーゲン｜ニューハウン"
   },
   {
     "key": "first-es",
@@ -126,20 +70,6 @@
     "caption": "アムステルダム｜ダムラックの家並み"
   },
   {
-    "key": "scenery-at",
-    "file": "assets/photos/scenery-at.jpg",
-    "title": "Palacio Belvedere, Viena, Austria, 2020-02-01, DD 90-92 HDR.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_90-92_HDR.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/3/31/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_90-92_HDR.jpg",
-    "author": "Diego Delso",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2020-02-01 18:23:11",
-    "width": 960,
-    "height": 412,
-    "caption": "ウィーン｜ベルヴェデーレ宮殿"
-  },
-  {
     "key": "scenery-be",
     "file": "assets/photos/scenery-be.jpg",
     "title": "Rozenhoedkaai (canal) and Belfry of Bruges, Bruges, Belgium (Ank Kumar, Infosys Limited) 05.jpg",
@@ -152,48 +82,6 @@
     "width": 960,
     "height": 640,
     "caption": "ブルージュ｜ローゼンフートカイ"
-  },
-  {
-    "key": "scenery-ch",
-    "file": "assets/photos/scenery-ch.jpg",
-    "title": "1 lauterbrunnen valley 2012.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:1_lauterbrunnen_valley_2012.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/7/7c/1_lauterbrunnen_valley_2012.jpg",
-    "author": "chensiyuan",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "",
-    "width": 960,
-    "height": 641,
-    "caption": "ラウターブルンネン｜アルプスの谷"
-  },
-  {
-    "key": "scenery-de",
-    "file": "assets/photos/scenery-de.jpg",
-    "title": "Plönlein, Rothenburg ob der Tauber, Alemania, 2023-06-17, DD 37.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Pl%C3%B6nlein,_Rothenburg_ob_der_Tauber,_Alemania,_2023-06-17,_DD_37.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Pl%C3%B6nlein%2C_Rothenburg_ob_der_Tauber%2C_Alemania%2C_2023-06-17%2C_DD_37.jpg",
-    "author": "Diego Delso",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2023-06-17 16:15:38",
-    "width": 960,
-    "height": 640,
-    "caption": "ローテンブルク｜旧市街"
-  },
-  {
-    "key": "scenery-dk",
-    "file": "assets/photos/scenery-dk.jpg",
-    "title": "Christianshavn Canal (15911963215).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Christianshavn_Canal_(15911963215).jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/2/24/Christianshavn_Canal_%2815911963215%29.jpg",
-    "author": "Tony Webster from Portland, Oregon, United States",
-    "license": "CC BY 2.0",
-    "license_url": "https://creativecommons.org/licenses/by/2.0",
-    "date": "2014-09-15 17:03",
-    "width": 960,
-    "height": 640,
-    "caption": "コペンハーゲン｜クリスチャンハウン"
   },
   {
     "key": "scenery-es",
@@ -252,20 +140,6 @@
     "caption": "アムステルダム｜運河沿いの街並み"
   },
   {
-    "key": "food-at",
-    "file": "assets/photos/food-at.jpg",
-    "title": "Wiener Schnitzel in Vienna.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Wiener_Schnitzel_in_Vienna.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/6/68/Wiener_Schnitzel_in_Vienna.jpg",
-    "author": "JIP",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2016-06-30",
-    "width": 960,
-    "height": 720,
-    "caption": "オーストリア｜ウィーナー・シュニッツェル"
-  },
-  {
     "key": "food-be",
     "file": "assets/photos/food-be.jpg",
     "title": "Belgian waffles - Brussels, Belgium, 2011 (2011-05-22 11.55.35 by Thomas Quine).jpg",
@@ -278,48 +152,6 @@
     "width": 960,
     "height": 640,
     "caption": "ベルギー｜ワッフル"
-  },
-  {
-    "key": "food-ch",
-    "file": "assets/photos/food-ch.jpg",
-    "title": "Swiss cheese fondue.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:Swiss_cheese_fondue.JPG",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Swiss_cheese_fondue.JPG",
-    "author": "Brücke-Osteuropa",
-    "license": "CC0",
-    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "date": "2007-10-25 20:12:48",
-    "width": 960,
-    "height": 720,
-    "caption": "スイス｜チーズフォンデュ"
-  },
-  {
-    "key": "food-de",
-    "file": "assets/photos/food-de.jpg",
-    "title": "Bratwurst Glöckl.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Bratwurst_Gl%C3%B6ckl.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Bratwurst_Gl%C3%B6ckl.jpg",
-    "author": "JIP / Talk / JIP at English Wikipedia",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "date": "2008-05-30",
-    "width": 960,
-    "height": 720,
-    "caption": "ドイツ｜ブラートヴルスト"
-  },
-  {
-    "key": "food-dk",
-    "file": "assets/photos/food-dk.jpg",
-    "title": "Smørrebrød in Copenhagen 01.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Sm%C3%B8rrebr%C3%B8d_in_Copenhagen_01.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/9/90/Sm%C3%B8rrebr%C3%B8d_in_Copenhagen_01.jpg",
-    "author": "Kritzolina",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2022-08-21 13:40:28",
-    "width": 960,
-    "height": 640,
-    "caption": "デンマーク｜スモーブロー"
   },
   {
     "key": "food-es",
@@ -378,20 +210,6 @@
     "caption": "オランダ｜ストロープワッフル"
   },
   {
-    "key": "arts-at",
-    "file": "assets/photos/arts-at.jpg",
-    "title": "Great Hall of the Musikverein, Vienna (2).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_Musikverein,_Vienna_(2).jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/3/30/Great_Hall_of_the_Musikverein%2C_Vienna_%282%29.jpg",
-    "author": "Michał Bulsa",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2022-09-02 13:04:31",
-    "width": 960,
-    "height": 720,
-    "caption": "ウィーン｜楽友協会 黄金のホール"
-  },
-  {
     "key": "arts-be",
     "file": "assets/photos/arts-be.jpg",
     "title": "Salle du Theatre Royal de la Monnaie 1 © Philippe De Gobert.jpg",
@@ -404,48 +222,6 @@
     "width": 960,
     "height": 640,
     "caption": "ブリュッセル｜モネ劇場"
-  },
-  {
-    "key": "arts-ch",
-    "file": "assets/photos/arts-ch.jpg",
-    "title": "Opernhaus Zürich Zuschauerraum.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Opernhaus_Z%C3%BCrich_Zuschauerraum.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Opernhaus_Z%C3%BCrich_Zuschauerraum.jpg",
-    "author": "Photo: Andreas Praefcke",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "date": "2003-09",
-    "width": 960,
-    "height": 663,
-    "caption": "チューリッヒ｜歌劇場の客席"
-  },
-  {
-    "key": "arts-de",
-    "file": "assets/photos/arts-de.jpg",
-    "title": "2024-05-19-Berliner-Philharmonie.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:2024-05-19-Berliner-Philharmonie.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a9/2024-05-19-Berliner-Philharmonie.jpg",
-    "author": "Gunnar Klack",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2024-05-19",
-    "width": 960,
-    "height": 563,
-    "caption": "ベルリン｜フィルハーモニー"
-  },
-  {
-    "key": "arts-dk",
-    "file": "assets/photos/arts-dk.jpg",
-    "title": "Copenhagen Opera House 2014 05.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Copenhagen_Opera_House_2014_05.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Copenhagen_Opera_House_2014_05.jpg",
-    "author": "Julian Herzog (Website)",
-    "license": "CC BY 4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0",
-    "date": "Taken on 3 October 2014, 14:03:25",
-    "width": 960,
-    "height": 540,
-    "caption": "コペンハーゲン｜オペラハウス"
   },
   {
     "key": "arts-es",
@@ -504,20 +280,6 @@
     "caption": "アムステルダム｜コンセルトヘボウ"
   },
   {
-    "key": "shopping-at",
-    "file": "assets/photos/shopping-at.jpg",
-    "title": "Porzellan Augarten Vienna 2007 005.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Porzellan_Augarten_Vienna_2007_005.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Porzellan_Augarten_Vienna_2007_005.jpg",
-    "author": "Gryffindor",
-    "license": "Public domain",
-    "license_url": "",
-    "date": "2007-10",
-    "width": 960,
-    "height": 720,
-    "caption": "ウィーン｜アウガルテンの磁器"
-  },
-  {
     "key": "shopping-be",
     "file": "assets/photos/shopping-be.jpg",
     "title": "Flea market at Place du Jeu de Balle, Brussels, 2024.jpg",
@@ -530,48 +292,6 @@
     "width": 960,
     "height": 638,
     "caption": "ブリュッセル｜マロールの蚤の市"
-  },
-  {
-    "key": "shopping-ch",
-    "file": "assets/photos/shopping-ch.jpg",
-    "title": "Niederdorf - Marktgasse 2011-07-20 19-28-30 ShiftN2.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Niederdorf_-_Marktgasse_2011-07-20_19-28-30_ShiftN2.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Niederdorf_-_Marktgasse_2011-07-20_19-28-30_ShiftN2.jpg",
-    "author": "Roland zh",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "date": "2011-07-15",
-    "width": 800,
-    "height": 1200,
-    "caption": "チューリッヒ｜ニーダードルフ"
-  },
-  {
-    "key": "shopping-de",
-    "file": "assets/photos/shopping-de.jpg",
-    "title": "Berlin, Ampelmann-Shop, Fußball 2014-07.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Berlin,_Ampelmann-Shop,_Fu%C3%9Fball_2014-07.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Berlin%2C_Ampelmann-Shop%2C_Fu%C3%9Fball_2014-07.jpg",
-    "author": "HerrAdams",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2014-07-04 10:31:17",
-    "width": 960,
-    "height": 720,
-    "caption": "ベルリン｜ハッケシェ・ヘーフェの店"
-  },
-  {
-    "key": "shopping-dk",
-    "file": "assets/photos/shopping-dk.jpg",
-    "title": "Illums Bolighus 01.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Illums_Bolighus_01.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Illums_Bolighus_01.jpg",
-    "author": "Ramblersen2",
-    "license": "CC0",
-    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "date": "2024-02-28 12:09:26",
-    "width": 960,
-    "height": 720,
-    "caption": "コペンハーゲン｜Illums Bolighus"
   },
   {
     "key": "shopping-es",
@@ -644,48 +364,6 @@
     "caption": "ブリュッセル｜BRIGHT の光の展示"
   },
   {
-    "key": "events-ch",
-    "file": "assets/photos/events-ch.jpg",
-    "title": "Lantern at night - Basler Fasnacht 2024.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Lantern_at_night_-_Basler_Fasnacht_2024.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/3/32/Lantern_at_night_-_Basler_Fasnacht_2024.jpg",
-    "author": "Paradise Chronicle",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2024-02-21 23:51:34",
-    "width": 800,
-    "height": 1200,
-    "caption": "バーゼル｜ファスナハトのランタン"
-  },
-  {
-    "key": "events-de",
-    "file": "assets/photos/events-de.jpg",
-    "title": "20150208 - Berlinale Palast and Red Carpet.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:20150208_-_Berlinale_Palast_and_Red_Carpet.JPG",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/5/54/20150208_-_Berlinale_Palast_and_Red_Carpet.JPG",
-    "author": "Tuluqaruk",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2015-02-08 17:56:11",
-    "width": 960,
-    "height": 640,
-    "caption": "ベルリン｜ベルリナーレ・パラスト"
-  },
-  {
-    "key": "events-dk",
-    "file": "assets/photos/events-dk.jpg",
-    "title": "20210222 Copenhagen Light Festival Højbro Plads - Absalon statue (51039221562).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:20210222_Copenhagen_Light_Festival_H%C3%B8jbro_Plads_-_Absalon_statue_(51039221562).jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/6/63/20210222_Copenhagen_Light_Festival_H%C3%B8jbro_Plads_-_Absalon_statue_%2851039221562%29.jpg",
-    "author": "News Oresund",
-    "license": "CC BY 2.0",
-    "license_url": "https://creativecommons.org/licenses/by/2.0",
-    "date": "2021-02-06 22:18",
-    "width": 960,
-    "height": 616,
-    "caption": "コペンハーゲン｜ライトフェスティバル"
-  },
-  {
     "key": "events-es",
     "file": "assets/photos/events-es.jpg",
     "title": "Festival flamenco Jerez.jpg",
@@ -714,20 +392,6 @@
     "caption": "ヴィアレッジョ｜カーニバルの山車"
   },
   {
-    "key": "weather-at",
-    "file": "assets/photos/weather-at.jpg",
-    "title": "Rochusmarkt im Winter, Vienna, 2026.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Rochusmarkt_im_Winter,_Vienna,_2026.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Rochusmarkt_im_Winter%2C_Vienna%2C_2026.jpg",
-    "author": "Eva Maria Mandl",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2026-02-20 11:22:51",
-    "width": 960,
-    "height": 720,
-    "caption": "ウィーン｜冬の街の様子"
-  },
-  {
     "key": "weather-be",
     "file": "assets/photos/weather-be.jpg",
     "title": "Grand-Place Brussels - Maison du Roi.jpg",
@@ -740,48 +404,6 @@
     "width": 960,
     "height": 640,
     "caption": "ブリュッセル｜冬のグラン・プラス"
-  },
-  {
-    "key": "weather-ch",
-    "file": "assets/photos/weather-ch.jpg",
-    "title": "Sunrise in Zurich on a winter day.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Sunrise_in_Zurich_on_a_winter_day.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sunrise_in_Zurich_on_a_winter_day.jpg",
-    "author": "Sergi Gomez Sanchis",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2017-01-09 09:46:34",
-    "width": 960,
-    "height": 540,
-    "caption": "チューリッヒ｜冬の街の様子"
-  },
-  {
-    "key": "weather-de",
-    "file": "assets/photos/weather-de.jpg",
-    "title": "Brandenburg Tor(Gate), Berlin (Ank Kumar) 06.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Brandenburg_Tor(Gate),_Berlin_(Ank_Kumar)_06.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Brandenburg_Tor%28Gate%29%2C_Berlin_%28Ank_Kumar%29_06.jpg",
-    "author": "Ank Kumar",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2015-01-30 15:00:26",
-    "width": 800,
-    "height": 1200,
-    "caption": "ベルリン｜冬のブランデンブルク門"
-  },
-  {
-    "key": "weather-dk",
-    "file": "assets/photos/weather-dk.jpg",
-    "title": "Nyhavn winter 2026 1.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Nyhavn_winter_2026_1.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/2/23/Nyhavn_winter_2026_1.jpg",
-    "author": "kallerna",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2026-02-02 09:39:11",
-    "width": 960,
-    "height": 640,
-    "caption": "コペンハーゲン｜冬のニューハウン"
   },
   {
     "key": "weather-es",
@@ -840,20 +462,6 @@
     "caption": "アムステルダム｜冬の旧市街"
   },
   {
-    "key": "routing-at",
-    "file": "assets/photos/routing-at.jpg",
-    "title": "Wien Hauptbahnhof station.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Wien_Hauptbahnhof_station.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Wien_Hauptbahnhof_station.jpg",
-    "author": "Ravi Dwivedi",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2025-09-07 11:48:40",
-    "width": 960,
-    "height": 540,
-    "caption": "ウィーン中央駅｜鉄道旅行の拠点"
-  },
-  {
     "key": "routing-be",
     "file": "assets/photos/routing-be.jpg",
     "title": "Antwerpen - Station Antwerpen-Centraal (7).jpg",
@@ -866,48 +474,6 @@
     "width": 960,
     "height": 641,
     "caption": "アントウェルペン中央駅｜ベルギーの鉄道旅行"
-  },
-  {
-    "key": "routing-ch",
-    "file": "assets/photos/routing-ch.jpg",
-    "title": "RhB Ge 4-4 II 614 Glacier Express on Landwasser Viaduct.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a2/RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg",
-    "author": "Kabelleger / David Gubler",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2018-01-27 15:41:59",
-    "width": 960,
-    "height": 640,
-    "caption": "ランドヴァッサー橋｜スイス国内の鉄道風景"
-  },
-  {
-    "key": "routing-de",
-    "file": "assets/photos/routing-de.jpg",
-    "title": "Hauptbahnhof Berlin exterior 0136.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Hauptbahnhof_Berlin_exterior_0136.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hauptbahnhof_Berlin_exterior_0136.jpg",
-    "author": "Dosseman",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "date": "2021-09-23 13:56:55",
-    "width": 960,
-    "height": 640,
-    "caption": "ベルリン中央駅｜ドイツの鉄道旅行"
-  },
-  {
-    "key": "routing-dk",
-    "file": "assets/photos/routing-dk.jpg",
-    "title": "The hall of the Copenhagen Central Station.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:The_hall_of_the_Copenhagen_Central_Station.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_hall_of_the_Copenhagen_Central_Station.jpg",
-    "author": "Liberaler Humanist",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "date": "2018-07-19",
-    "width": 960,
-    "height": 640,
-    "caption": "コペンハーゲン中央駅｜北欧の鉄道旅行"
   },
   {
     "key": "routing-es",

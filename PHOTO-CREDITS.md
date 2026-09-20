@@ -3,14 +3,6 @@
 Wikimedia Commonsに公開された実写真を使用しています。各写真には個別のライセンスが適用されます。
 表示用に縮小・JPEG圧縮しています。カード内はCSSによるトリミング表示、拡大時は画像全体を表示します。
 
-## ウィーン｜シェーンブルン宮殿
-
-- File: `assets/photos/first-at.jpg`
-- Photo: [Schloss Schönbrunn Wien 2014 (Zuschnitt 1).jpg](https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg)
-- Author: Thomas Wolf, www.foto-tw.de
-- License: [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)
-- Date (source metadata): 2014-06-02
-
 ## ブリュッセル｜グラン・プラス
 
 - File: `assets/photos/first-be.jpg`
@@ -18,30 +10,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Celuici
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2018-06-17
-
-## ツェルマット｜マッターホルン
-
-- File: `assets/photos/first-ch.jpg`
-- Photo: [Impressive Matterhorn view in Zermatt, Switzerland.jpg](https://commons.wikimedia.org/wiki/File:Impressive_Matterhorn_view_in_Zermatt,_Switzerland.jpg)
-- Author: Vavaloin
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2016-10-22 14:44:12
-
-## ベルリン｜ブランデンブルク門
-
-- File: `assets/photos/first-de.jpg`
-- Photo: [Brandenburger Tor morgens.jpg](https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg)
-- Author: Thomas Wolf, www.foto-tw.de
-- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
-- Date (source metadata): Taken on 10 July 2012
-
-## コペンハーゲン｜ニューハウン
-
-- File: `assets/photos/first-dk.jpg`
-- Photo: [Nyhavn, Copenhagen, 20220618 1728 7354.jpg](https://commons.wikimedia.org/wiki/File:Nyhavn,_Copenhagen,_20220618_1728_7354.jpg)
-- Author: Jakub Hałun
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2022-06-18 17:28:56
 
 ## バルセロナ｜サグラダ・ファミリア
 
@@ -75,14 +43,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2024-04-24 18:01:41
 
-## ウィーン｜ベルヴェデーレ宮殿
-
-- File: `assets/photos/scenery-at.jpg`
-- Photo: [Palacio Belvedere, Viena, Austria, 2020-02-01, DD 90-92 HDR.jpg](https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_90-92_HDR.jpg)
-- Author: Diego Delso
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2020-02-01 18:23:11
-
 ## ブルージュ｜ローゼンフートカイ
 
 - File: `assets/photos/scenery-be.jpg`
@@ -90,29 +50,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Ank Kumar
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2015-03-08 16:15:17
-
-## ラウターブルンネン｜アルプスの谷
-
-- File: `assets/photos/scenery-ch.jpg`
-- Photo: [1 lauterbrunnen valley 2012.jpg](https://commons.wikimedia.org/wiki/File:1_lauterbrunnen_valley_2012.jpg)
-- Author: chensiyuan
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-
-## ローテンブルク｜旧市街
-
-- File: `assets/photos/scenery-de.jpg`
-- Photo: [Plönlein, Rothenburg ob der Tauber, Alemania, 2023-06-17, DD 37.jpg](https://commons.wikimedia.org/wiki/File:Pl%C3%B6nlein,_Rothenburg_ob_der_Tauber,_Alemania,_2023-06-17,_DD_37.jpg)
-- Author: Diego Delso
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2023-06-17 16:15:38
-
-## コペンハーゲン｜クリスチャンハウン
-
-- File: `assets/photos/scenery-dk.jpg`
-- Photo: [Christianshavn Canal (15911963215).jpg](https://commons.wikimedia.org/wiki/File:Christianshavn_Canal_(15911963215).jpg)
-- Author: Tony Webster from Portland, Oregon, United States
-- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-- Date (source metadata): 2014-09-15 17:03
 
 ## セビリア｜スペイン広場
 
@@ -146,14 +83,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 17-Feb-2008, Amsterdam
 
-## オーストリア｜ウィーナー・シュニッツェル
-
-- File: `assets/photos/food-at.jpg`
-- Photo: [Wiener Schnitzel in Vienna.jpg](https://commons.wikimedia.org/wiki/File:Wiener_Schnitzel_in_Vienna.jpg)
-- Author: JIP
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2016-06-30
-
 ## ベルギー｜ワッフル
 
 - File: `assets/photos/food-be.jpg`
@@ -161,30 +90,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Thomas Quine
 - License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
 - Date (source metadata): 2011-05-22 11:55
-
-## スイス｜チーズフォンデュ
-
-- File: `assets/photos/food-ch.jpg`
-- Photo: [Swiss cheese fondue.JPG](https://commons.wikimedia.org/wiki/File:Swiss_cheese_fondue.JPG)
-- Author: Brücke-Osteuropa
-- License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
-- Date (source metadata): 2007-10-25 20:12:48
-
-## ドイツ｜ブラートヴルスト
-
-- File: `assets/photos/food-de.jpg`
-- Photo: [Bratwurst Glöckl.jpg](https://commons.wikimedia.org/wiki/File:Bratwurst_Gl%C3%B6ckl.jpg)
-- Author: JIP / Talk / JIP at English Wikipedia
-- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
-- Date (source metadata): 2008-05-30
-
-## デンマーク｜スモーブロー
-
-- File: `assets/photos/food-dk.jpg`
-- Photo: [Smørrebrød in Copenhagen 01.jpg](https://commons.wikimedia.org/wiki/File:Sm%C3%B8rrebr%C3%B8d_in_Copenhagen_01.jpg)
-- Author: Kritzolina
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2022-08-21 13:40:28
 
 ## スペイン｜タパス
 
@@ -218,14 +123,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
 - Date (source metadata): 2024-11-27 15:39:02
 
-## ウィーン｜楽友協会 黄金のホール
-
-- File: `assets/photos/arts-at.jpg`
-- Photo: [Great Hall of the Musikverein, Vienna (2).jpg](https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_Musikverein,_Vienna_(2).jpg)
-- Author: Michał Bulsa
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2022-09-02 13:04:31
-
 ## ブリュッセル｜モネ劇場
 
 - File: `assets/photos/arts-be.jpg`
@@ -233,30 +130,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Philippe De Gobert
 - License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
 - Date (source metadata): 2017-08-21
-
-## チューリッヒ｜歌劇場の客席
-
-- File: `assets/photos/arts-ch.jpg`
-- Photo: [Opernhaus Zürich Zuschauerraum.jpg](https://commons.wikimedia.org/wiki/File:Opernhaus_Z%C3%BCrich_Zuschauerraum.jpg)
-- Author: Photo: Andreas Praefcke
-- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
-- Date (source metadata): 2003-09
-
-## ベルリン｜フィルハーモニー
-
-- File: `assets/photos/arts-de.jpg`
-- Photo: [2024-05-19-Berliner-Philharmonie.jpg](https://commons.wikimedia.org/wiki/File:2024-05-19-Berliner-Philharmonie.jpg)
-- Author: Gunnar Klack
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2024-05-19
-
-## コペンハーゲン｜オペラハウス
-
-- File: `assets/photos/arts-dk.jpg`
-- Photo: [Copenhagen Opera House 2014 05.jpg](https://commons.wikimedia.org/wiki/File:Copenhagen_Opera_House_2014_05.jpg)
-- Author: Julian Herzog (Website)
-- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
-- Date (source metadata): Taken on 3 October 2014, 14:03:25
 
 ## バルセロナ｜カタルーニャ音楽堂
 
@@ -289,14 +162,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2016-05-30 23:10:24
 
-## ウィーン｜アウガルテンの磁器
-
-- File: `assets/photos/shopping-at.jpg`
-- Photo: [Porzellan Augarten Vienna 2007 005.jpg](https://commons.wikimedia.org/wiki/File:Porzellan_Augarten_Vienna_2007_005.jpg)
-- Author: Gryffindor
-- License: Public domain
-- Date (source metadata): 2007-10
-
 ## ブリュッセル｜マロールの蚤の市
 
 - File: `assets/photos/shopping-be.jpg`
@@ -304,30 +169,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: DimiTalen
 - License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
 - Date (source metadata): 2024-07-14 10:42:42
-
-## チューリッヒ｜ニーダードルフ
-
-- File: `assets/photos/shopping-ch.jpg`
-- Photo: [Niederdorf - Marktgasse 2011-07-20 19-28-30 ShiftN2.jpg](https://commons.wikimedia.org/wiki/File:Niederdorf_-_Marktgasse_2011-07-20_19-28-30_ShiftN2.jpg)
-- Author: Roland zh
-- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
-- Date (source metadata): 2011-07-15
-
-## ベルリン｜ハッケシェ・ヘーフェの店
-
-- File: `assets/photos/shopping-de.jpg`
-- Photo: [Berlin, Ampelmann-Shop, Fußball 2014-07.jpg](https://commons.wikimedia.org/wiki/File:Berlin,_Ampelmann-Shop,_Fu%C3%9Fball_2014-07.jpg)
-- Author: HerrAdams
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2014-07-04 10:31:17
-
-## コペンハーゲン｜Illums Bolighus
-
-- File: `assets/photos/shopping-dk.jpg`
-- Photo: [Illums Bolighus 01.jpg](https://commons.wikimedia.org/wiki/File:Illums_Bolighus_01.jpg)
-- Author: Ramblersen2
-- License: [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
-- Date (source metadata): 2024-02-28 12:09:26
 
 ## セビリア｜トリアナの陶器店
 
@@ -369,30 +210,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2019-02-15 19:11:44
 
-## バーゼル｜ファスナハトのランタン
-
-- File: `assets/photos/events-ch.jpg`
-- Photo: [Lantern at night - Basler Fasnacht 2024.jpg](https://commons.wikimedia.org/wiki/File:Lantern_at_night_-_Basler_Fasnacht_2024.jpg)
-- Author: Paradise Chronicle
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2024-02-21 23:51:34
-
-## ベルリン｜ベルリナーレ・パラスト
-
-- File: `assets/photos/events-de.jpg`
-- Photo: [20150208 - Berlinale Palast and Red Carpet.JPG](https://commons.wikimedia.org/wiki/File:20150208_-_Berlinale_Palast_and_Red_Carpet.JPG)
-- Author: Tuluqaruk
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2015-02-08 17:56:11
-
-## コペンハーゲン｜ライトフェスティバル
-
-- File: `assets/photos/events-dk.jpg`
-- Photo: [20210222 Copenhagen Light Festival Højbro Plads - Absalon statue (51039221562).jpg](https://commons.wikimedia.org/wiki/File:20210222_Copenhagen_Light_Festival_H%C3%B8jbro_Plads_-_Absalon_statue_(51039221562).jpg)
-- Author: News Oresund
-- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-- Date (source metadata): 2021-02-06 22:18
-
 ## ヘレス｜フラメンコ祭の街路
 
 - File: `assets/photos/events-es.jpg`
@@ -408,14 +225,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Vinima
 - License: Public domain
 
-## ウィーン｜冬の街の様子
-
-- File: `assets/photos/weather-at.jpg`
-- Photo: [Rochusmarkt im Winter, Vienna, 2026.jpg](https://commons.wikimedia.org/wiki/File:Rochusmarkt_im_Winter,_Vienna,_2026.jpg)
-- Author: Eva Maria Mandl
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2026-02-20 11:22:51
-
 ## ブリュッセル｜冬のグラン・プラス
 
 - File: `assets/photos/weather-be.jpg`
@@ -423,30 +232,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Szilas
 - License: Public domain
 - Date (source metadata): 2009-12-10
-
-## チューリッヒ｜冬の街の様子
-
-- File: `assets/photos/weather-ch.jpg`
-- Photo: [Sunrise in Zurich on a winter day.jpg](https://commons.wikimedia.org/wiki/File:Sunrise_in_Zurich_on_a_winter_day.jpg)
-- Author: Sergi Gomez Sanchis
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2017-01-09 09:46:34
-
-## ベルリン｜冬のブランデンブルク門
-
-- File: `assets/photos/weather-de.jpg`
-- Photo: [Brandenburg Tor(Gate), Berlin (Ank Kumar) 06.jpg](https://commons.wikimedia.org/wiki/File:Brandenburg_Tor(Gate),_Berlin_(Ank_Kumar)_06.jpg)
-- Author: Ank Kumar
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2015-01-30 15:00:26
-
-## コペンハーゲン｜冬のニューハウン
-
-- File: `assets/photos/weather-dk.jpg`
-- Photo: [Nyhavn winter 2026 1.jpg](https://commons.wikimedia.org/wiki/File:Nyhavn_winter_2026_1.jpg)
-- Author: kallerna
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2026-02-02 09:39:11
 
 ## バルセロナ｜冬の海辺
 
@@ -480,14 +265,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 - Date (source metadata): 2011-01-04 13:19:46
 
-## ウィーン中央駅｜鉄道旅行の拠点
-
-- File: `assets/photos/routing-at.jpg`
-- Photo: [Wien Hauptbahnhof station.jpg](https://commons.wikimedia.org/wiki/File:Wien_Hauptbahnhof_station.jpg)
-- Author: Ravi Dwivedi
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2025-09-07 11:48:40
-
 ## アントウェルペン中央駅｜ベルギーの鉄道旅行
 
 - File: `assets/photos/routing-be.jpg`
@@ -495,30 +272,6 @@ Wikimedia Commonsに公開された実写真を使用しています。各写真
 - Author: Fred Romero from Paris, France
 - License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
 - Date (source metadata): Taken on 28 September 2015, 15:44
-
-## ランドヴァッサー橋｜スイス国内の鉄道風景
-
-- File: `assets/photos/routing-ch.jpg`
-- Photo: [RhB Ge 4-4 II 614 Glacier Express on Landwasser Viaduct.jpg](https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg)
-- Author: Kabelleger / David Gubler
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2018-01-27 15:41:59
-
-## ベルリン中央駅｜ドイツの鉄道旅行
-
-- File: `assets/photos/routing-de.jpg`
-- Photo: [Hauptbahnhof Berlin exterior 0136.jpg](https://commons.wikimedia.org/wiki/File:Hauptbahnhof_Berlin_exterior_0136.jpg)
-- Author: Dosseman
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- Date (source metadata): 2021-09-23 13:56:55
-
-## コペンハーゲン中央駅｜北欧の鉄道旅行
-
-- File: `assets/photos/routing-dk.jpg`
-- Photo: [The hall of the Copenhagen Central Station.jpg](https://commons.wikimedia.org/wiki/File:The_hall_of_the_Copenhagen_Central_Station.jpg)
-- Author: Liberaler Humanist
-- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
-- Date (source metadata): 2018-07-19
 
 ## バルセロナ・サンツ駅｜高速列車のホーム
 
