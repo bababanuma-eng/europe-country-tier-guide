@@ -29,7 +29,7 @@ p{margin:0 0 10px}
 .page.active{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 7px 22px rgba(31,38,48,.045)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.axisgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.axisgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .axis{background:#fbfaf7;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:14px}
 .axis b{display:block;margin-bottom:4px}
 .tierrow{display:grid;grid-template-columns:72px 1fr;gap:10px;margin:10px 0}
@@ -92,11 +92,11 @@ th{background:#faf9f6;color:#4c5562}
 <div class="wrap">
   <div class="hero">
     <h1>Europe Graduation Trip<br>Country Tier Guide</h1>
-    <p class="lead">2027年2月14日ごろ出発予定。ルートを決める前に、2人で「どの国を候補に残すか」を比較するための資料。観点ごとにページを切り替えて確認できる。</p>
+    <p class="lead">2027年2月14日ごろ出発予定。<b>🇪🇸 スペインと🇮🇹 イタリアは確定</b>。ここに何をあと1〜2か国足すか（合計3〜4か国）を、2人で決めるための資料。観点ごとにページを切り替えて確認できる。</p>
     <div class="meta">
       <span class="pill">👫 22歳・カップル</span><span class="pill">🎓 卒業旅行</span><span class="pill">🇪🇺 彼女は初ヨーロッパ</span>
-      <span class="pill">🗓 10日〜最大2週間半</span><span class="pill">🏙 1都市2〜3泊</span><span class="pill">🍝 景色・街並み・食事重視</span>
-      <span class="pill">🌡 0℃前後は避けたい</span><span class="pill">🌲 自然は1日程度ならあり</span>
+      <span class="pill">✅ スペイン・イタリア確定</span><span class="pill">➕ 追加は1〜2か国（計3〜4か国）</span><span class="pill">🗓 10日〜最大2週間半</span><span class="pill">🏙 1都市2〜3泊</span><span class="pill">🍝 景色・街並み・食事重視</span>
+      <span class="pill">🌡 0℃前後は避けたい</span><span class="pill">🌲 自然は1日程度ならあり</span><span class="pill">🎭 舞台・買い物・イベントも重視</span>
     </div>
   </div>
 
@@ -105,46 +105,53 @@ th{background:#faf9f6;color:#4c5562}
     <button class="tabbtn" data-page="first">初ヨーロッパ</button>
     <button class="tabbtn" data-page="scenery">街並み・景色</button>
     <button class="tabbtn" data-page="food">食事</button>
+    <button class="tabbtn" data-page="arts">舞台芸術・音楽</button>
+    <button class="tabbtn" data-page="shopping">買い物・雑貨</button>
+    <button class="tabbtn" data-page="events">2月のイベント</button>
     <button class="tabbtn" data-page="weather">2月の歩きやすさ</button>
-    <button class="tabbtn" data-page="routing">3か国旅行の組みやすさ</button>
+    <button class="tabbtn" data-page="routing">周遊の組みやすさ</button>
   </div>
 
   <section id="overview" class="page active">
     <div class="card">
       <h2>比較の前提</h2>
-      <p class="sub">今回の旅行に合わせて評価軸を独立させる。国そのものの優劣ではない。</p>
+      <p class="sub">今回の旅行に合わせて評価軸を独立させる。国そのものの優劣ではない。<b>スペインとイタリアは確定</b>なので、Tierは「残り1〜2か国に何を足すか」を選ぶために読む。</p>
       <div class="axisgrid">
         <div class="axis"><b>① 初ヨーロッパの感動</b>象徴性、初回での印象の強さ。</div>
         <div class="axis"><b>② 街並み・景色</b>街歩きそのものが楽しいか。</div>
         <div class="axis"><b>③ 食事</b>毎日の食事が旅の楽しみになるか。</div>
-        <div class="axis"><b>④ 2月の歩きやすさ</b>気温・風・日照を含む。</div>
-        <div class="axis"><b>⑤ 3か国旅行の組みやすさ</b>地理・移動・体験変化。</div>
+        <div class="axis"><b>④ 舞台芸術・音楽鑑賞</b>オペラ・ミュージカル・クラシック。</div>
+        <div class="axis"><b>⑤ 買い物・雑貨</b>持ち帰りたい物を探せるか。</div>
+        <div class="axis"><b>⑥ 2月のイベント</b>旅行期間に実際に当たるか。</div>
+        <div class="axis"><b>⑦ 2月の歩きやすさ</b>気温・風・日照を含む。</div>
+        <div class="axis"><b>⑧ 周遊の組みやすさ</b>スペイン・イタリアに足しやすいか。</div>
       </div>
     </div>
 
     <div class="card" style="margin-top:14px;overflow:auto">
-      <h2>5軸一覧</h2>
+      <h2>8軸一覧</h2>
       <table>
-        <thead><tr><th>国</th><th>初ヨーロッパ</th><th>街並み・景色</th><th>食事</th><th>2月</th><th>組みやすさ</th></tr></thead>
+        <thead><tr><th>国</th><th>初ヨーロッパ</th><th>街並み・景色</th><th>食事</th><th>舞台芸術</th><th>買い物</th><th>2月のイベント</th><th>2月</th><th>周遊</th></tr></thead>
         <tbody>
-          <tr><td>🇫🇷 フランス</td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td></tr>
-          <tr><td>🇮🇹 イタリア</td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td></tr>
-          <tr><td>🇪🇸 スペイン</td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td></tr>
-          <tr><td>🇬🇧 イギリス</td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td></tr>
-          <tr><td>🇨🇭 スイス</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
-          <tr><td>🇳🇱 オランダ</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
-          <tr><td>🇧🇪 ベルギー</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
-          <tr><td>🇦🇹 オーストリア</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td></tr>
-          <tr><td>🇩🇪 ドイツ</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gC">C</span></td><td><span class="grade gA">A</span></td></tr>
-          <tr><td>🇩🇰 デンマーク</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gC">C</span></td><td><span class="grade gB">B</span></td></tr>
+          <tr><td>🇮🇹 イタリア　<b>確定</b></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇪🇸 スペイン　<b>確定</b></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇬🇧 イギリス</td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gS">S</span></td><td><span class="grade gC">C</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇨🇭 スイス</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td></tr>
+          <tr><td>🇦🇹 オーストリア</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gC">C</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇳🇱 オランダ</td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gS">S</span></td><td><span class="grade gC">C</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇧🇪 ベルギー</td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇩🇪 ドイツ</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gA">A</span></td><td><span class="grade gA">A</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td><td><span class="grade gC">C</span></td><td><span class="grade gA">A</span></td></tr>
+          <tr><td>🇩🇰 デンマーク</td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gB">B</span></td><td><span class="grade gS">S</span></td><td><span class="grade gA">A</span></td><td><span class="grade gC">C</span></td><td><span class="grade gB">B</span></td></tr>
         </tbody>
       </table>
     </div>
-    <div class="callout"><b>使い方：</b>まず2人で「どの観点を最優先するか」を決め、そのページを見ながら候補国を削っていく。平均点だけで決めない。</div>
-  <div class="photo-intro"><h2>写真で見比べる10か国</h2><p>まずは各国の象徴的な景色から。上のタブを切り替えると、街並み・食事・冬・移動の実写真を見比べられます。</p><p>写真をタップすると大きく表示できます。</p></div><div class="photo-grid overview-photos"><article class="photo-card"><h3>🇫🇷 フランス</h3><figure class="travel-photo" data-photo="first-fr">
-<a class="photo-open portrait" href="assets/photos/first-fr.jpg" aria-label="パリ｜エッフェル塔の写真を拡大"><img src="assets/photos/first-fr.jpg" width="801" height="1200" loading="lazy" decoding="async" alt="パリ｜エッフェル塔の実際の写真"></a>
-<figcaption><div class="photo-caption">パリ｜エッフェル塔</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DXR<br><a href="https://commons.wikimedia.org/wiki/File:Tour_Eiffel_and_Pont_de_Bir-Hakeim_as_seen_from_Ile_aux_Cygnes_140203_7.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="first-it">
+    <div class="callout"><b>使い方：</b>スペインとイタリアは決まっているので、平均点の高い国を探すのではなく「確定2か国に無いものを足せる国」を探す。<br>
+      ・舞台芸術を旅の柱にする → <b>🇦🇹 オーストリア / 🇬🇧 イギリス</b><br>
+      ・雑貨や買い物を楽しむ → <b>🇬🇧 イギリス / 🇩🇰 デンマーク / 🇳🇱 オランダ</b><br>
+      ・2月のイベントに当てる → <b>🇨🇭 スイス（バーゼルのファスナハト 2/15–17）/ 🇩🇪 ドイツ（ベルリナーレ 2/10–21）</b><br>
+      ・移動の負担を最小にする → <b>🇨🇭 スイス</b>（ミラノから鉄道で直結）<br>
+      4か国にする場合は、性格の違う2か国（例：🇨🇭 スイス＋🇬🇧 イギリス）を足すと重複が少ない。</div>
+  <div class="photo-intro"><h2>写真で見比べる10か国</h2><p>まずは各国の象徴的な景色から。上のタブを切り替えると、街並み・食事・冬・移動の実写真を見比べられます。</p><p>写真をタップすると大きく表示できます。</p></div><div class="photo-grid overview-photos"><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="first-it">
 <a class="photo-open" href="assets/photos/first-it.jpg" aria-label="ローマ｜コロッセオの写真を拡大"><img src="assets/photos/first-it.jpg" width="960" height="568" loading="lazy" decoding="async" alt="ローマ｜コロッセオの実際の写真"></a>
 <figcaption><div class="photo-caption">ローマ｜コロッセオ</div>
 <details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Wilfredor<br><a href="https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇪🇸 スペイン</h3><figure class="travel-photo" data-photo="first-es">
@@ -177,15 +184,11 @@ th{background:#faf9f6;color:#4c5562}
     <div class="card">
       <h2>① 初ヨーロッパの感動</h2>
       <p class="sub">彼女にとって「初めてヨーロッパに来た」という感覚をどれだけ強く作れるか。</p>
-      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇫🇷 フランス　🇮🇹 イタリア　🇬🇧 イギリス</div><div class="reason">象徴的な都市・建築・文化が多く、初回での分かりやすい感動が強い。</div></div></div>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇬🇧 イギリス</div><div class="reason">象徴的な都市・建築・文化が多く、初回での分かりやすい感動が強い。</div></div></div>
       <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇨🇭 スイス　🇳🇱 オランダ</div><div class="reason">その国ならではの景観や文化が非常に分かりやすい。</div></div></div>
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇩🇪 ドイツ　🇧🇪 ベルギー　🇩🇰 デンマーク</div><div class="reason">十分魅力的だが、初回での象徴性は上位国よりやや弱い。</div></div></div>
     </div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="first-fr">
-<a class="photo-open portrait" href="assets/photos/first-fr.jpg" aria-label="パリ｜エッフェル塔の写真を拡大"><img src="assets/photos/first-fr.jpg" width="801" height="1200" loading="lazy" decoding="async" alt="パリ｜エッフェル塔の実際の写真"></a>
-<figcaption><div class="photo-caption">パリ｜エッフェル塔</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DXR<br><a href="https://commons.wikimedia.org/wiki/File:Tour_Eiffel_and_Pont_de_Bir-Hakeim_as_seen_from_Ile_aux_Cygnes_140203_7.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パリの象徴性が非常に高い。</li><li>エッフェル塔、セーヌ、ルーヴルなど「見たことがある場所に来た」感が強い。</li><li>初ヨーロッパの入口として分かりやすい。</li></ul></div>
       <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="first-it">
 <a class="photo-open" href="assets/photos/first-it.jpg" aria-label="ローマ｜コロッセオの写真を拡大"><img src="assets/photos/first-it.jpg" width="960" height="568" loading="lazy" decoding="async" alt="ローマ｜コロッセオの実際の写真"></a>
 <figcaption><div class="photo-caption">ローマ｜コロッセオ</div>
@@ -197,7 +200,7 @@ th{background:#faf9f6;color:#4c5562}
       <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="first-es">
 <a class="photo-open portrait" href="assets/photos/first-es.jpg" aria-label="バルセロナ｜サグラダ・ファミリアの写真を拡大"><img src="assets/photos/first-es.jpg" width="825" height="1200" loading="lazy" decoding="async" alt="バルセロナ｜サグラダ・ファミリアの実際の写真"></a>
 <figcaption><div class="photo-caption">バルセロナ｜サグラダ・ファミリア</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Canaan<br><a href="https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ガウディや旧市街など視覚的なインパクトが大きい。</li><li>イギリス・フランスとは違う南欧感が出る。</li><li>初回でも十分印象に残る。</li></ul></div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Canaan<br><a href="https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ガウディや旧市街など視覚的なインパクトが大きい。</li><li>イギリスとは違う南欧感が出る。</li><li>初回でも十分印象に残る。</li></ul></div>
       <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="first-ch">
 <a class="photo-open" href="assets/photos/first-ch.jpg" aria-label="ツェルマット｜マッターホルンの写真を拡大"><img src="assets/photos/first-ch.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ツェルマット｜マッターホルンの実際の写真"></a>
 <figcaption><div class="photo-caption">ツェルマット｜マッターホルン</div>
@@ -225,7 +228,7 @@ th{background:#faf9f6;color:#4c5562}
     <div class="card">
       <h2>② 街並み・景色</h2>
       <p class="sub">観光地だけでなく、街を歩いている時間そのものが楽しいか。</p>
-      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇫🇷 フランス　🇨🇭 スイス　🇳🇱 オランダ</div><div class="reason">歴史都市・水辺・アルプス・運河など、街や景観そのものの強さが大きい。</div></div></div>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇨🇭 スイス　🇳🇱 オランダ</div><div class="reason">歴史都市・水辺・アルプス・運河など、街や景観そのものの強さが大きい。</div></div></div>
       <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇦🇹 オーストリア　🇬🇧 イギリス　🇧🇪 ベルギー</div><div class="reason">個性的な街が多く、写真・散歩との相性が良い。</div></div></div>
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇩🇰 デンマーク</div><div class="reason">良い都市はあるが、今回の候補内では視覚的な変化の強さはやや弱め。</div></div></div>
     </div>
@@ -234,10 +237,7 @@ th{background:#faf9f6;color:#4c5562}
 <a class="photo-open" href="assets/photos/scenery-it.jpg" aria-label="ヴェネツィア｜リアルト橋と大運河の写真を拡大"><img src="assets/photos/scenery-it.jpg" width="960" height="427" loading="lazy" decoding="async" alt="ヴェネツィア｜リアルト橋と大運河の実際の写真"></a>
 <figcaption><div class="photo-caption">ヴェネツィア｜リアルト橋と大運河</div>
 <details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Martin Falbisoner<br><a href="https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ローマ、フィレンツェ、ヴェネツィアで景観が全く違う。</li><li>旧市街の密度が高く、街歩きが目的になる。</li><li>写真映えだけでなく、歴史の厚みがある。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-fr">
-<a class="photo-open" href="assets/photos/scenery-fr.jpg" aria-label="パリ｜セーヌ川沿いの街並みの写真を拡大"><img src="assets/photos/scenery-fr.jpg" width="960" height="435" loading="lazy" decoding="async" alt="パリ｜セーヌ川沿いの街並みの実際の写真"></a>
-<figcaption><div class="photo-caption">パリ｜セーヌ川沿いの街並み</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DiscoA340<br><a href="https://commons.wikimedia.org/wiki/File:Panorama_on_the_River_Seine_(July_2022).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>パリの都市景観が強い。</li><li>南フランスまで広げると景色の変化も作れる。</li><li>大通り・川・建築のバランスがよい。</li></ul></div>
+      
       <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="scenery-ch">
 <a class="photo-open" href="assets/photos/scenery-ch.jpg" aria-label="ラウターブルンネン｜アルプスの谷の写真を拡大"><img src="assets/photos/scenery-ch.jpg" width="960" height="641" loading="lazy" decoding="async" alt="ラウターブルンネン｜アルプスの谷の実際の写真"></a>
 <figcaption><div class="photo-caption">ラウターブルンネン｜アルプスの谷</div>
@@ -273,7 +273,7 @@ th{background:#faf9f6;color:#4c5562}
     <div class="card">
       <h2>③ 食事</h2>
       <p class="sub">毎日の食事を旅の大きな楽しみにできるか。</p>
-      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇪🇸 スペイン　🇫🇷 フランス</div><div class="reason">地域ごとの料理の幅が広く、食そのものが旅の目的になる。</div></div></div>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇮🇹 イタリア　🇪🇸 スペイン</div><div class="reason">地域ごとの料理の幅が広く、食そのものが旅の目的になる。</div></div></div>
       <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇧🇪 ベルギー　🇩🇪 ドイツ　🇬🇧 イギリス</div><div class="reason">ビール、肉料理、菓子、パブ文化など楽しみ方が明確。</div></div></div>
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇨🇭 スイス　🇳🇱 オランダ　🇩🇰 デンマーク</div><div class="reason">魅力はあるが、今回の他候補と比べると食を主目的にはしにくい。</div></div></div>
     </div>
@@ -286,10 +286,7 @@ th{background:#faf9f6;color:#4c5562}
 <a class="photo-open" href="assets/photos/food-es.jpg" aria-label="スペイン｜タパスの写真を拡大"><img src="assets/photos/food-es.jpg" width="960" height="720" loading="lazy" decoding="async" alt="スペイン｜タパスの実際の写真"></a>
 <figcaption><div class="photo-caption">スペイン｜タパス</div>
 <details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：David Adam Kess<br><a href="https://commons.wikimedia.org/wiki/File:(_Tapas_in_Spain,_Madrid_).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>タパス、魚介、肉料理などシェアしやすい。</li><li>食事時間そのものが旅行体験になる。</li><li>バル文化との相性も良い。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="food-fr">
-<a class="photo-open" href="assets/photos/food-fr.jpg" aria-label="フランス｜クロワッサンとカフェの写真を拡大"><img src="assets/photos/food-fr.jpg" width="960" height="960" loading="lazy" decoding="async" alt="フランス｜クロワッサンとカフェの実際の写真"></a>
-<figcaption><div class="photo-caption">フランス｜クロワッサンとカフェ</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ajay Suresh from New York, NY, USA<br><a href="https://commons.wikimedia.org/wiki/File:Paris-Day1-5_(37702232851).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ビストロ、パン、菓子、ワインまで幅広い。</li><li>高級店から日常食まで選択肢が多い。</li><li>食文化の象徴性が高い。</li></ul></div>
+      
       <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="food-be">
 <a class="photo-open" href="assets/photos/food-be.jpg" aria-label="ベルギー｜ワッフルの写真を拡大"><img src="assets/photos/food-be.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ベルギー｜ワッフルの実際の写真"></a>
 <figcaption><div class="photo-caption">ベルギー｜ワッフル</div>
@@ -317,12 +314,150 @@ th{background:#faf9f6;color:#4c5562}
 <figcaption><div class="photo-caption">デンマーク｜スモーブロー</div>
 <details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kritzolina<br><a href="https://commons.wikimedia.org/wiki/File:Sm%C3%B8rrebr%C3%B8d_in_Copenhagen_01.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div></section>
 
+  <section id="arts" class="page">
+    <div class="card">
+      <h2>④ 舞台芸術・音楽鑑賞</h2>
+      <p class="sub">オペラ、ミュージカル、クラシックを旅の柱にできるか。会場の有名さではなく「2027年2月の滞在日に、観たい演目があるか」で見る。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇬🇧 イギリス　🇮🇹 イタリア</div><div class="reason">その国に行く理由そのものになる。劇場・演目の選択肢が多く、日程を合わせる価値がある。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇳🇱 オランダ　🇪🇸 スペイン</div><div class="reason">世界的な会場があり、1公演を旅程の柱にできる。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇨🇭 スイス　🇧🇪 ベルギー　🇩🇰 デンマーク</div><div class="reason">良い劇場はあるが、鑑賞だけを理由に国を足すには弱い。ほかの目的と合わせたい。</div></div></div>
+    </div><div class="callout"><b>先に決めること：</b>「有名な劇場に入りたい」のか「特定の演目を観たい」のかで、選ぶ国が変わる。前者ならウィーン・ミラノ、後者なら演目から逆算してロンドンかベルリン。どちらにしても<b>公演日が先、都市の順番は後</b>。</div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="arts-at">
+<a class="photo-open" href="assets/photos/arts-at.jpg" aria-label="ウィーン｜楽友協会 黄金のホールの写真を拡大"><img src="assets/photos/arts-at.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ウィーン｜楽友協会 黄金のホールの実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜楽友協会 黄金のホール</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Michał Bulsa<br><a href="https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_Musikverein,_Vienna_(2).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ウィーン国立歌劇場・楽友協会｜この目的なら最有力</b></p><ul><li>国立歌劇場は2027年2月の公演カレンダーを公開済み。観たい演目の日を軸に滞在日を組める。</li><li>立見席は数ユーロから。初鑑賞のハードルが低く、「とりあえず1回観る」がやりやすい。</li><li>楽友協会は会場名だけで決めず、曲目と演奏団体まで見て選びたい。</li><li>注意：オペラ座舞踏会は2027年2月4日で、出発予定より前。通常公演とは分けて考える。</li><li><a href="https://www.wiener-staatsoper.at/en/calendar/2027/february/" target="_blank" rel="noopener noreferrer">ウィーン国立歌劇場・2027年2月</a> · <a href="https://www.musikverein.at/en/" target="_blank" rel="noopener noreferrer">楽友協会</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="arts-gb">
+<a class="photo-open portrait" href="assets/photos/arts-gb.jpg" aria-label="ロンドン｜ウエストエンドの劇場の写真を拡大"><img src="assets/photos/arts-gb.jpg" width="810" height="1200" loading="lazy" decoding="async" alt="ロンドン｜ウエストエンドの劇場の実際の写真"></a>
+<figcaption><div class="photo-caption">ロンドン｜ウエストエンドの劇場</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ji-Elle<br><a href="https://commons.wikimedia.org/wiki/File:London-Sondheim_Theatre_in_2023.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ロンドン｜ウエストエンド。ミュージカル優先なら最有力</b></p><ul><li>作品・劇場・日程の選択肢が圧倒的に多い。滞在日に合わせて選べるのが強み。</li><li>台詞中心の演劇より、曲と踊りが多い作品のほうが初鑑賞では入りやすい。あらすじを知っている作品が無難。</li><li>イタリアのオペラ＋ロンドンのミュージカルなら、2つの舞台体験が重ならない。</li><li>2027年2月の販売対象日は作品ごとに違うので、行きたい作品を決めてから個別に確認する。</li><li><a href="https://officiallondontheatre.com/west-end-shows/" target="_blank" rel="noopener noreferrer">Official London Theatre</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="arts-it">
+<a class="photo-open" href="assets/photos/arts-it.jpg" aria-label="ミラノ｜スカラ座の客席の写真を拡大"><img src="assets/photos/arts-it.jpg" width="960" height="331" loading="lazy" decoding="async" alt="ミラノ｜スカラ座の客席の実際の写真"></a>
+<figcaption><div class="photo-caption">ミラノ｜スカラ座の客席</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ermell<br><a href="https://commons.wikimedia.org/wiki/File:Mailand_scala_view_from_stage_1300010_Pano.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ミラノ｜スカラ座。確定国の中で舞台を主役にできる</b></p><ul><li>確定国。スカラ座は2026–27シーズンを公開済みで、2027年2月にも上演がある。</li><li>ただし毎日公演があるわけではない。上演日を先に決めてから都市の順番を組む。</li><li>ローマ・フィレンツェ・ヴェネツィア中心の旅程だとミラノは寄り道になる。鑑賞のための移動時間も比較する。</li><li>まずイタリアで1公演押さえると、追加する国に求める役割がはっきりする。</li><li><a href="https://www.teatroallascala.org/it/stagione/2026-2027/opera/don-giovanni.html" target="_blank" rel="noopener noreferrer">スカラ座・公演詳細</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="arts-de">
+<a class="photo-open" href="assets/photos/arts-de.jpg" aria-label="ベルリン｜フィルハーモニーの写真を拡大"><img src="assets/photos/arts-de.jpg" width="960" height="563" loading="lazy" decoding="async" alt="ベルリン｜フィルハーモニーの実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜フィルハーモニー</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Gunnar Klack<br><a href="https://commons.wikimedia.org/wiki/File:2024-05-19-Berliner-Philharmonie.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ベルリン｜フィルハーモニー。演奏そのものが目的なら</b></p><ul><li>ベルリン・フィルは2026–27シーズンを公開。滞在日に観たい演奏家・曲目があるかが決め手。</li><li>劇場建築や街の雰囲気より、演奏内容を重視する人向け。オペラよりコンサート寄り。</li><li>2月はベルリナーレ（映画祭）とも重なる。イベントのページと合わせて検討できる。</li><li>ドイツ国内を横断すると移動日が増える。ベルリン1拠点で組むのが現実的。</li><li><a href="https://www.berliner-philharmoniker.de/en/concerts/season-highlights/season-2026-27/digital-preview/" target="_blank" rel="noopener noreferrer">ベルリン・フィル 2026–27</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="arts-nl">
+<a class="photo-open" href="assets/photos/arts-nl.jpg" aria-label="アムステルダム｜コンセルトヘボウの写真を拡大"><img src="assets/photos/arts-nl.jpg" width="960" height="638" loading="lazy" decoding="async" alt="アムステルダム｜コンセルトヘボウの実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜コンセルトヘボウ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Diego Delso<br><a href="https://commons.wikimedia.org/wiki/File:Concertgebouw,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_22-24_HDR.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>アムステルダム｜コンセルトヘボウ。昼は雑貨、夜は音楽</b></p><ul><li>音響で世界的に知られるホール。オーケストラから室内楽まで演目の幅が広い。</li><li>昼はナイン・ストリーツで雑貨、夜はコンサート。追加1都市に2つの目的を持たせられる。</li><li>「有名なホールで聴く」と「特定の楽団を聴く」は別物。出演者まで確認したい。</li><li><a href="https://www.concertgebouw.nl/en/concerts-and-tickets" target="_blank" rel="noopener noreferrer">コンセルトヘボウ・公演一覧</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="arts-es">
+<a class="photo-open portrait" href="assets/photos/arts-es.jpg" aria-label="バルセロナ｜カタルーニャ音楽堂の写真を拡大"><img src="assets/photos/arts-es.jpg" width="798" height="1200" loading="lazy" decoding="async" alt="バルセロナ｜カタルーニャ音楽堂の実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ｜カタルーニャ音楽堂</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Josep Renalias<br><a href="https://commons.wikimedia.org/wiki/File:Palau_de_la_M%C3%BAsica_-_Interior_general.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バルセロナ／アンダルシア｜音楽堂とフラメンコ</b></p><ul><li>確定国。カタルーニャ音楽堂は建物自体が世界遺産。ただし「見学」と「実際の公演を聴くこと」は別なので、公演カレンダーから選ぶ。</li><li>フラメンコを1回入れると、イタリアのオペラと体験が重ならない。</li><li>本格的なフラメンコ祭（ヘレス）は南部。バルセロナからは遠いので、イベントのページと合わせて判断する。</li><li><a href="https://www.palaumusica.cat/ca/temporada-2026-2027_1466030" target="_blank" rel="noopener noreferrer">カタルーニャ音楽堂・シーズン</a> · <a href="https://www.festivaldejerez.es/" target="_blank" rel="noopener noreferrer">Festival de Jerez</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="arts-ch">
+<a class="photo-open" href="assets/photos/arts-ch.jpg" aria-label="チューリッヒ｜歌劇場の客席の写真を拡大"><img src="assets/photos/arts-ch.jpg" width="960" height="663" loading="lazy" decoding="async" alt="チューリッヒ｜歌劇場の客席の実際の写真"></a>
+<figcaption><div class="photo-caption">チューリッヒ｜歌劇場の客席</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Photo: Andreas Praefcke<br><a href="https://commons.wikimedia.org/wiki/File:Opernhaus_Z%C3%BCrich_Zuschauerraum.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener noreferrer">CC BY 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>チューリッヒ｜歌劇場。滞在に夜のオペラを足す</b></p><ul><li>2026–27シーズンから、滞在日に合うオペラ・バレエを探せる。</li><li>スイスは自然と鉄道が主目的になりやすい。舞台は「あれば行く」程度の位置づけ。</li><li>物価が高く、チケット代も他国より重くなりやすい。</li><li><a href="https://www.opernhaus.ch/spielplan/kalendarium/" target="_blank" rel="noopener noreferrer">チューリッヒ歌劇場・カレンダー</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="arts-be">
+<a class="photo-open" href="assets/photos/arts-be.jpg" aria-label="ブリュッセル｜モネ劇場の写真を拡大"><img src="assets/photos/arts-be.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ブリュッセル｜モネ劇場の実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜モネ劇場</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Philippe De Gobert<br><a href="https://commons.wikimedia.org/wiki/File:Salle_du_Theatre_Royal_de_la_Monnaie_1_%C2%A9_Philippe_De_Gobert.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ブリュッセル｜モネ劇場。街歩きと組み合わせる</b></p><ul><li>歴史のある歌劇場。2026–27シーズンから、希望日に公演があるかをまず確認する。</li><li>古物探しや街歩きと組み合わせれば、昼と夜で楽しみ方を分けられる。</li><li>オペラだけを理由に足すなら、ウィーン・ミラノと演目と移動負担を比較したい。</li><li><a href="https://www.lamonnaiedemunt.be/en/static-pages/3609-opera-season-tickets-flexible-series-2026-27" target="_blank" rel="noopener noreferrer">モネ劇場・2026–27</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇰 デンマーク</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="arts-dk">
+<a class="photo-open" href="assets/photos/arts-dk.jpg" aria-label="コペンハーゲン｜オペラハウスの写真を拡大"><img src="assets/photos/arts-dk.jpg" width="960" height="540" loading="lazy" decoding="async" alt="コペンハーゲン｜オペラハウスの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜オペラハウス</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Julian Herzog (Website)<br><a href="https://commons.wikimedia.org/wiki/File:Copenhagen_Opera_House_2014_05.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>コペンハーゲン｜王立劇場・オペラハウス</b></p><ul><li>オペラ・バレエとも上演があり、オペラハウスは建物自体も見どころ。</li><li>バレエ《Beneath the Depths》は1月30日〜3月6日の上演期間が案内されている。実際の公演日で照合したい。</li><li>舞台単体で国を足す理由には弱い。北欧デザインの買い物と合わせるなら価値が出る。</li><li><a href="https://www.kglteater.dk/opera/" target="_blank" rel="noopener noreferrer">王立劇場・オペラ</a> · <a href="https://www.kglteater.dk/en/ballet/" target="_blank" rel="noopener noreferrer">王立劇場・バレエ</a></li></ul></div>
+    </div>
+  <p class="photo-hint">各国の劇場・ホールの実写真です。公演日はシーズンごとに変わるため、行く国を決めたら必ず公式カレンダーで実際の日付を確認してください。</p></section>
+
+  <section id="shopping" class="page">
+    <div class="card">
+      <h2>⑤ 買い物・雑貨</h2>
+      <p class="sub">持ち帰りたい物を探す時間が、旅の楽しみとして成立するか。ブランド品ではなく、器・布小物・文具・古物などの雑貨を基準にしている。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇬🇧 イギリス　🇩🇰 デンマーク　🇳🇱 オランダ</div><div class="reason">雑貨探しそのものが1日の予定になる。店の数・種類が多く、歩きながら回れる。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇮🇹 イタリア　🇪🇸 スペイン　🇦🇹 オーストリア　🇧🇪 ベルギー</div><div class="reason">「その土地ならでは」の物がはっきりある。目的を絞れば満足度が高い。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇨🇭 スイス</div><div class="reason">買える物はあるが、買い物を理由に国を足すほどではない。</div></div></div>
+    </div><div class="callout"><b>重複に注意：</b>🇩🇰 デンマーク（新しい北欧デザイン）と🇧🇪 ベルギー（古物・アンティーク）は方向が逆なので両方入れる意味がある。一方で🇩🇰 と🇳🇱 は「きれいな生活雑貨」で重なりやすいので、4か国にするならどちらか一方でよい。</div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="shopping-gb">
+<a class="photo-open" href="assets/photos/shopping-gb.jpg" aria-label="ロンドン｜Libertyの写真を拡大"><img src="assets/photos/shopping-gb.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ロンドン｜Libertyの実際の写真"></a>
+<figcaption><div class="photo-caption">ロンドン｜Liberty</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Bex Walton<br><a href="https://commons.wikimedia.org/wiki/File:Liberty_store_London_2025-07-26.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ロンドン｜Liberty・コヴェントガーデン・ミュージアムショップ</b></p><ul><li>百貨店、マーケット、ミュージアムショップと、店のタイプを変えながら回れる。1日では足りないくらい選択肢がある。</li><li>布小物、文具、ポスターなど軽い物が多く、周遊の途中で買っても荷物になりにくい。</li><li>昼に雑貨、夜にミュージカルを1都市でまとめられるのが大きい。</li><li>2月15〜19日は学校のハーフターム休暇。人気の店や美術館は混みやすい。</li><li><a href="https://www.visitlondon.com/things-to-do/shopping" target="_blank" rel="noopener noreferrer">ロンドン公式・ショッピング</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇰 デンマーク</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="shopping-dk">
+<a class="photo-open" href="assets/photos/shopping-dk.jpg" aria-label="コペンハーゲン｜Illums Bolighusの写真を拡大"><img src="assets/photos/shopping-dk.jpg" width="960" height="720" loading="lazy" decoding="async" alt="コペンハーゲン｜Illums Bolighusの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜Illums Bolighus</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ramblersen2<br><a href="https://commons.wikimedia.org/wiki/File:Illums_Bolighus_01.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>コペンハーゲン｜北欧デザイン雑貨。今回の「雑貨を見たい」に最も近い</b></p><ul><li>Illums Bolighus などで、器・照明・生活道具をまとめて比較できる。</li><li>南欧2か国とはデザインの方向性が正反対なので、買う物が確定国と重複しない。</li><li>冬は外を歩ける時間が短いぶん、店とカフェを行き来する過ごし方と相性がよい。</li><li>一方で2月の寒さは今回の条件（0℃前後は避けたい）に引っかかる。歩きやすさのページと合わせて判断する。</li><li><a href="https://www.visitcopenhagen.com/copenhagen/planning/illums-bolighus-gdk412280" target="_blank" rel="noopener noreferrer">コペンハーゲン公式・Illums Bolighus</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="shopping-nl">
+<a class="photo-open" href="assets/photos/shopping-nl.jpg" aria-label="アムステルダム｜ナイン・ストリーツ地区の写真を拡大"><img src="assets/photos/shopping-nl.jpg" width="960" height="540" loading="lazy" decoding="async" alt="アムステルダム｜ナイン・ストリーツ地区の実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム｜ナイン・ストリーツ地区</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Jorge Franganillo<br><a href="https://commons.wikimedia.org/wiki/File:Amsterdam_Negen_Straatjes_(55028715990).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>アムステルダム｜ナイン・ストリーツ</b></p><ul><li>運河沿いの9本の路地に、生活雑貨・ヴィンテージ・アクセサリーの個人店が集まる。</li><li>百貨店に長時間いるより、散歩しながら気になる店に入りたい人向け。</li><li>夜のコンサートと組み合わせれば、追加1都市に2つの目的を持たせられる。</li><li><a href="https://www.iamsterdam.com/en/see-and-do/shopping-and-markets/unique-boutiques-in-the-negen-straatjes" target="_blank" rel="noopener noreferrer">I amsterdam・ナイン・ストリーツ</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="shopping-it">
+<a class="photo-open" href="assets/photos/shopping-it.jpg" aria-label="ムラーノ｜ガラス工房の店先の写真を拡大"><img src="assets/photos/shopping-it.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ムラーノ｜ガラス工房の店先の実際の写真"></a>
+<figcaption><div class="photo-caption">ムラーノ｜ガラス工房の店先</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Joadl<br><a href="https://commons.wikimedia.org/wiki/File:Murano_Fondamenta_dei_Vetrai_2014_02.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/at/deed.en" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0 at</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ヴェネツィア／ムラーノ｜ガラス工芸</b></p><ul><li>確定国。ヴェネツィアに行くならムラーノのガラス小物や器が候補。</li><li>割れ物なので、周遊の後半で買うか、小さいアクセサリーに絞ると安全。</li><li>工房・産地・作り手を確認して選ぶと、一般的な土産物との違いが分かりやすい。</li><li>ヴェネツィアに行かない旅程なら、ガラスのために都市を増やさず、滞在都市の工芸店を探す。</li><li><a href="https://www.italia.it/en/veneto/venice/murano/things-to-do/murano-and-the-glass-art" target="_blank" rel="noopener noreferrer">イタリア政府観光サイト・ムラーノ</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="shopping-es">
+<a class="photo-open" href="assets/photos/shopping-es.jpg" aria-label="セビリア｜トリアナの陶器店の写真を拡大"><img src="assets/photos/shopping-es.jpg" width="960" height="880" loading="lazy" decoding="async" alt="セビリア｜トリアナの陶器店の実際の写真"></a>
+<figcaption><div class="photo-caption">セビリア｜トリアナの陶器店</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Anual<br><a href="https://commons.wikimedia.org/wiki/File:Cer%C3%A1mica_Triana_001.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener noreferrer">CC BY 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>セビリア｜トリアナの陶器</b></p><ul><li>確定国。トリアナ地区に絵付けタイルや小皿の工房・店が集まる。日常で使う器を選ぶ楽しみがある。</li><li>バルセロナ中心の旅程だと南部は遠い。ヘレスのフラメンコ祭（2/19〜）と合わせるなら南下する理由になる。</li><li>バルセロナにもデザイン雑貨の店はあるが、「スペインらしい物」はやはり南部が濃い。</li><li>割れ物は荷物が増える。買う量を決めてから都市間移動に臨む。</li><li><a href="https://www.turismosevilla.org/en/taxonomy/term/1874" target="_blank" rel="noopener noreferrer">セビリア公式・陶器</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="shopping-at">
+<a class="photo-open" href="assets/photos/shopping-at.jpg" aria-label="ウィーン｜アウガルテンの磁器の写真を拡大"><img src="assets/photos/shopping-at.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ウィーン｜アウガルテンの磁器の実際の写真"></a>
+<figcaption><div class="photo-caption">ウィーン｜アウガルテンの磁器</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Gryffindor<br><a href="https://commons.wikimedia.org/wiki/File:Porzellan_Augarten_Vienna_2007_005.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · Public domain<br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ウィーン｜アウガルテンの磁器</b></p><ul><li>伝統柄から現代的な器まで幅がある。数を買うより、二人で1つ選ぶタイプの買い物。</li><li>クラシック鑑賞のついでに寄れるので、舞台目的でウィーンに行くなら相性がよい。</li><li>雑貨を広く見て回りたいなら、ロンドンやコペンハーゲンのほうが向いている。</li><li><a href="https://www.wien.info/en/see-do/shopping/old-city/augarten-flagshipstore-339880" target="_blank" rel="noopener noreferrer">ウィーン公式・アウガルテン</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="shopping-be">
+<a class="photo-open" href="assets/photos/shopping-be.jpg" aria-label="ブリュッセル｜マロールの蚤の市の写真を拡大"><img src="assets/photos/shopping-be.jpg" width="960" height="638" loading="lazy" decoding="async" alt="ブリュッセル｜マロールの蚤の市の実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜マロールの蚤の市</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：DimiTalen<br><a href="https://commons.wikimedia.org/wiki/File:Flea_market_at_Place_du_Jeu_de_Balle,_Brussels,_2024.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ブリュッセル｜サブロン・マロールの古物</b></p><ul><li>マロールの蚤の市は毎日開いている。アンティークや一点物との出会いを楽しむ買い物。</li><li>新品の北欧雑貨とは方向が逆なので、デンマークと両方入れる必要はない。どちらかで足りる。</li><li>ブリュッセルは1〜2泊で足りるので、4か国目として足しやすい。</li><li><a href="https://www.visit.brussels/en/visitors/plan-your-trip/the-sablon-and-marolles-districts-antiques-and-tradition" target="_blank" rel="noopener noreferrer">ブリュッセル公式・サブロンとマロール</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="shopping-de">
+<a class="photo-open" href="assets/photos/shopping-de.jpg" aria-label="ベルリン｜ハッケシェ・ヘーフェの店の写真を拡大"><img src="assets/photos/shopping-de.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ベルリン｜ハッケシェ・ヘーフェの店の実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜ハッケシェ・ヘーフェの店</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：HerrAdams<br><a href="https://commons.wikimedia.org/wiki/File:Berlin,_Ampelmann-Shop,_Fu%C3%9Fball_2014-07.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ベルリン｜ハッケシェ・ヘーフェ周辺</b></p><ul><li>中庭に小さなデザイン店が並ぶエリア。普段使いの物を探しやすい。</li><li>買い物単体で国を足す理由にはなりにくい。映画祭やクラシックと合わせて考えたい。</li><li><a href="https://www.visitberlin.de/de/shoppen-rund-um-den-hackeschen-markt" target="_blank" rel="noopener noreferrer">ベルリン公式・買い物エリア</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="shopping-ch">
+<a class="photo-open portrait" href="assets/photos/shopping-ch.jpg" aria-label="チューリッヒ｜ニーダードルフの写真を拡大"><img src="assets/photos/shopping-ch.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="チューリッヒ｜ニーダードルフの実際の写真"></a>
+<figcaption><div class="photo-caption">チューリッヒ｜ニーダードルフ</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Roland zh<br><a href="https://commons.wikimedia.org/wiki/File:Niederdorf_-_Marktgasse_2011-07-20_19-28-30_ShiftN2.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>チューリッヒ｜ニーダードルフ（旧市街）</b></p><ul><li>旧市街の散歩と店巡りを同時にできる。ただし雑貨目的で行く場所ではない。</li><li>物価が高く、雑貨の単価も上がる。買い物の予算は他国に配分したほうがよい。</li><li><a href="https://www.zuerich.com/en/visit/attractions/niederdorf-popular-promenade-in-zurichs-old-town" target="_blank" rel="noopener noreferrer">チューリッヒ公式・ニーダードルフ</a></li></ul></div>
+    </div>
+  <p class="photo-hint">各国の店・買い物エリアの実写真です。営業日や品ぞろえは時期によって変わります。</p></section>
+
+  <section id="events" class="page">
+    <div class="card">
+      <h2>⑥ 2027年2月のイベント</h2>
+      <p class="sub">「行けば何かやっている」ではなく、2027年2月14日ごろ出発・10日〜2週間半という<b>実際の旅程に日程が当たるか</b>だけで評価している。日程が外れるものはCにしている。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇨🇭 スイス　🇩🇪 ドイツ　🇪🇸 スペイン</div><div class="reason">2027年2月14日ごろ出発・10日〜2週間半の旅程に、日程がしっかり重なる。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇮🇹 イタリア　🇩🇰 デンマーク　🇧🇪 ベルギー</div><div class="reason">重なるが、日にちか場所に条件がつく。旅程の前半／後半のどちらに置くかで決まる。</div></div></div>
+      <div class="tierrow C"><div class="label">C</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇳🇱 オランダ　🇬🇧 イギリス</div><div class="reason">目玉のイベントは出発前に終わる。この観点では国を足す理由にならない。</div></div></div>
+    </div><div class="callout" style="border-color:#e0b4b4;background:#fdf6f4"><b>⚠️ 先に共有しておきたいこと：ヴェネツィアのカーニバルは間に合わない。</b><br>
+      2027年の開催は<b>1月23日〜2月9日</b>。2月14日ごろ出発だと、着いた時にはもう終わっている。<br>
+      「2月のヨーロッパ＝仮面のヴェネツィア」のイメージで旅程を組まないこと。同じくウィーンのオペラ座舞踏会（2/4）、オランダのカーニバル（2/7〜9）、スペインのカディスのカーニバル（2/4〜14）も出発前に終わる。<br>
+      <b>出発後に当たるのは、バーゼルのファスナハト（2/15〜17）、ヴィアレッジョのカーニバル最終日（2/20）、ベルリナーレ（〜2/21）、コペンハーゲンのライトフェス（〜2/21）、ヘレスのフラメンコ祭（2/19〜）。</b></div>
+    <div class="grid" style="margin-top:14px">
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="events-ch">
+<a class="photo-open portrait" href="assets/photos/events-ch.jpg" aria-label="バーゼル｜ファスナハトのランタンの写真を拡大"><img src="assets/photos/events-ch.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="バーゼル｜ファスナハトのランタンの実際の写真"></a>
+<figcaption><div class="photo-caption">バーゼル｜ファスナハトのランタン</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Paradise Chronicle<br><a href="https://commons.wikimedia.org/wiki/File:Lantern_at_night_-_Basler_Fasnacht_2024.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バーゼル・ファスナハト｜2027年2月15日 4:00 〜 17日</b></p><ul><li><b>2027年は2月15日（月）の朝4時に始まり、17日まで72時間続く</b>。2月14日ごろ出発なら、ちょうど旅の序盤に当たる。</li><li>街の灯りを消し、絵を描いた大きなランタンと笛・太鼓だけで始まる「モルゲシュトライク」が名物。ヨーロッパの祭りの中でもかなり特殊な体験。</li><li>これに合わせるなら、スイスを旅程の<b>前半</b>に置く必要がある。宿は早めに埋まる。</li><li>バーゼルはミラノから鉄道で行ける。イタリアを先にすれば動線が繋がる。</li><li><a href="https://www.basel.com/en/events/carnival" target="_blank" rel="noopener noreferrer">Basel.com・カーニバル</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="events-de">
+<a class="photo-open" href="assets/photos/events-de.jpg" aria-label="ベルリン｜ベルリナーレ・パラストの写真を拡大"><img src="assets/photos/events-de.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ベルリン｜ベルリナーレ・パラストの実際の写真"></a>
+<figcaption><div class="photo-caption">ベルリン｜ベルリナーレ・パラスト</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Tuluqaruk<br><a href="https://commons.wikimedia.org/wiki/File:20150208_-_Berlinale_Palast_and_Red_Carpet.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ベルリン国際映画祭（ベルリナーレ）｜2027年2月10〜21日</b></p><ul><li><b>2027年は2月10〜21日</b>。一般向けの観客デー（Publikumstage）は2月20〜21日で、旅程の後半に当たる。</li><li>一般チケットで上映を観られる。受賞作の発表は2月19日なので、その後の2日間は受賞作が上映されやすい。</li><li>映画に強い興味がなければ、街が混むだけになる。無理に合わせる必要はない。</li><li><a href="https://www.visitberlin.de/en/event/berlinale-2027" target="_blank" rel="noopener noreferrer">visitBerlin・Berlinale 2027</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="events-es">
+<a class="photo-open" href="assets/photos/events-es.jpg" aria-label="ヘレス｜フラメンコ祭の街路の写真を拡大"><img src="assets/photos/events-es.jpg" width="960" height="720" loading="lazy" decoding="async" alt="ヘレス｜フラメンコ祭の街路の実際の写真"></a>
+<figcaption><div class="photo-caption">ヘレス｜フラメンコ祭の街路</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：El Pantera<br><a href="https://commons.wikimedia.org/wiki/File:Festival_flamenco_Jerez.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ヘレス・フラメンコ祭｜2027年2月19日 〜 3月6日</b></p><ul><li>確定国。<b>2027年は2月19日〜3月6日</b>。10日以上の旅程なら後半に当たる。</li><li>市内の劇場やボデガ（ワイナリー）でフラメンコとスペイン舞踊の公演が2週間強続く。</li><li>バルセロナからは遠い。セビリアの陶器と合わせて「後半はアンダルシア」という組み方にすると筋が通る。</li><li>舞台芸術のページとも繋がる。スペイン国内でオペラとは違う舞台体験が作れる。</li><li><a href="https://www.festivaldejerez.es/" target="_blank" rel="noopener noreferrer">Festival de Jerez 公式</a> · <a href="https://www.turismojerez.com/en/event-detail/jerez-festival" target="_blank" rel="noopener noreferrer">ヘレス市・公式案内</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="events-it">
+<a class="photo-open portrait" href="assets/photos/events-it.jpg" aria-label="ヴィアレッジョ｜カーニバルの山車の写真を拡大"><img src="assets/photos/events-it.jpg" width="360" height="480" loading="lazy" decoding="async" alt="ヴィアレッジョ｜カーニバルの山車の実際の写真"></a>
+<figcaption><div class="photo-caption">ヴィアレッジョ｜カーニバルの山車</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Vinima<br><a href="https://commons.wikimedia.org/wiki/File:Carnevaleviareggio.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · Public domain<br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ヴィアレッジョのカーニバル｜2027年2月14日・20日</b></p><ul><li>確定国。2027年の大パレード（corsi mascherati）は1月30日・2月4日・7日・9日・<b>14日・20日</b>の6回。出発日と最終日が当たる。</li><li>ヴィアレッジョはトスカーナの海沿い。フィレンツェから日帰りできる距離なので、都市を増やさずに組み込める。</li><li>巨大な張りぼての山車が名物で、ヴェネツィアの仮面舞踏会とは全く別の祭り。</li><li><a href="https://www.visittuscany.com/en/events/viareggio-carnival/" target="_blank" rel="noopener noreferrer">Visit Tuscany・ヴィアレッジョのカーニバル</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇰 デンマーク</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="events-dk">
+<a class="photo-open" href="assets/photos/events-dk.jpg" aria-label="コペンハーゲン｜ライトフェスティバルの写真を拡大"><img src="assets/photos/events-dk.jpg" width="960" height="616" loading="lazy" decoding="async" alt="コペンハーゲン｜ライトフェスティバルの実際の写真"></a>
+<figcaption><div class="photo-caption">コペンハーゲン｜ライトフェスティバル</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：News Oresund<br><a href="https://commons.wikimedia.org/wiki/File:20210222_Copenhagen_Light_Festival_H%C3%B8jbro_Plads_-_Absalon_statue_(51039221562).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>コペンハーゲン・ライトフェスティバル｜2027年1月29日 〜 2月21日</b></p><ul><li><b>2027年は1月29日〜2月21日</b>。毎晩17〜22時に、市内約35か所の光の作品が点灯する。</li><li>旅程の前半〜中盤に置けば当たる。2月21日を過ぎると終了するので、後半に回すと見られない。</li><li>日が短い北欧の冬を、逆に楽しみに変えられる数少ない企画。寒さの対策は必要。</li><li><a href="https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-light-festival-gdk1098085" target="_blank" rel="noopener noreferrer">Visit Copenhagen・Light Festival</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="events-be">
+<a class="photo-open" href="assets/photos/events-be.jpg" aria-label="ブリュッセル｜BRIGHT の光の展示の写真を拡大"><img src="assets/photos/events-be.jpg" width="960" height="474" loading="lazy" decoding="async" alt="ブリュッセル｜BRIGHT の光の展示の実際の写真"></a>
+<figcaption><div class="photo-caption">ブリュッセル｜BRIGHT の光の展示</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Edison McCullen<br><a href="https://commons.wikimedia.org/wiki/File:Bright_Brussels_2.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>BRIGHT Brussels｜毎年2月中旬（2027年の日程は要確認）</b></p><ul><li>毎年2月中旬の4夜、市内各所が光の作品になる無料のイベント。</li><li><b>2027年の正式な日程はまだ確認できていない</b>。近年は2月11〜16日あたりで、出発日（2/14ごろ）と重なる可能性はあるが、公式発表待ち。</li><li>日程が外れても、マロールの蚤の市など街の楽しみは残る。イベントを理由にベルギーを選ぶのは賭けになる。</li><li><a href="https://www.visit.brussels/en/visitors/agenda/bright-festival/home-2" target="_blank" rel="noopener noreferrer">visit.brussels・BRIGHT</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bc">C</span></span></div><p class="photo-hint" style="margin:12px 0 0">（今回の日程には当たらないため写真なし）</p><p class="photo-hint" style="margin-top:10px"><b>オペラ座舞踏会は2027年2月4日｜出発前に終了</b></p><ul><li><b>2027年のウィーン・オペラ座舞踏会は2月4日</b>。出発予定より前で、当たらない。</li><li>謝肉祭（ファッシング）の舞踏会シーズンも2月9日で終わる。「2月のウィーン＝舞踏会」では組めない。</li><li>ただし通常のオペラ・バレエ公演は2月も続く。舞台目的でウィーンを足すこと自体には影響しない。</li><li><a href="https://www.wiener-staatsoper.at/en/opera-ball/" target="_blank" rel="noopener noreferrer">ウィーン国立歌劇場・オペラ座舞踏会</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bc">C</span></span></div><p class="photo-hint" style="margin:12px 0 0">（今回の日程には当たらないため写真なし）</p><p class="photo-hint" style="margin-top:10px"><b>ライトフェスティバルは1月17日に終了</b></p><ul><li>アムステルダム・ライトフェスティバルは2026年11月26日〜<b>2027年1月17日</b>。旅行時には終わっている。</li><li>オランダのカーニバル（マーストリヒトなど）も2027年は2月7〜9日で、出発前。</li><li>2月のオランダは「イベントに当てる国」ではなく、雑貨とコンサートの国として考えるのがよい。</li><li><a href="https://amsterdamlightfestival.com/en/dates-hours" target="_blank" rel="noopener noreferrer">Amsterdam Light Festival・日程</a></li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bc">C</span></span></div><p class="photo-hint" style="margin:12px 0 0">（今回の日程には当たらないため写真なし）</p><p class="photo-hint" style="margin-top:10px"><b>大型イベントは無し｜学校の休みで混雑</b></p><ul><li>2027年2月に、旅行者向けの大きなイベントは特にない。旧正月の行事は2月6日ごろで出発前。</li><li><b>2月15〜19日はイングランドの学校がハーフターム休暇</b>。美術館や人気の劇場・店は混みやすい。</li><li>逆に言えば、イベントに日程を縛られずウエストエンドと買い物に集中できる、とも言える。</li><li><a href="https://www.visitlondon.com/things-to-do/event/45089111-february-half-term-in-london" target="_blank" rel="noopener noreferrer">Visit London・2月のハーフターム</a></li></ul></div>
+    </div>
+  <p class="photo-hint">各イベントの実写真です（過去の開催時のもの）。日程は2026年9月時点で公表されている情報です。チケットや正式日程は出発前に必ず公式サイトで再確認してください。</p></section>
+
   <section id="weather" class="page">
     <div class="card">
-      <h2>④ 2月の歩きやすさ</h2>
+      <h2>⑦ 2月の歩きやすさ</h2>
       <p class="sub">今回だけは完全に季節依存。街歩き時間を削らないかという観点。</p>
       <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇪🇸 スペイン　🇮🇹 イタリア</div><div class="reason">バルセロナ・ローマなら昼は約13〜14℃前後で、候補内では明確に有利。</div></div></div>
-      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇫🇷 フランス　🇬🇧 イギリス</div><div class="reason">パリ・ロンドンは昼約9℃前後。冬だが観光は十分可能。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇬🇧 イギリス</div><div class="reason">パリ・ロンドンは昼約9℃前後。冬だが観光は十分可能。</div></div></div>
       <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇧🇪 ベルギー　🇳🇱 オランダ　🇨🇭 スイス　🇦🇹 オーストリア</div><div class="reason">昼5〜7℃程度。朝晩は0℃前後になりやすい。</div></div></div>
       <div class="tierrow C"><div class="label">C</div><div class="box"><div class="countries">🇩🇪 ドイツ　🇩🇰 デンマーク</div><div class="reason">ベルリン約5℃、コペンハーゲン約2℃が目安。街歩き型の旅行では負担が大きい。</div></div></div>
     </div>
@@ -333,7 +468,6 @@ th{background:#faf9f6;color:#4c5562}
           <tr><td>🇪🇸 スペイン</td><td>バルセロナ</td><td>約14℃</td><td>約5℃</td><td>かなり歩きやすい</td></tr>
           <tr><td>🇮🇹 イタリア</td><td>ローマ</td><td>約13℃</td><td>約3〜4℃</td><td>中南部中心なら強い</td></tr>
           <tr><td>🇬🇧 イギリス</td><td>ロンドン</td><td>約9℃</td><td>約3℃</td><td>寒いが現実的</td></tr>
-          <tr><td>🇫🇷 フランス</td><td>パリ</td><td>約9℃</td><td>約3℃</td><td>十分観光可能</td></tr>
           <tr><td>🇧🇪 ベルギー</td><td>ブリュッセル</td><td>約7℃</td><td>約1〜2℃</td><td>やや寒い</td></tr>
           <tr><td>🇳🇱 オランダ</td><td>アムステルダム</td><td>約7℃</td><td>約1℃</td><td>風で体感低下</td></tr>
           <tr><td>🇨🇭 スイス</td><td>チューリッヒ</td><td>約5〜7℃</td><td>約0℃</td><td>景観目的ならあり</td></tr>
@@ -343,10 +477,7 @@ th{background:#faf9f6;color:#4c5562}
         </tbody>
       </table>
     </div>
-  <div class="photo-intro"><h2>冬の街を写真で見る</h2><p>12〜2月に撮影された実際の写真です。撮影日の景色を示すもので、2月の平年の天候を表すものではありません。積雪の有無は年・日・場所によって変わります。</p></div><div class="photo-grid"><article class="photo-card"><h3>🇫🇷 フランス</h3><figure class="travel-photo" data-photo="weather-fr">
-<a class="photo-open" href="assets/photos/weather-fr.jpg" aria-label="パリ｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-fr.jpg" width="960" height="640" loading="lazy" decoding="async" alt="パリ｜冬の街の様子の実際の写真"></a>
-<figcaption><div class="photo-caption">パリ｜冬の街の様子</div><span class="photo-date">2017年2月5日撮影</span>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Guilhem Vellut from Paris, France<br><a href="https://commons.wikimedia.org/wiki/File:Seine_River_in_Paris_(32353423710).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="weather-it">
+  <div class="photo-intro"><h2>冬の街を写真で見る</h2><p>12〜2月に撮影された実際の写真です。撮影日の景色を示すもので、2月の平年の天候を表すものではありません。積雪の有無は年・日・場所によって変わります。</p></div><div class="photo-grid"><article class="photo-card"><h3>🇮🇹 イタリア</h3><figure class="travel-photo" data-photo="weather-it">
 <a class="photo-open" href="assets/photos/weather-it.jpg" aria-label="ローマ｜冬の街の様子の写真を拡大"><img src="assets/photos/weather-it.jpg" width="960" height="604" loading="lazy" decoding="async" alt="ローマ｜冬の街の様子の実際の写真"></a>
 <figcaption><div class="photo-caption">ローマ｜冬の街の様子</div><span class="photo-date">2024年2月8日撮影</span>
 <details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Wilfredor<br><a href="https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇪🇸 スペイン</h3><figure class="travel-photo" data-photo="weather-es">
@@ -377,56 +508,60 @@ th{background:#faf9f6;color:#4c5562}
 
   <section id="routing" class="page">
     <div class="card">
-      <h2>⑤ 3か国旅行の組みやすさ</h2>
-      <p class="sub">10日〜2週間半、1都市2〜3泊、3か国程度という条件で見た移動の作りやすさ。</p>
-      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇫🇷 フランス　🇮🇹 イタリア　🇨🇭 スイス　🇧🇪 ベルギー　🇳🇱 オランダ</div><div class="reason">鉄道・航空とも選択肢が多く、隣国と自然につながる。</div></div></div>
-      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇪🇸 スペイン　🇦🇹 オーストリア　🇩🇪 ドイツ　🇬🇧 イギリス</div><div class="reason">十分組みやすいが、スペイン・英国は次国への移動で飛行機を使いやすい。</div></div></div>
-      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇰 デンマーク</div><div class="reason">北欧方面なら強いが、南欧・西欧と組み合わせると距離が出やすい。</div></div></div>
-    </div>
+      <h2>⑧ 周遊の組みやすさ（3〜4か国）</h2>
+      <p class="sub"><b>スペインとイタリアは確定</b>。そこに何を足すと移動が破綻しないかで見る。「3か国」に固定せず、4か国にする場合の組み方も並べている。</p>
+      <div class="tierrow S"><div class="label">S</div><div class="box"><div class="countries">🇨🇭 スイス</div><div class="reason">ミラノから鉄道で直結。移動日を増やさずに足せる、唯一の国。</div></div></div>
+      <div class="tierrow A"><div class="label">A</div><div class="box"><div class="countries">🇦🇹 オーストリア　🇬🇧 イギリス　🇩🇪 ドイツ　🇧🇪 ベルギー　🇳🇱 オランダ</div><div class="reason">飛行機1本か長距離列車1本で足せる。2〜3泊で成立する。</div></div></div>
+      <div class="tierrow B"><div class="label">B</div><div class="box"><div class="countries">🇩🇰 デンマーク</div><div class="reason">最も北にあり、確定2か国からは遠い。移動だけで1日使いやすい。</div></div></div>
+    </div><div class="callout"><b>日数の目安（10日〜2週間半・1都市2〜3泊）：</b><br>
+      ・<b>3か国（10日前後）</b>：🇪🇸 バルセロナ 3泊 → 🇮🇹 2都市 5泊 → ＋1か国 2〜3泊。移動は3回。いちばん無理がない。<br>
+      ・<b>4か国（2週間以上）</b>：確定2か国を短めにして、追加2か国を2泊ずつ。移動が5回になるので、<b>鉄道で繋がる組み合わせ</b>（🇨🇭＋🇦🇹 / 🇧🇪＋🇳🇱）にしないと移動日ばかりになる。<br>
+      ・<b>2週間半あるなら</b>、アンダルシアまで下りる案（スペイン内で4日）か、4か国案か、どちらかを選ぶ。両方は入らない。</div>
     <div class="grid" style="margin-top:14px">
-      <div class="country"><div class="head"><h3>🇫🇷 フランス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-fr">
-<a class="photo-open" href="assets/photos/routing-fr.jpg" aria-label="パリ北駅｜旅の出発点をイメージの写真を拡大"><img src="assets/photos/routing-fr.jpg" width="960" height="640" loading="lazy" decoding="async" alt="パリ北駅｜旅の出発点をイメージの実際の写真"></a>
-<figcaption><div class="photo-caption">パリ北駅｜旅の出発点をイメージ</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Lionel Allorge<br><a href="https://commons.wikimedia.org/wiki/File:Gare_du_Nord_%C3%A0_Paris_le_17_juillet_2015_-_54.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>英国、ベルギー、スイス、イタリア、スペインと組める。</li><li>パリを中継点にしやすい。</li><li>鉄道でも飛行機でも柔軟。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-it">
-<a class="photo-open" href="assets/photos/routing-it.jpg" aria-label="ミラノ中央駅｜イタリアの鉄道旅行の写真を拡大"><img src="assets/photos/routing-it.jpg" width="960" height="700" loading="lazy" decoding="async" alt="ミラノ中央駅｜イタリアの鉄道旅行の実際の写真"></a>
-<figcaption><div class="photo-caption">ミラノ中央駅｜イタリアの鉄道旅行</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Daniel Case<br><a href="https://commons.wikimedia.org/wiki/File:Upper_front_facade_of_Milano_Stazione_Centrale.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>スイス、フランス、オーストリア方面へ広げやすい。</li><li>国内都市の選択肢も多い。</li><li>3か国旅の「核」にしやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-ch">
+      <div class="country"><div class="head"><h3>🇨🇭 スイス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="routing-ch">
 <a class="photo-open" href="assets/photos/routing-ch.jpg" aria-label="ランドヴァッサー橋｜スイス国内の鉄道風景の写真を拡大"><img src="assets/photos/routing-ch.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ランドヴァッサー橋｜スイス国内の鉄道風景の実際の写真"></a>
 <figcaption><div class="photo-caption">ランドヴァッサー橋｜スイス国内の鉄道風景</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kabelleger / David Gubler<br><a href="https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランス・イタリア・ドイツの中間に置きやすい。</li><li>自然担当として1〜2泊入れると旅に変化が出る。</li><li>通過国ではなく短期滞在の価値がある。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-be">
-<a class="photo-open" href="assets/photos/routing-be.jpg" aria-label="アントウェルペン中央駅｜ベルギーの鉄道旅行の写真を拡大"><img src="assets/photos/routing-be.jpg" width="960" height="641" loading="lazy" decoding="async" alt="アントウェルペン中央駅｜ベルギーの鉄道旅行の実際の写真"></a>
-<figcaption><div class="photo-caption">アントウェルペン中央駅｜ベルギーの鉄道旅行</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Fred Romero from Paris, France<br><a href="https://commons.wikimedia.org/wiki/File:Antwerpen_-_Station_Antwerpen-Centraal_(7).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランス・オランダとの組み合わせが非常に自然。</li><li>鉄道移動が短く、旅程を圧迫しにくい。</li><li>2泊でも成立しやすい。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span class="badge bs">S</span></div><figure class="travel-photo" data-photo="routing-nl">
-<a class="photo-open" href="assets/photos/routing-nl.jpg" aria-label="アムステルダム中央駅｜運河の街への玄関口の写真を拡大"><img src="assets/photos/routing-nl.jpg" width="960" height="640" loading="lazy" decoding="async" alt="アムステルダム中央駅｜運河の街への玄関口の実際の写真"></a>
-<figcaption><div class="photo-caption">アムステルダム中央駅｜運河の街への玄関口</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Sundaze.work<br><a href="https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_Station_Building.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>ベルギー・フランス・ドイツと繋ぎやすい。</li><li>2〜3泊でまとまりやすい。</li><li>街並みの変化も作れる。</li></ul></div>
-      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span class="badge ba">A</span></div><figure class="travel-photo" data-photo="routing-es">
-<a class="photo-open" href="assets/photos/routing-es.jpg" aria-label="バルセロナ・サンツ駅｜高速列車のホームの写真を拡大"><img src="assets/photos/routing-es.jpg" width="960" height="721" loading="lazy" decoding="async" alt="バルセロナ・サンツ駅｜高速列車のホームの実際の写真"></a>
-<figcaption><div class="photo-caption">バルセロナ・サンツ駅｜高速列車のホーム</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：MaxEmanuel<br><a href="https://commons.wikimedia.org/wiki/File:Gleishalle_Barcelona_Sants_2.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><ul><li>フランスとは組みやすい。</li><li>イタリアや英国へは飛行機を使うことが増える。</li><li>移動負担より気候メリットが大きい。</li></ul></div>
-    </div>
-  <div class="photo-intro"><h2>ほかの候補国も写真で比較</h2></div><div class="photo-grid"><article class="photo-card"><h3>🇬🇧 イギリス</h3><figure class="travel-photo" data-photo="routing-gb">
-<a class="photo-open" href="assets/photos/routing-gb.jpg" aria-label="セント・パンクラス駅｜ユーロスターの写真を拡大"><img src="assets/photos/routing-gb.jpg" width="960" height="720" loading="lazy" decoding="async" alt="セント・パンクラス駅｜ユーロスターの実際の写真"></a>
-<figcaption><div class="photo-caption">セント・パンクラス駅｜ユーロスター</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Someone Not Awful<br><a href="https://commons.wikimedia.org/wiki/File:London_St_Pancras_Eurostar_trains.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇦🇹 オーストリア</h3><figure class="travel-photo" data-photo="routing-at">
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Kabelleger / David Gubler<br><a href="https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ミラノ 〜 チューリッヒ／バーゼル｜鉄道で直通</b></p><ul><li>ミラノから直通列車で行ける。イタリアを旅程に入れる以上、最も自然に足せる国。</li><li>バーゼルのファスナハト（2/15〜17）に合わせるなら、イタリア→スイスの順が組みやすい。</li><li>自然担当として1〜2泊。通過国ではなく短期滞在の価値がある。</li><li>4か国にするなら、スイスを挟んでドイツ・オーストリアへ抜ける動線も作れる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇦🇹 オーストリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="routing-at">
 <a class="photo-open" href="assets/photos/routing-at.jpg" aria-label="ウィーン中央駅｜鉄道旅行の拠点の写真を拡大"><img src="assets/photos/routing-at.jpg" width="960" height="540" loading="lazy" decoding="async" alt="ウィーン中央駅｜鉄道旅行の拠点の実際の写真"></a>
 <figcaption><div class="photo-caption">ウィーン中央駅｜鉄道旅行の拠点</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ravi Dwivedi<br><a href="https://commons.wikimedia.org/wiki/File:Wien_Hauptbahnhof_station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇪 ドイツ</h3><figure class="travel-photo" data-photo="routing-de">
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Ravi Dwivedi<br><a href="https://commons.wikimedia.org/wiki/File:Wien_Hauptbahnhof_station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ヴェネツィア／ミラノ 〜 ウィーン｜列車または短距離便</b></p><ul><li>ヴェネツィアから直通列車があり、ミラノからも繋がる。イタリア経由なら無理がない。</li><li>舞台芸術を旅の柱にするなら最有力の追加先。ウィーンだけで2〜3泊。</li><li>バルセロナからは飛行機。スペインを先に回るなら、ウィーンは旅程の後半に置く。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇬🇧 イギリス</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="routing-gb">
+<a class="photo-open" href="assets/photos/routing-gb.jpg" aria-label="セント・パンクラス駅｜ユーロスターの写真を拡大"><img src="assets/photos/routing-gb.jpg" width="960" height="720" loading="lazy" decoding="async" alt="セント・パンクラス駅｜ユーロスターの実際の写真"></a>
+<figcaption><div class="photo-caption">セント・パンクラス駅｜ユーロスター</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Someone Not Awful<br><a href="https://commons.wikimedia.org/wiki/File:London_St_Pancras_Eurostar_trains.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バルセロナ／ローマ 〜 ロンドン｜飛行機で2〜2.5時間</b></p><ul><li>直行便が多く、時間帯も選べる。鉄道では繋がらないが、実際の移動時間は短い。</li><li>買い物とミュージカルを1都市でまとめられるので、2〜3泊の価値が出やすい。</li><li>空港が市内から遠い。移動の前後に半日ずつ取られる前提で日数を見る。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇪 ドイツ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="routing-de">
 <a class="photo-open" href="assets/photos/routing-de.jpg" aria-label="ベルリン中央駅｜ドイツの鉄道旅行の写真を拡大"><img src="assets/photos/routing-de.jpg" width="960" height="640" loading="lazy" decoding="async" alt="ベルリン中央駅｜ドイツの鉄道旅行の実際の写真"></a>
 <figcaption><div class="photo-caption">ベルリン中央駅｜ドイツの鉄道旅行</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Dosseman<br><a href="https://commons.wikimedia.org/wiki/File:Hauptbahnhof_Berlin_exterior_0136.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article><article class="photo-card"><h3>🇩🇰 デンマーク</h3><figure class="travel-photo" data-photo="routing-dk">
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Dosseman<br><a href="https://commons.wikimedia.org/wiki/File:Hauptbahnhof_Berlin_exterior_0136.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>ミラノ 〜 ミュンヘン（鉄道）／ベルリンは飛行機</b></p><ul><li>ミュンヘンならミラノから鉄道で繋がる。ベルリンに行くなら飛行機が現実的。</li><li>ベルリナーレ（2/10〜21）に合わせるならベルリン。国内を横断すると移動日が増えるので1拠点に絞る。</li><li>2月の寒さは今回の条件に対して厳しめ。歩きやすさのページと合わせて判断する。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇧🇪 ベルギー</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="routing-be">
+<a class="photo-open" href="assets/photos/routing-be.jpg" aria-label="アントウェルペン中央駅｜ベルギーの鉄道旅行の写真を拡大"><img src="assets/photos/routing-be.jpg" width="960" height="641" loading="lazy" decoding="async" alt="アントウェルペン中央駅｜ベルギーの鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">アントウェルペン中央駅｜ベルギーの鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Fred Romero from Paris, France<br><a href="https://commons.wikimedia.org/wiki/File:Antwerpen_-_Station_Antwerpen-Centraal_(7).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バルセロナ／ローマ 〜 ブリュッセル｜飛行機</b></p><ul><li>直行便で行ける。オランダとは鉄道で1〜2時間なので、ベルギー＋オランダをまとめて4か国目にもできる。</li><li>1〜2泊で成立するので、日数の少ない旅程でも足しやすい。</li><li>古物やアンティークが目的なら、滞在は短くても満足度が出る。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇳🇱 オランダ</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge ba">A</span></span></div><figure class="travel-photo" data-photo="routing-nl">
+<a class="photo-open" href="assets/photos/routing-nl.jpg" aria-label="アムステルダム中央駅｜運河の街への玄関口の写真を拡大"><img src="assets/photos/routing-nl.jpg" width="960" height="640" loading="lazy" decoding="async" alt="アムステルダム中央駅｜運河の街への玄関口の実際の写真"></a>
+<figcaption><div class="photo-caption">アムステルダム中央駅｜運河の街への玄関口</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Sundaze.work<br><a href="https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_Station_Building.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バルセロナ／ローマ 〜 アムステルダム｜飛行機</b></p><ul><li>直行便が多い。ベルギーと繋げれば、鉄道で2か国を一度に回れる。</li><li>雑貨とコンサートを1都市に収められるので、2〜3泊がちょうどよい。</li><li>2月は風が強く寒い。屋内中心の予定と相性がよい。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇩🇰 デンマーク</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bb">B</span></span></div><figure class="travel-photo" data-photo="routing-dk">
 <a class="photo-open" href="assets/photos/routing-dk.jpg" aria-label="コペンハーゲン中央駅｜北欧の鉄道旅行の写真を拡大"><img src="assets/photos/routing-dk.jpg" width="960" height="640" loading="lazy" decoding="async" alt="コペンハーゲン中央駅｜北欧の鉄道旅行の実際の写真"></a>
 <figcaption><div class="photo-caption">コペンハーゲン中央駅｜北欧の鉄道旅行</div>
-<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Liberaler Humanist<br><a href="https://commons.wikimedia.org/wiki/File:The_hall_of_the_Copenhagen_Central_Station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure></article></div><p class="photo-hint">各国の駅・列車の実写真です。移動の雰囲気を、旅程の組みやすさとあわせて見比べてください。</p></section>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Liberaler Humanist<br><a href="https://commons.wikimedia.org/wiki/File:The_hall_of_the_Copenhagen_Central_Station.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>バルセロナ／ローマ 〜 コペンハーゲン｜飛行機・最も遠い</b></p><ul><li>確定2か国から最も遠く、移動だけで実質1日使いやすい。</li><li>北欧デザインの買い物とライトフェス（〜2/21）が目的なら、それでも価値はある。</li><li>2月の寒さと日の短さは今回の条件（0℃前後は避けたい）に真っ向から反する。ここを足すなら、寒さを受け入れる合意が先。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇮🇹 イタリア</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="routing-it">
+<a class="photo-open" href="assets/photos/routing-it.jpg" aria-label="ミラノ中央駅｜イタリアの鉄道旅行の写真を拡大"><img src="assets/photos/routing-it.jpg" width="960" height="700" loading="lazy" decoding="async" alt="ミラノ中央駅｜イタリアの鉄道旅行の実際の写真"></a>
+<figcaption><div class="photo-caption">ミラノ中央駅｜イタリアの鉄道旅行</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：Daniel Case<br><a href="https://commons.wikimedia.org/wiki/File:Upper_front_facade_of_Milano_Stazione_Centrale.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>【確定】ローマ・フィレンツェ・ヴェネツィア・ミラノ</b></p><ul><li>確定国。国内だけで都市の性格が大きく変わるので、周遊の「核」にしやすい。</li><li>どの都市を選ぶかで、足せる国が変わる。ミラノ→スイス／ヴェネツィア→オーストリアが自然。</li><li>2月のイベント（ヴィアレッジョ）を入れるならフィレンツェ滞在中に日帰りできる。</li></ul></div>
+      <div class="country"><div class="head"><h3>🇪🇸 スペイン</h3><span style="display:flex;gap:6px;align-items:center"><span class="badge bs" style="background:#cfe3f7">確定</span><span class="badge bs">S</span></span></div><figure class="travel-photo" data-photo="routing-es">
+<a class="photo-open" href="assets/photos/routing-es.jpg" aria-label="バルセロナ・サンツ駅｜高速列車のホームの写真を拡大"><img src="assets/photos/routing-es.jpg" width="960" height="721" loading="lazy" decoding="async" alt="バルセロナ・サンツ駅｜高速列車のホームの実際の写真"></a>
+<figcaption><div class="photo-caption">バルセロナ・サンツ駅｜高速列車のホーム</div>
+<details class="photo-credit"><summary>写真の出典・ライセンス</summary><p>撮影：MaxEmanuel<br><a href="https://commons.wikimedia.org/wiki/File:Gleishalle_Barcelona_Sants_2.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons・元の写真</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a><br>表示用に縮小・圧縮。カード内では一部トリミング。</p></details></figcaption></figure><p class="photo-hint" style="margin-top:10px"><b>【確定】バルセロナ・マドリード・アンダルシア</b></p><ul><li>確定国。イタリアとは飛行機で2時間前後。両方入れるなら、どちらかを旅の入口か出口にする。</li><li>アンダルシア（セビリア・ヘレス）まで行くなら、スペイン国内だけで3〜4日は必要。追加国の日数を削ることになる。</li><li>バルセロナ中心にまとめれば、確定2か国を短くして追加国に日数を回せる。</li></ul></div>
+    </div>
+  <p class="photo-hint">各国の駅・空港・鉄道の実写真です。移動の雰囲気を、旅程の組みやすさとあわせて見比べてください。</p></section>
 
   <div class="footer">
     写真：Wikimedia Commons。撮影者・出典・利用条件は各写真の「写真の出典・ライセンス」から確認できます。<br>
     ※ Tierは今回の2人の旅行条件に対する比較用。国そのものの一般的な価値・優劣を示すものではありません。<br>
-    ※ 気温は代表都市の2月平年値ベースの目安。2027年2月の実際の天候は直前予報で確認する前提です。
+    ※ 気温は代表都市の2月平年値ベースの目安。2027年2月の実際の天候は直前予報で確認する前提です。<br>
+    ※ イベント日程は2026年9月時点で各公式サイト等が公表している情報です。BRIGHT Brussels など未確定のものは本文に明記しています。出発前に必ず再確認してください。
   </div>
 </div>
 
