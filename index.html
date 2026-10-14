@@ -147,6 +147,31 @@ th{background:#faf9f6;color:#4c5562}
 .t-table tr.t-long td{background:#fdf3dc;font-weight:700;color:#1f2630}
 .t-table tr:last-child td{border-bottom:0}
 @media(min-width:851px){.tabs{flex-wrap:wrap;overflow:visible}}
+.todo-progress{display:flex;align-items:center;gap:12px;margin-top:12px}
+.todo-progress p{margin:0;white-space:nowrap;font-size:14px}
+.todo-bar{flex:1;height:10px;background:#ece7df;border-radius:999px;overflow:hidden}
+.todo-bar span{display:block;height:100%;width:0;background:var(--navy);transition:width .2s}
+.todo-phase{margin-bottom:22px}
+.todo-phase:last-child{margin-bottom:0}
+.todo-phase h3{border-bottom:2px solid var(--line);padding-bottom:6px;margin-bottom:8px}
+.todo-item{display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:start;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin:8px 0;background:#fff}
+.todo-check{width:20px;height:20px;margin:3px 0 0;accent-color:var(--navy);cursor:pointer}
+.todo-item summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.todo-item summary::-webkit-details-marker{display:none}
+.todo-item summary::after{content:"＋";margin-left:auto;color:var(--muted);font-weight:700}
+.todo-item details[open] summary::after{content:"－"}
+.todo-name{font-weight:700}
+.todo-tags{display:flex;flex-wrap:wrap;gap:6px}
+.todo-when,.todo-cost{font-size:12px;padding:3px 8px;border-radius:999px;background:#f5f3ee;color:#415062;white-space:nowrap}
+.todo-cost{background:#fdf3dc}
+.todo-item.done .todo-name{text-decoration:line-through;color:var(--muted)}
+.todo-item.done{background:#fbfaf7}
+.todo-body{padding:8px 0 4px;font-size:14px}
+.todo-body h4{margin:14px 0 6px;font-size:14px}
+.todo-body h4:first-child{margin-top:6px}
+.todo-table{min-width:0}
+@media(max-width:560px){.todo-table{font-size:12px}.todo-table th,.todo-table td{padding:7px 8px}}
+
 </style>
 </head>
 <body>
@@ -170,6 +195,7 @@ th{background:#faf9f6;color:#4c5562}
     <button class="tabbtn" data-page="planB">B パリ先・直行</button>
     <button class="tabbtn" data-page="planC">C パリ先・乗継</button>
     <button class="tabbtn" data-page="planD">D パリ先・ミラノ帰り</button>
+    <button class="tabbtn" data-page="todo">✅ やること（D案）</button>
   </div>
 
 
@@ -511,6 +537,276 @@ th{background:#faf9f6;color:#4c5562}
     </article>
   <p class="photo-hint">費用は2026年10月時点の相場と公式入場料をもとにした推測です。航空券と宿は変動が大きいため、実際の予約画面で必ず確認してください。</p></section>
 
+  <section id="todo" class="page">
+    <div class="card">
+      <h2>✅ D案で行くときのやることリスト</h2>
+      <p class="sub">D案（2/13 羽田 → パリ … ミラノ → 2/26 羽田）で行く前提で、予約と準備を時期ごとに並べた。項目を押すと、詳しいやり方・注意点・かかるお金が開く。　<b>1人あたり 約79万円（791,000円）</b></p>
+      <div class="todo-progress"><div class="todo-bar"><span id="todo-bar-fill"></span></div><p><b id="todo-count">0</b> / 23 完了</p></div>
+      <p class="photo-hint">チェックの状態はこのブラウザだけに保存されます（相手の画面には反映されません）。</p>
+    </div>
+
+    <article class="plan">
+      <div class="plan-head"><h3>お金を払う時期（1人あたり）</h3><span class="plan-tag">合計 約79万円</span></div>
+      <div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>項目</th><th>払う時期</th><th>金額</th></tr></thead><tbody><tr><td>ANAの航空券</td><td>10月〜11月</td><td>約22.5万円</td></tr><tr><td>宿（12泊）</td><td>予約時か現地</td><td>約13.9万円＋宿泊税</td></tr><tr><td>欧州内の飛行機（2本）</td><td>11月</td><td>約3万円</td></tr><tr><td>イタリアの鉄道（3本）</td><td>11月〜12月</td><td>約1.5万円</td></tr><tr><td>観光チケット・『最後の晩餐』</td><td>12月〜1月</td><td>約5万円</td></tr><tr><td>保険・eSIM</td><td>11月〜出発前</td><td>約8,500円</td></tr><tr><td>食事・市内交通・買い物など</td><td>旅行中</td><td>残り（約32万円）</td></tr></tbody></table></div>
+    </article>
+
+    <article class="plan todo-list"><div class="todo-phase"><h3>今すぐ（10月中）</h3><p class="sub">航空券と宿は早いほど選べる。まずは2人の予定とパスポートから。</p>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-passport" data-id="passport" aria-label="パスポートの有効期限を確認する">
+        <details>
+          <summary><span class="todo-name">パスポートの有効期限を確認する</span><span class="todo-tags"><span class="todo-when">🗓 10月中</span><span class="todo-cost">💴 0〜1.6万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>2人とも確認する。シェンゲン圏（フランス・スペイン・イタリア）に入るには、<b>出国する日から3か月以上の残り</b>と<b>発行から10年以内</b>が必要。帰国が2/25なので、<b>2027年5月25日より後まで有効</b>なら大丈夫。</p><p>持っていない・足りない場合は、住民登録のある都道府県で申請する（受け取りまで約1〜2週間）。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>航空券の名前はパスポートのローマ字と1文字でも違うと乗れない。航空券を買う前に確認する。</li><li>更新するとパスポート番号が変わる。航空券を先に買った場合は、ANAに新しい番号を登録し直す。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>持っていて期限が足りれば 0円</li><li>新しく作る場合：10年用 約1.6万円／5年用 約1.1万円</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-schedule" data-id="schedule" aria-label="2/13〜2/26 の予定を空ける">
+        <details>
+          <summary><span class="todo-name">2/13〜2/26 の予定を空ける</span><span class="todo-tags"><span class="todo-when">🗓 10月中</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>卒業式・卒論発表・研究室・バイト・内定先の研修などと重ならないか、2人とも確認する。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>卒業関連の日程は年明けに決まることもある。決まっていないものは、いつ決まるかだけでも確認しておく。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-ana" data-id="ana" aria-label="ANAのオープンジョー航空券を買う">
+        <details>
+          <summary><span class="todo-name">ANAのオープンジョー航空券を買う</span><span class="todo-tags"><span class="todo-when">🗓 10月〜11月</span><span class="todo-cost">💴 1人 約22.5万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>ANA公式サイトで<b>「複数都市」</b>を選び、2区間を2人分まとめて予約する。</p><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>区間</th><th>日付</th><th>便</th><th>時刻</th></tr></thead><tbody><tr><td>羽田 → パリ</td><td>2/13（土）</td><td>NH215</td><td>09:35 → 17:10</td></tr><tr><td>ミラノ → 羽田</td><td>2/25（木）</td><td>NH208</td><td>11:20 → 2/26 07:15</td></tr></tbody></table></div><p>買ったら座席指定をして、2人並びの席を取る。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li><b>最初に2/25のNH208があるかを確認する</b>（現行ダイヤは火・木・日）。</li><li>安い運賃は変更・払い戻しができない、または手数料が高い。運賃の条件を読んでから買う。</li><li>比べるときは燃油サーチャージ・税金込みの総額で見る。</li><li>受託手荷物はエコノミーで23kgまで2個。帰りの買い物はこの範囲に収める。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約22.5万円（2人 約45万円）</li><li>ANAのセールで下がることもある。何回か値段を見ておく</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-card" data-id="card" aria-label="クレジットカードを準備する">
+        <details>
+          <summary><span class="todo-name">クレジットカードを準備する</span><span class="todo-tags"><span class="todo-when">🗓 10月中</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>Visa か Mastercard を<b>1人2枚以上</b>持っていく（JCB・アメックスは使えない店がある）。タッチ決済に対応したカードだと、改札やお店が楽。</p><p>4桁の暗証番号（PIN）を確認しておく。ヨーロッパではサインではなくPINを求められることが多い。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>航空券と宿で1枚に50万円を超えることがある。足りなければカード会社に<b>一時的な利用枠の増額</b>を申し込む。</li><li>お店で「円で払いますか？」と聞かれたら<b>ユーロを選ぶ</b>。円を選ぶと割高なレートになる。</li><li>カードに付いている海外旅行保険の条件（旅行代金をそのカードで払う必要があるか）も一緒に確認する。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>年会費以外は 0円</li><li>海外で使うと、利用額の約1.6〜2.2%の手数料がかかる</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-hotel" data-id="hotel" aria-label="宿を12泊ぶん予約する">
+        <details>
+          <summary><span class="todo-name">宿を12泊ぶん予約する</span><span class="todo-tags"><span class="todo-when">🗓 10月〜11月</span><span class="todo-cost">💴 1人 約13.9万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>都市</th><th>泊まる日</th><th>泊数</th><th>選び方のポイント</th></tr></thead><tbody><tr><td>パリ</td><td>2/13〜2/15</td><td>2泊</td><td>空港（CDG）から RER B で行きやすい場所</td></tr><tr><td>バルセロナ</td><td>2/15〜2/17</td><td>2泊</td><td>ゴシック地区・エイシャンプレ地区</td></tr><tr><td>ローマ</td><td>2/17〜2/19</td><td>2泊</td><td>テルミニ駅の近く（鉄道に乗りやすい）</td></tr><tr><td>フィレンツェ</td><td>2/19〜2/21</td><td>2泊</td><td>サンタ・マリア・ノヴェッラ駅〜ドゥオーモ周辺</td></tr><tr><td>ヴェネツィア</td><td>2/21〜2/23</td><td>2泊</td><td><b>本島</b>（メストレだと毎回移動が必要）</td></tr><tr><td>ミラノ</td><td>2/23〜2/25</td><td>2泊</td><td>中央駅の近く（マルペンサ・エクスプレスに乗りやすい）</td></tr></tbody></table></div><p>3つ星〜4つ星のダブル1室を2人で使う前提。Booking.com・Expedia・ホテル公式のどれでもよい。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>まずは<b>無料キャンセルできるプラン</b>で押さえ、あとで安いところが見つかったら取り直す。</li><li>「ダブルベッド」の部屋か確認する（ツインは別々のベッド）。</li><li>どの都市も<b>宿泊税（都市税）</b>を現地で払う。1人1泊 €2〜6 ほどで、予算では予備費から出す。</li><li>エレベーターがない古い建物も多い。大きなスーツケースなら確認する。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>宿代：1人 約13.9万円（2人 約27.7万円）</li><li>宿泊税：1人 合計 約5,000〜8,000円（現地払い）</li></ul>
+          </div>
+        </details>
+      </div></div><div class="todo-phase"><h3>11月</h3><p class="sub">移動手段と保険を固める。</p>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-euflight" data-id="euflight" aria-label="欧州内の飛行機2本を予約する">
+        <details>
+          <summary><span class="todo-name">欧州内の飛行機2本を予約する</span><span class="todo-tags"><span class="todo-when">🗓 11月</span><span class="todo-cost">💴 1人 約3万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>日付</th><th>区間</th><th>時間帯</th><th>主な航空会社</th></tr></thead><tbody><tr><td>2/15（月）</td><td>パリ → バルセロナ</td><td>午後（午前はルーヴル）</td><td>Vueling・Air France など</td></tr><tr><td>2/17（水）</td><td>バルセロナ → ローマ</td><td>午後（午前は買い物）</td><td>Vueling・ITA・Ryanair など</td></tr></tbody></table></div><p>Google フライトで便と値段を比べてから、航空会社の公式サイトで買う。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li><b>受託手荷物込みの運賃</b>で選ぶ。格安航空会社は荷物が別料金で、空港で払うとかなり高い。</li><li>機内持ち込みはサイズ・重さの制限が厳しい（多くは 40×30×20cm の小さなバッグまで無料）。</li><li>パリは<b>シャルル・ド・ゴール（CDG）かオルリー（ORY）か</b>で、宿からの行き方が変わる。ローマは<b>フィウミチーノ（FCO）</b>着を選ぶ（チャンピーノは市内から遠い）。</li><li>格安航空会社はオンラインチェックインが必要なことが多い。空港でのチェックインは有料のことがある。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約3万円（2本・預け荷物込み）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-rail" data-id="rail" aria-label="イタリアの鉄道3本を予約する">
+        <details>
+          <summary><span class="todo-name">イタリアの鉄道3本を予約する</span><span class="todo-tags"><span class="todo-when">🗓 11月〜12月</span><span class="todo-cost">💴 1人 約1.5万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>日付</th><th>区間</th><th>所要</th><th>降りる駅</th></tr></thead><tbody><tr><td>2/19（金）</td><td>ローマ → フィレンツェ</td><td>約1時間30分</td><td>Firenze S.M.N.</td></tr><tr><td>2/21（日）</td><td>フィレンツェ → ヴェネツィア</td><td>約2時間05分</td><td>Venezia S. Lucia</td></tr><tr><td>2/23（火）</td><td>ヴェネツィア → ミラノ</td><td>約2時間25分</td><td>Milano Centrale</td></tr></tbody></table></div><p>Trenitalia（フレッチャロッサ）か Italo の公式サイト・アプリで買う。発売はおよそ4か月前からで、早いほど安い。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>早割は変更・払い戻しができないことが多い。</li><li>ヴェネツィアは<b>サンタ・ルチア駅</b>で降りる（ひとつ手前のメストレ駅は本島ではない）。</li><li>チケットはアプリかPDFで見せればよい。紙の切符を買った場合は、乗る前に刻印機で刻印する。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約1.5万円（早割なら半額近くになることも）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-insurance" data-id="insurance" aria-label="海外旅行保険を決める">
+        <details>
+          <summary><span class="todo-name">海外旅行保険を決める</span><span class="todo-tags"><span class="todo-when">🗓 11月〜出発前</span><span class="todo-cost">💴 1人 約6,000円〜</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>まずクレジットカード付帯の保険で足りるか確認する。足りなければ、14日間の海外旅行保険に入る。</p><p>見るべき補償：<b>治療・救援費用</b>（ヨーロッパは医療費が高いので1,000万円以上か無制限）、<b>携行品損害</b>（スリ・盗難）、<b>航空機の遅延・欠航</b>。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>カード付帯は「旅行代金をそのカードで払ったときだけ有効」という条件のことがある。</li><li>盗難にあったら現地の警察で<b>盗難証明書</b>をもらう。ないと保険金が出ない。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約6,000〜1万円（カード付帯で足りれば0円）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-etias" data-id="etias" aria-label="ETIAS（エティアス）の開始状況を確認する">
+        <details>
+          <summary><span class="todo-name">ETIAS（エティアス）の開始状況を確認する</span><span class="todo-tags"><span class="todo-when">🗓 12月・1月に1回ずつ</span><span class="todo-cost">💴 0円（始まれば €20）</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>ビザなしでヨーロッパに入る人向けの事前認証。2026年10月の時点ではまだ始まっておらず、<b>開始は2027年以降になる見込み</b>で日付は決まっていない。開始の数か月前に告知されるので、出発前に公式サイトでもう一度確認する。</p><p>これとは別に、2025年から空港の入国審査で指紋と顔写真を登録する仕組み（EES）が始まっている。最初に入国するパリの空港で登録する。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>「ETIAS申請」をうたう<b>偽サイト・代行サイト</b>が多い。申請するなら EU の公式サイト（travel-europe.europa.eu）だけを使う。</li><li>EES の登録で、パリの入国審査は時間がかかることがある。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>今は 0円</li><li>始まった場合：1人 €20（約3,600円）・3年間有効</li></ul>
+          </div>
+        </details>
+      </div></div><div class="todo-phase"><h3>12月〜1月</h3><p class="sub">人気の場所は発売日に合わせて押さえる。</p>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-cenacolo" data-id="cenacolo" aria-label="『最後の晩餐』を予約する（2/24 午前）">
+        <details>
+          <summary><span class="todo-name">『最後の晩餐』を予約する（2/24 午前）</span><span class="todo-tags"><span class="todo-when">🗓 12月中旬の発売日</span><span class="todo-cost">💴 1人 約3,100円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>2〜4月分はいつも<b>12月中旬（例年12/17ごろ）の正午（ミラノ時間）</b>にまとめて発売される。日本時間だと夜8時ごろ。発売日は公式サイト（cenacolovinciano.org）で告知され、予約は公式の販売サイト（lastsupper.shop）で行う。</p><p>15分ごとの入れ替え制。見学は15分だけなので、時間に遅れないようにする。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>発売後すぐに売り切れることが多い。<b>発売日の予定を空けておく</b>。</li><li>売り切れても、毎週水曜の正午に翌週分の追加枠が出る。それでもだめなら、ガイドツアー付きのチケット（€60〜）を探す。</li><li>転売サイトは数倍の値段。必ず公式で買う。</li><li>予約時間の20分前には着いておく。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 €15＋予約料 €2（約3,100円）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-sights" data-id="sights" aria-label="美術館・観光地のチケットを予約する">
+        <details>
+          <summary><span class="todo-name">美術館・観光地のチケットを予約する</span><span class="todo-tags"><span class="todo-when">🗓 12月〜1月</span><span class="todo-cost">💴 1人 約5万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>日付</th><th>場所</th><th>料金</th><th>予約の目安</th></tr></thead><tbody><tr><td>2/14（日）</td><td>オルセー美術館</td><td>€16</td><td>時間指定。1か月前で間に合う</td></tr><tr><td>2/14（日）</td><td>エッフェル塔（頂上）</td><td>€36.70</td><td>夜の時間帯は早めに</td></tr><tr><td>2/15（月）</td><td>ルーヴル美術館</td><td>€32</td><td>時間指定が必須。朝いちばんの枠</td></tr><tr><td>2/16（火）</td><td>サグラダ・ファミリア</td><td>€26</td><td>2〜4週間前。塔に登るなら別料金</td></tr><tr><td>2/16（火）</td><td>カサ・バトリョ</td><td>€29</td><td>2週間前</td></tr><tr><td>2/16（火）</td><td>グエル公園</td><td>€18</td><td>時間指定。予算外なので予備費から</td></tr><tr><td>2/18（木）</td><td>ヴァチカン美術館</td><td>€25</td><td>発売は約60日前。朝の枠がおすすめ</td></tr><tr><td>2/18（木）</td><td>コロッセオ・フォロロマーノ</td><td>€18</td><td><b>発売は約1か月前で、すぐ売り切れる</b></td></tr><tr><td>2/20（土）</td><td>ウフィツィ美術館</td><td>€29</td><td>時間指定。1か月前</td></tr><tr><td>2/22（月）</td><td>ドゥカーレ宮殿</td><td>€30</td><td>当日でも入れるが予約すると並ばない</td></tr><tr><td>2/23（火）</td><td>ミラノのドゥオーモ（屋上テラス）</td><td>約€20</td><td>1〜2週間前</td></tr></tbody></table></div>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>必ず<b>公式サイト</b>で買う。検索の上に出てくる代理販売サイトは割高。</li><li>名前入りのチケットは、パスポートと同じローマ字で入れる。</li><li>パリの「ミュージアム・パス」は、ルーヴルとオルセーの2か所だけなら元が取れない。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 合計 約5万円（グエル公園を含む）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-dinner" data-id="dinner" aria-label="特別なディナー3回を予約する">
+        <details>
+          <summary><span class="todo-name">特別なディナー3回を予約する</span><span class="todo-tags"><span class="todo-when">🗓 12月〜1月</span><span class="todo-cost">💴 1人 約6万円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>日付</th><th>都市</th><th>お店</th><th>予算（1人）</th></tr></thead><tbody><tr><td>2/14（日）</td><td>パリ</td><td>ミシュラン1つ星</td><td>€130（約23,400円）</td></tr><tr><td>2/18（木）</td><td>ローマ</td><td>ミシュラン1つ星</td><td>€120（約21,600円）</td></tr><tr><td>2/22（月）</td><td>ヴェネツィア</td><td>評判のよいお店</td><td>€80（約14,400円）</td></tr></tbody></table></div><p>店の公式サイト、TheFork、Googleマップから予約できる。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li><b>2/14はバレンタイン</b>。パリのレストランは特別コースになって高くなり、早く埋まる。1〜2か月前には予約する。</li><li>ドレスコードはスマートカジュアルが目安（襟付きのシャツ、きれいめの靴）。</li><li>予約時にカード情報を求められ、無断キャンセルは料金を取られることがある。</li><li>月曜定休の店が多い（ヴェネツィアの2/22は月曜）。営業日を確認する。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約6万円（3回）。飲み物を多く頼むと増える</li></ul>
+          </div>
+        </details>
+      </div></div><div class="todo-phase"><h3>出発の2週間前</h3><p class="sub">通信・お金・荷物の準備。</p>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-esim" data-id="esim" aria-label="eSIMを買ってインストールする">
+        <details>
+          <summary><span class="todo-name">eSIMを買ってインストールする</span><span class="todo-tags"><span class="todo-when">🗓 出発1週間前</span><span class="todo-cost">💴 1人 約2,500円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>ヨーロッパ周遊用のeSIM（14日間・10GB前後）を買う。1つで3か国とも使える。出発前に日本でインストールしておき、現地に着いたらオンにする。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>スマホが<b>SIMロック解除済み・eSIM対応</b>か確認する。</li><li>日本のSIMの<b>データローミングはオフ</b>にしておく。オンのままだと高額請求になることがある。</li><li>地図と翻訳を多く使うので、少し多めの容量にしておくと安心。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約2,500円</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-cash" data-id="cash" aria-label="ユーロの現金を少し用意する">
+        <details>
+          <summary><span class="todo-name">ユーロの現金を少し用意する</span><span class="todo-tags"><span class="todo-when">🗓 出発前</span><span class="todo-cost">💴 1人 €100〜150</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>ほとんどカードで払えるが、公衆トイレ（€1〜2）、市場、チップ、ヴェネツィアの小さな店などで現金が必要になる。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>€50以下のお札で持つ。€100以上のお札は断られることがある。</li><li>日本の空港で両替するとレートが悪い。足りなくなったら現地の銀行ATMでカードから引き出すほうが安いことが多い。</li><li>財布を2つに分けて、全部を一度に盗まれないようにする。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 €100〜150（約1.8〜2.7万円）。旅行中の食事などに使うので、予算の中に含まれる</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-packing" data-id="packing" aria-label="持ち物をそろえる">
+        <details>
+          <summary><span class="todo-name">持ち物をそろえる</span><span class="todo-tags"><span class="todo-when">🗓 出発1週間前</span><span class="todo-cost">💴 予算外（買い足す分）</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>都市</th><th>2月の気温（最低〜最高）</th></tr></thead><tbody><tr><td>パリ</td><td>3〜8℃</td></tr><tr><td>バルセロナ</td><td>9〜15℃</td></tr><tr><td>ローマ</td><td>5〜13℃</td></tr><tr><td>フィレンツェ</td><td>3〜12℃</td></tr><tr><td>ヴェネツィア</td><td>1〜8℃</td></tr><tr><td>ミラノ</td><td>1〜9℃</td></tr></tbody></table></div><p>あると便利なもの：厚手のコート、重ね着できる服、折りたたみ傘、歩きやすい靴、<b>変換プラグ（Cタイプ）</b>、モバイルバッテリー、ファスナー付きのショルダーバッグ、エコバッグ、パスポートのコピー。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>スマホやPCの充電器は100〜240V対応なら、変換プラグだけでよい（変圧器はいらない）。ドライヤーは要確認。</li><li>モバイルバッテリーは<b>機内持ち込みのみ</b>（スーツケースに入れて預けられない）。</li><li>ヴェネツィアは2月に高潮（アクア・アルタ）で道が水につかることがある。宿で長靴を借りられるか確認しておく。</li><li>帰りは買い物で荷物が増える。行きのスーツケースは余裕を持たせる。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>持っていない物を買い足す分だけ（予算には入れていない）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-tabireji" data-id="tabireji" aria-label="外務省「たびレジ」に登録する・アプリを入れる">
+        <details>
+          <summary><span class="todo-name">外務省「たびレジ」に登録する・アプリを入れる</span><span class="todo-tags"><span class="todo-when">🗓 出発1週間前</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>たびレジに登録すると、現地の安全情報やストのお知らせがメールで届く。</p><p>入れておくと便利なアプリ：ANA、乗る格安航空会社、Trenitalia／Italo、Googleマップ（オフライン地図も保存）、翻訳アプリ、配車アプリ（Uber・FREENOW）。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>パスポートの写真ページを撮って、スマホとクラウドに保存しておく（なくしたときの再発行で必要）。</li><li>家族に旅程と宿の連絡先を共有しておく。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円</li></ul>
+          </div>
+        </details>
+      </div></div><div class="todo-phase"><h3>前日・当日（2/12〜2/13）</h3>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-checkin" data-id="checkin" aria-label="ANAのオンラインチェックインをする">
+        <details>
+          <summary><span class="todo-name">ANAのオンラインチェックインをする</span><span class="todo-tags"><span class="todo-when">🗓 2/12（出発24時間前から）</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>ANAのアプリかサイトでチェックインして、座席と搭乗券を確認する。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>パスポート情報をここで入力する。</li><li>預け荷物は1人23kgまで2個。量りで重さを確認しておく。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-airport" data-id="airport" aria-label="羽田空港へ向かう">
+        <details>
+          <summary><span class="todo-name">羽田空港へ向かう</span><span class="todo-tags"><span class="todo-when">🗓 2/13（土）朝</span><span class="todo-cost">💴 1人 約2,000円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>NH215は<b>9:35発</b>。国際線は2時間前には着いておきたいので、<b>7:30までに羽田空港</b>に着くように家を出る。ANAの国際線は第2ターミナルと第3ターミナルに分かれているので、どちらから出るかをeチケットで確認する。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>土曜の朝なので、電車の始発や乗り換えも確認しておく。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>1人 約2,000円（自宅から空港まで）</li></ul>
+          </div>
+        </details>
+      </div></div><div class="todo-phase"><h3>旅行中</h3>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-strike" data-id="strike" aria-label="移動日の朝に、ストと遅延を確認する">
+        <details>
+          <summary><span class="todo-name">移動日の朝に、ストと遅延を確認する</span><span class="todo-tags"><span class="todo-when">🗓 移動日ごと</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>移動日は2/15（飛行機）、2/17（飛行機）、2/19・2/21・2/23（鉄道）、2/25（帰国）。前日の夜と当日の朝に、航空会社・鉄道のアプリとニュースで運行状況を見る。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>フランスとイタリアは交通機関のストが比較的よくある。イタリアのストは事前に予告されることが多い。</li><li>欠航・運休になったら、すぐ航空会社・鉄道会社のアプリで振替を探す。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円（振替で追加料金がかかったら、保険で補償されるか確認）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-safety" data-id="safety" aria-label="スリ・詐欺に気をつける">
+        <details>
+          <summary><span class="todo-name">スリ・詐欺に気をつける</span><span class="todo-tags"><span class="todo-when">🗓 旅行中ずっと</span><span class="todo-cost">💴 0円</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>特に注意する場所：パリの地下鉄・エッフェル塔の周り、バルセロナのランブラス通り・サグラダ・ファミリアの周り、ローマのテルミニ駅・地下鉄A線・トレヴィの泉。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>スマホをテーブルに置かない・後ろのポケットに入れない。</li><li>「署名をお願いします」の紙、勝手に手首に巻くミサンガ、ハトのエサ、路上の写真撮影の誘いは無視して立ち去る。</li><li>電車のドア付近で囲まれたら、すぐバッグを前に抱える。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-taxfree" data-id="taxfree" aria-label="免税の書類をお店でもらう">
+        <details>
+          <summary><span class="todo-name">免税の書類をお店でもらう</span><span class="todo-tags"><span class="todo-when">🗓 買い物のたび</span><span class="todo-cost">💴 0円（約10%が戻る）</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>免税（タックスフリー）対応のお店で、会計のときに<b>パスポートを見せて</b>免税の書類（またはデジタル登録）をお願いする。</p><div class="t-wrap"><table class="t-table todo-table"><thead><tr><th>国</th><th>1店舗・1日あたりの最低額</th></tr></thead><tbody><tr><td>🇫🇷 フランス</td><td>€100.01 以上</td></tr><tr><td>🇪🇸 スペイン</td><td>最低額なし</td></tr><tr><td>🇮🇹 イタリア</td><td>€70.01 以上</td></tr></tbody></table></div>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>パスポートの原本が必要。コピーでは断られることがある。</li><li>買った物は使わず、箱やタグもそのままにしておく（帰りの空港で見せることがある）。</li><li>フランスとスペインで買った分も、<b>最後にEUを出るミラノの空港でまとめて</b>手続きする。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>0円。購入額のおよそ10〜13%が戻ってくる（手数料が引かれる）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-refund" data-id="refund" aria-label="ミラノの空港で免税手続きをしてから帰る">
+        <details>
+          <summary><span class="todo-name">ミラノの空港で免税手続きをしてから帰る</span><span class="todo-tags"><span class="todo-when">🗓 2/25（木）朝</span><span class="todo-cost">💴 1人 約2,300円（空港までの電車）</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>NH208は11:20発。免税手続きがあるので、<b>3時間前（8:20ごろ）までにマルペンサ空港</b>に着くように、7時ごろにホテルを出る。中央駅からマルペンサ・エクスプレスで約50分。</p><p>順番：①チェックインの前に、免税の窓口（税関）で書類を確認してもらう → ②スーツケースを預ける → ③出国審査 → ④返金カウンターで受け取る（カードへの返金を選ぶこともできる）。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>税関で品物を見せるよう言われることがある。<b>スーツケースを預ける前に</b>手続きする。</li><li>現金で受け取ると手数料が高い。カードへの返金のほうが多く戻ることが多い。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>マルペンサ・エクスプレス €13（約2,300円）</li></ul>
+          </div>
+        </details>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" class="todo-check" id="todo-customs" data-id="customs" aria-label="日本の税関の免税範囲を確認して帰国する">
+        <details>
+          <summary><span class="todo-name">日本の税関の免税範囲を確認して帰国する</span><span class="todo-tags"><span class="todo-when">🗓 2/26（金）羽田着</span><span class="todo-cost">💴 0円（超えたら課税）</span></span></summary>
+          <div class="todo-body">
+            <h4>やること</h4><p>日本に持ち込める免税の範囲（1人あたり）：お酒3本（760mlのもの）、香水2オンス、その他の物は合計20万円まで。超える場合は申告する。</p><p>税関の申告は「Visit Japan Web」で事前に済ませると早い。</p>
+            <h4>気をつけること</h4><ul class="plan-list plan-care"><li>1つで20万円を超える物（ブランドのバッグなど）は、その品物の全額に税金がかかる。</li><li>ハム・ソーセージなどの肉製品は日本に持ち込めない（お店で「持ち帰りOK」と言われても不可）。チーズは量によって申告が必要。</li></ul>
+            <h4>かかるお金の目安</h4><ul class="plan-list"><li>範囲内なら 0円</li></ul>
+          </div>
+        </details>
+      </div></div>
+    </article>
+  <p class="photo-hint">料金・発売時期・制度は2026年10月時点の情報をもとにした目安です。予約の前に、必ず各公式サイトで最新の情報を確認してください。</p></section>
+
   <div class="footer">
     ※ 気温は代表都市の2月平年値ベースの目安。2027年2月の実際の天候は直前予報で確認する前提です。<br>
     ※ 地図：<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a>（パブリックドメイン）の国境データをもとに作図。都市の位置は実座標、ルートの線は直線で簡略化しています。<br>
@@ -539,6 +835,26 @@ buttons.forEach(btn=>{
 });
 
 buttons.forEach(btn=>btn.setAttribute('aria-pressed',String(btn.classList.contains('active'))));
+const todoKey='plan-d-todo';
+const todoChecks=[...document.querySelectorAll('.todo-check')];
+let todoState={};
+try{todoState=JSON.parse(localStorage.getItem(todoKey)||'{}')||{};}catch(e){todoState={};}
+function renderTodo(){
+  let done=0;
+  todoChecks.forEach(c=>{c.closest('.todo-item').classList.toggle('done',c.checked);if(c.checked)done++;});
+  document.getElementById('todo-count').textContent=done;
+  document.getElementById('todo-bar-fill').style.width=(todoChecks.length?done/todoChecks.length*100:0)+'%';
+}
+todoChecks.forEach(c=>{
+  c.checked=!!todoState[c.dataset.id];
+  c.addEventListener('change',()=>{
+    todoState[c.dataset.id]=c.checked;
+    try{localStorage.setItem(todoKey,JSON.stringify(todoState));}catch(e){}
+    renderTodo();
+  });
+});
+renderTodo();
+
 const photoDialog=document.getElementById('photo-dialog');
 const dialogImage=photoDialog.querySelector('.dialog-image');
 const dialogCaption=photoDialog.querySelector('.dialog-caption');
